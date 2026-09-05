@@ -1,15 +1,17 @@
 ---
 name: cs-phd-writing
-description: "面向计算机学科的中文博士学位论文写作与审阅。支持多篇英文小论文向毕业论文的组织转换、章节编排、中文转写、主谓宾与指代检查、事实和术语核查，以及全文一致性审阅。可读取 PDF、DOCX、LaTeX 工程或粘贴文本；学校规范、范文分析和个人偏好从当前论文项目读取。"
+description: "面向计算机学科的中文博士学位论文写作与审阅。支持多篇英文小论文向毕业论文的组织转换、章节与段落编排、中文转写、主谓宾与指代检查、套话审阅、事实和术语核查，以及全文一致性审阅。可读取 PDF、DOCX、LaTeX 工程或粘贴文本；学校规范、范文分析和个人偏好从当前论文项目读取。"
 license: "Apache-2.0"
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
   language: "zh-CN"
 ---
 
 # CS PhD Writing
 
 将真实研究组织成问题清楚、论据充分、中文自然的博士学位论文。先保持研究含义与事实，再改进论证和表述。面向计算机学科，适用于不同学校和具体研究方向；章节形式由研究材料与当前项目要求决定。
+
+技能操作规则、参考指南和写作示例使用中文；技能名和文件名使用英文。原文引文、技术名称与来源署名按需要保留原语言。
 
 本技能由两个开源技能改写整合，具体来源、保留内容与修改说明见 [上游改写记录](references/upstream-adaptation.md) 和 [NOTICE](NOTICE.md)。无需安装上游技能。
 
@@ -39,6 +41,8 @@ metadata:
 | 多篇英文小论文整合为中文毕业论文 | [小论文到学位论文](references/paper-to-thesis.md) | 研究主线、成果与章节对应、重组后的正文及来源 |
 | 阅读 PDF、DOCX 或 LaTeX 工程 | [输入读取](references/input-reading.md) | 可核验的阅读顺序、原文位置及实际覆盖范围 |
 | 检查或润色中文、英文转写中文 | [中文表达](references/chinese-expression.md) | 保持含义的文本与关键改动说明 |
+| 组织段落论证、方法解释或实验分析 | [段落功能](references/paragraph-functions.md) | 本段要建立的判断、需要的证据及与上下文的关系 |
+| 检查套话、空泛分析或用户所说的“AI 味” | [学术表述检查](references/prose-quality.md) | 有依据的具体表述；保留正常句式，不给出 AI 生成概率 |
 | 核对数据、贡献、引文、术语 | [事实与术语](references/evidence-and-terms.md) | 论断、定位、支持程度和处理意见 |
 | 组织总论点、提纲、研究章节或绪论 | [论文结构](references/thesis-structure.md) | 问题、章节功能、证据与研究关系 |
 | 组织文献综述、理论框架、研究设计或方法结果讨论 | [研究与综合](references/research-and-synthesis.md) | 文献比较、问题与方法证据对应、已完成研究与计划的区分 |

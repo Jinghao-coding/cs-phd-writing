@@ -1,7 +1,5 @@
 # CS PhD Writing
 
-An agent skill for writing and reviewing computer science PhD dissertations in Chinese.
-
 面向计算机学科的中文博士学位论文写作与审阅，支持将多篇英文小论文组织、重写为中文毕业论文。
 
 基于 [doctoral-dissertation-skills](https://github.com/syc9336-rgb/doctoral-dissertation-skills) 和 [dissertation-polisher-zh](https://github.com/ChipsAhoyM/dissertation-polisher-zh) 改写整合，保留上游署名与许可证。
@@ -15,6 +13,7 @@ An agent skill for writing and reviewing computer science PhD dissertations in C
 | 组织文献综述、理论框架和研究设计 | 按问题比较已有研究，明确概念与假设，区分实验计划和实际结果 |
 | 组织方法、结果与讨论 | 说明做法、观察与解释各自的功能，核对结论是否有证据支持 |
 | 检查中文与技术表达 | 主谓宾、指代、修饰范围、术语、因果与比较关系；清理防御性表述并保留必要条件 |
+| 组织段落、检查空泛与套话 | 根据段落功能安排论证，检查具体事实与解释；保留正常术语、句型和数学推导 |
 | 审阅章节或全文 | 有原文定位、依据和建议的修改意见，检查重复贡献及跨章一致性 |
 | 核对图表、附录、脚注、引文和中英文版本 | 对象与引用是否对应、材料是否存在、数值与结论是否一致 |
 | 接入学校规范、范文和个人偏好 | 论文项目内的配置与资料指针，区分正式规范、参考写法和个人安排 |
@@ -33,6 +32,19 @@ An agent skill for writing and reviewing computer science PhD dissertations in C
 | 粘贴文本 | 直接处理片段，不据此声称已审阅全文 |
 
 工具按运行环境选择；扫描件需要实际可用的 OCR 或视觉读取能力。具体策略与覆盖范围见 [输入读取](references/input-reading.md)。
+
+## Agent 如何读取这些规则
+
+技能正文、参考指南和写作示例均用中文；技能名与文件名用英文，技术名称、原文引文和来源署名按需要保留原语言。
+
+| 位置 | 用途 |
+| --- | --- |
+| [SKILL.md](SKILL.md) | 供 Agent 读取的任务入口、核心规则和参考文件选择表 |
+| [references/](references/) | 供 Agent 按任务读取的详细方法、判断依据及例子 |
+| [assets/project-template/](assets/project-template/) | 放入论文项目的配置模板，按需合并已有内容 |
+| [evals/](evals/) | 合成案例和验收要求，用于检查技能行为 |
+
+`references/` 已接入技能入口。例如，新写方法或实验分析时读取 [段落功能](references/paragraph-functions.md)，检查语病时读取 [中文表达](references/chinese-expression.md)，检查空泛或套话时读取 [学术表述检查](references/prose-quality.md)。按请求选择文件，不要求每次加载全部规则。
 
 ## 安装与调用
 
@@ -123,6 +135,18 @@ npx skills@latest update cs-phd-writing --global
 | [dissertation-polisher-zh](https://github.com/ChipsAhoyM/dissertation-polisher-zh)，[e88ee2b](https://github.com/ChipsAhoyM/dissertation-polisher-zh/tree/e88ee2b1746e3c90c48ec16c9b98b4be3ac33ef4) | 按章阅读；校准“本文、本章、本节”的作用域；检查跨章术语和符号一致性；提供有原文定位的审阅意见 | [中文表达](references/chinese-expression.md)、[写作与审阅](references/writing-and-review.md) |
 
 改写后的规则已包含在本仓库的 `SKILL.md` 和 `references/` 中。使用时只需调用 `$cs-phd-writing`，无需另行安装或调用这两个上游技能。这里没有导入它们的全部工作流，也不会自动跟随上游更新；后续采用新版本时需重新核对规则并更新来源记录。
+
+doctoral-dissertation-skills 中三个参考文件的具体分工与本项目的对应关系如下：
+
+| 上游文件 | 解决的问题 | 本项目对应内容 |
+| --- | --- | --- |
+| `paragraph_functions.md` | 段落如何完成背景、方法、证据、讨论等论证功能 | [段落功能](references/paragraph-functions.md)：按计算机研究整理为 24 类，补充算法、证明、实现和消融等内容 |
+| `language_style.md` | 全文如何保持自然、精确、稳定的学术表达 | [中文表达](references/chinese-expression.md)：中文句法、术语、逻辑关系和证据强度 |
+| `forbidden_patterns.md` | 哪些表达需要重点复核 | [中文表达](references/chinese-expression.md) 与 [学术表述检查](references/prose-quality.md)：提前辩护、夸大、空泛分析和正文残留，按语境判断 |
+
+上游的表达模式是复核线索，不是见词即删的黑名单。本项目保留数学证明、必要限定和有实际作用的章节导引。
+
+补充阅读参考为 [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)。其观察用于提醒检查具体写作与来源问题，不作为学位论文规范或 AI 作者判定标准。阅读版本与独立编写的中文检查流程见 [学术表述检查](references/prose-quality.md)。
 
 ### 本项目的补充与调整
 

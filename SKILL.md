@@ -3,7 +3,7 @@ name: cs-phd-writing
 description: "面向计算机学科的中文博士学位论文写作与审阅。支持多篇英文小论文向毕业论文的组织转换、章节与段落编排、中文转写、主谓宾与指代检查、套话审阅、事实和术语核查，以及全文一致性审阅。可读取 PDF、DOCX、LaTeX 工程或粘贴文本；学校规范、范文分析和个人偏好从当前论文项目读取。"
 license: "Apache-2.0"
 metadata:
-  version: "0.3.0"
+  version: "0.3.1"
   language: "zh-CN"
 ---
 

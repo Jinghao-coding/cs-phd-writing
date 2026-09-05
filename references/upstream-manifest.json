@@ -1,0 +1,83 @@
+[
+  {
+    "key": "doctoral",
+    "repository": "https://github.com/syc9336-rgb/doctoral-dissertation-skills",
+    "commit": "95b0af625e34e4d26835e719352c52c2e907a43c",
+    "fetched_date": "2026-09-05",
+    "files": [
+      {
+        "path": "LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      },
+      {
+        "path": "NOTICE",
+        "sha256": "f61d572d421773d10945b4e668ddec2ed54fcb7f0eee142a3be58ea62dcd04c1",
+        "bytes": 409
+      },
+      {
+        "path": "skills/doctoral-dissertation/SKILL.md",
+        "sha256": "788f7bb1de7f2b100bb8390a0edbef5e84ef0cda0daf6aa786612f06b0c1a2aa",
+        "bytes": 7165
+      },
+      {
+        "path": "skills/doctoral-dissertation/tasks/start_project.md",
+        "sha256": "78b23ea794a98ff1ae2e230c8c0a8811d39e191915b6f721dd040f577bb9a03c",
+        "bytes": 2583
+      },
+      {
+        "path": "skills/doctoral-dissertation/tasks/structure_and_chapters.md",
+        "sha256": "f49f15d9d7ca9337bc5bb56b3cd4b3e1644da9c0da7007ae1a80fcfb0014411e",
+        "bytes": 4425
+      },
+      {
+        "path": "skills/doctoral-dissertation/tasks/write_sections.md",
+        "sha256": "8453628c72824836d6b749129e1da82bf068b76985563306017b5b07d73da306",
+        "bytes": 2583
+      },
+      {
+        "path": "skills/doctoral-dissertation/tasks/audit_revision.md",
+        "sha256": "0c9041ce4c4bf9c025f3d09a290af9c5ed75d7d27d937a415297f748bdc7db24",
+        "bytes": 2456
+      },
+      {
+        "path": "skills/doctoral-dissertation/references/qa_gates.md",
+        "sha256": "db9283ddbff44a00df1a0dae2c0fe3ae5d950762e29c5921025d916a7dbdd33d",
+        "bytes": 3796
+      },
+      {
+        "path": "skills/doctoral-dissertation/references/language_style.md",
+        "sha256": "ec1522784f1f2185748b1e022ef761ca2a59e0f578256cc847cccf0132533491",
+        "bytes": 2747
+      },
+      {
+        "path": "skills/doctoral-dissertation/references/forbidden_patterns.md",
+        "sha256": "a6fe1bea1ffb8940c5162a4ccd9f0082d420282376775bdbaf5964ffa596583e",
+        "bytes": 2695
+      },
+      {
+        "path": "skills/doctoral-dissertation/references/paragraph_functions.md",
+        "sha256": "c859da07b708687f985dd1a297b5920c1dd5fc317474ec694576e0cc4ac072f2",
+        "bytes": 3563
+      }
+    ]
+  },
+  {
+    "key": "polisher",
+    "repository": "https://github.com/ChipsAhoyM/dissertation-polisher-zh",
+    "commit": "e88ee2b1746e3c90c48ec16c9b98b4be3ac33ef4",
+    "fetched_date": "2026-09-05",
+    "files": [
+      {
+        "path": "LICENSE",
+        "sha256": "aa00e74769e1b9d8e7fa7094dbfcca9b129a0ded6dce1cf4da050b99146d2fa7",
+        "bytes": 1063
+      },
+      {
+        "path": "codex/dissertation-polisher-zh/SKILL.md",
+        "sha256": "f1e50c37daf3a44a45bf12044d275ab12b5432be72fd08930b148fcfce97472e",
+        "bytes": 44679
+      }
+    ]
+  }
+]

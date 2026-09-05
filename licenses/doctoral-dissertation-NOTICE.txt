@@ -1,0 +1,9 @@
+Doctoral Dissertation Skills
+Copyright 2026 Yuchen Song
+
+This product includes the "doctoral-dissertation" Skill and supporting
+documentation, released under the Apache License, Version 2.0.
+
+The Apache License, Version 2.0 permits use, reproduction, modification,
+distribution, and commercial integration subject to its terms, including
+preservation of applicable copyright, license, and NOTICE information.

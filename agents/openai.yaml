@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese PhD Writing"
+  short_description: "基于真实研究组织博士论文，逐句检查中文语义、术语、论证和证据"
+  default_prompt: "使用 $chinese-phd-writing，读取当前论文项目约定与相关材料，按本次请求写作或审阅，重点检查中文表达、事实依据和防御性表述。"

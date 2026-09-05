@@ -1,8 +1,8 @@
-# Chinese PhD Writing
+# CS PhD Writing
 
-An agent skill for evidence-based Chinese PhD dissertation writing and review.
+An agent skill for writing and reviewing computer science PhD dissertations in Chinese.
 
-面向中文博士学位论文的写作与审阅 Agent Skill。以真实研究为依据组织章节，检查中文语义、事实、术语、论证和跨章一致性。
+面向计算机学科的中文博士学位论文写作与审阅。以真实研究为依据组织章节，检查中文语义、事实、术语、论证和跨章一致性。
 
 基于 [doctoral-dissertation-skills](https://github.com/syc9336-rgb/doctoral-dissertation-skills) 和 [dissertation-polisher-zh](https://github.com/ChipsAhoyM/dissertation-polisher-zh) 改写整合，保留上游署名与许可证。
 
@@ -14,7 +14,7 @@ An agent skill for evidence-based Chinese PhD dissertation writing and review.
 - 清理防御性、宣传性和写作过程表述，保留必要推导与研究条件。
 - 接入当前论文的学校规范、范文分析及个人偏好。
 
-学校、作者、题目、论文来源和篇幅目标保存在论文项目中。通用技能包不携带这些个人配置，也不默认指定学校或研究方向。
+学校、作者、题目、论文来源和篇幅目标保存在论文项目中。通用技能包不携带这些个人配置，也不默认指定学校或具体研究方向。
 
 ## 安装到 Codex
 
@@ -22,27 +22,27 @@ An agent skill for evidence-based Chinese PhD dissertation writing and review.
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/Jinghao-coding/chinese-phd-writing.git "${CODEX_HOME:-$HOME/.codex}/skills/chinese-phd-writing"
+git clone https://github.com/Jinghao-coding/cs-phd-writing.git "${CODEX_HOME:-$HOME/.codex}/skills/cs-phd-writing"
 ```
 
-也可以下载仓库，将完整目录命名为 `chinese-phd-writing/` 后放入用户技能目录（通常为 `~/.codex/skills/`）。保留 `references/`、许可证和其他随包文件。
+也可以下载仓库，将完整目录命名为 `cs-phd-writing/` 后放入用户技能目录（通常为 `~/.codex/skills/`）。保留 `references/`、许可证和其他随包文件。
 
 开启一个新会话以刷新技能发现。也可以在现有会话中提供 `SKILL.md` 路径，明确要求读取后使用。
 
 ## 使用示例
 
 ```text
-使用 $chinese-phd-writing，审阅第三章，只给修改建议。
+使用 $cs-phd-writing，审阅第三章，只给修改建议。
 重点检查中文主谓宾、指代、术语和实验结论，不改源码。
 ```
 
 ```text
-使用 $chinese-phd-writing，根据材料索引和已完成研究调整大纲。
+使用 $cs-phd-writing，根据材料索引和已完成研究调整大纲。
 说明每章解决的问题及证据，不按论文数量决定章数。
 ```
 
 ```text
-使用 $chinese-phd-writing，把这段英文方法说明改写成中文博士论文表述。
+使用 $cs-phd-writing，把这段英文方法说明改写成中文博士论文表述。
 保留技术含义、公式和引用，不能补造事实或术语。
 ```
 
@@ -59,7 +59,7 @@ git clone https://github.com/Jinghao-coding/chinese-phd-writing.git "${CODEX_HOM
 | [doctoral-dissertation-skills](https://github.com/syc9336-rgb/doctoral-dissertation-skills)，[95b0af6](https://github.com/syc9336-rgb/doctoral-dissertation-skills/tree/95b0af625e34e4d26835e719352c52c2e907a43c) | 根据实际研究组织章节；区分章、节、段落的论证功能；用证据支撑结论；清理修稿过程和提前辩护式表述 | [论文结构](references/thesis-structure.md)、[事实与术语](references/evidence-and-terms.md)、[写作与审阅](references/writing-and-review.md) |
 | [dissertation-polisher-zh](https://github.com/ChipsAhoyM/dissertation-polisher-zh)，[e88ee2b](https://github.com/ChipsAhoyM/dissertation-polisher-zh/tree/e88ee2b1746e3c90c48ec16c9b98b4be3ac33ef4) | 按章阅读；校准“本文、本章、本节”的作用域；检查跨章术语和符号一致性；提供有原文定位的审阅意见 | [中文表达](references/chinese-expression.md)、[写作与审阅](references/writing-and-review.md) |
 
-改写后的规则已包含在本仓库的 `SKILL.md` 和 `references/` 中。使用时只需调用 `$chinese-phd-writing`，无需另行安装或调用这两个上游技能。这里没有导入它们的全部工作流，也不会自动跟随上游更新；后续采用新版本时需重新核对规则并更新来源记录。
+改写后的规则已包含在本仓库的 `SKILL.md` 和 `references/` 中。使用时只需调用 `$cs-phd-writing`，无需另行安装或调用这两个上游技能。这里没有导入它们的全部工作流，也不会自动跟随上游更新；后续采用新版本时需重新核对规则并更新来源记录。
 
 ### 本项目的补充与调整
 

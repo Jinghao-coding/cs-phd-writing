@@ -1,6 +1,6 @@
 # Notices
 
-Chinese PhD Writing is an adapted and reorganized skill for Chinese doctoral dissertations. Modified instruction files are identified in [the adaptation record](references/upstream-adaptation.md). New and adapted project content is distributed under the [Apache License, Version 2.0](LICENSE), with the following third-party notices preserved.
+CS PhD Writing is an adapted and reorganized skill for Chinese doctoral dissertations in computer science. Modified instruction files are identified in [the adaptation record](references/upstream-adaptation.md). New and adapted project content is distributed under the [Apache License, Version 2.0](LICENSE), with the following third-party notices preserved.
 
 ## Doctoral Dissertation Skills
 

@@ -4,6 +4,8 @@ An agent skill for evidence-based Chinese PhD dissertation writing and review.
 
 面向中文博士学位论文的写作与审阅 Agent Skill。以真实研究为依据组织章节，检查中文语义、事实、术语、论证和跨章一致性。
 
+基于 [doctoral-dissertation-skills](https://github.com/syc9336-rgb/doctoral-dissertation-skills) 和 [dissertation-polisher-zh](https://github.com/ChipsAhoyM/dissertation-polisher-zh) 改写整合，保留上游署名与许可证。
+
 ## 能做什么
 
 - 把多项研究组织成有明确问题和证据的学位论文。
@@ -48,9 +50,29 @@ git clone https://github.com/Jinghao-coding/chinese-phd-writing.git "${CODEX_HOM
 
 ## 来源与许可证
 
-基于 [doctoral-dissertation-skills](https://github.com/syc9336-rgb/doctoral-dissertation-skills) 和 [dissertation-polisher-zh](https://github.com/ChipsAhoyM/dissertation-polisher-zh) 改写整合。
+### 两个上游具体如何使用
 
-本项目采用 Apache-2.0，保留上游 Apache-2.0 与 MIT 通知。参见 [NOTICE](NOTICE.md) 和 [改写记录](references/upstream-adaptation.md)。
+本项目读取并改写了下列上游版本中的相关规则，按中文博士论文的写作与审阅任务重新组织。
+
+| 上游与采用版本 | 采用的内容 | 本项目中的主要位置 |
+| --- | --- | --- |
+| [doctoral-dissertation-skills](https://github.com/syc9336-rgb/doctoral-dissertation-skills)，[95b0af6](https://github.com/syc9336-rgb/doctoral-dissertation-skills/tree/95b0af625e34e4d26835e719352c52c2e907a43c) | 根据实际研究组织章节；区分章、节、段落的论证功能；用证据支撑结论；清理修稿过程和提前辩护式表述 | [论文结构](references/thesis-structure.md)、[事实与术语](references/evidence-and-terms.md)、[写作与审阅](references/writing-and-review.md) |
+| [dissertation-polisher-zh](https://github.com/ChipsAhoyM/dissertation-polisher-zh)，[e88ee2b](https://github.com/ChipsAhoyM/dissertation-polisher-zh/tree/e88ee2b1746e3c90c48ec16c9b98b4be3ac33ef4) | 按章阅读；校准“本文、本章、本节”的作用域；检查跨章术语和符号一致性；提供有原文定位的审阅意见 | [中文表达](references/chinese-expression.md)、[写作与审阅](references/writing-and-review.md) |
+
+改写后的规则已包含在本仓库的 `SKILL.md` 和 `references/` 中。使用时只需调用 `$chinese-phd-writing`，无需另行安装或调用这两个上游技能。这里没有导入它们的全部工作流，也不会自动跟随上游更新；后续采用新版本时需重新核对规则并更新来源记录。
+
+### 本项目的补充与调整
+
+- 强化中文主谓宾、指代、修饰范围和比较关系检查，逐项核对改写是否改变研究含义。
+- 补充事实与词汇依据检查，区分误差和准确率、百分比和百分点、计划与已完成工作；对新术语核查定义和使用依据。
+- 清理防御性表述时保留必要的数学推导、研究条件和真实局限；正常连接词和中文承前省略根据上下文判断。
+- 学校规范与个人偏好由当前论文项目提供，不把上游个案中的固定章数、页数或强制递进关系设为通用要求；提供 [合成案例](evals/cases.md) 检查事实、语言、修改范围和跨项目使用。
+
+完整的采用范围与改写说明见 [改写记录](references/upstream-adaptation.md)，上游文件、固定提交与校验信息见 [来源清单](references/upstream-manifest.json)。
+
+### 许可证与署名
+
+本项目以 [Apache License 2.0](LICENSE) 发布，保留 doctoral-dissertation-skills 的 [原始 NOTICE](licenses/doctoral-dissertation-NOTICE.txt) 和 dissertation-polisher-zh 的 [MIT 许可证](licenses/dissertation-polisher-zh-MIT.txt)。作者署名、第三方通知及适用范围见 [NOTICE](NOTICE.md)。
 
 ## 验证与限制
 

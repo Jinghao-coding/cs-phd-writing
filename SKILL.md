@@ -3,7 +3,7 @@ name: chinese-phd-writing
 description: "基于真实研究材料组织、撰写、改写和审阅中文博士学位论文。适用于多项成果整合、章节编排、英文论文转写、中文主谓宾与指代检查、事实和术语核查、消除防御性表述，以及全文一致性审阅。学校规范和个人偏好从当前论文项目读取。"
 license: "Apache-2.0"
 metadata:
-  version: "0.1.2"
+  version: "0.1.3"
   language: "zh-CN"
 ---
 

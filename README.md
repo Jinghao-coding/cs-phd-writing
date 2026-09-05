@@ -109,7 +109,7 @@ npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --age
 npx skills@latest update cs-phd-writing --global
 ```
 
-项目级安装改用 `--project`。Git 克隆、手动复制和链接源码采用各自的更新方式，见 [安装、更新与维护者发布](references/install-and-update.md)。默认分支可能包含尚未单独发布的修改；需要固定版本时使用对应 Release。
+项目级安装改用 `--project`。如果使用复制安装，或某个平台仍显示旧版，重新执行带 `--agent` 的安装命令，更新对应平台的完整副本。Git 克隆、手动复制和链接源码采用各自的更新方式，见 [安装、更新与维护者发布](references/install-and-update.md)。默认分支可能包含尚未单独发布的修改；需要固定版本时使用对应 Release。
 
 ## 来源与许可证
 

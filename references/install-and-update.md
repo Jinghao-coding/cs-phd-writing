@@ -16,7 +16,7 @@ npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --age
 npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --agent claude-code --global
 ```
 
-需要两个平台时，可使用 `--agent codex claude-code`。具体目录和安装方式由安装器处理。参数依据 [skills CLI](https://github.com/vercel-labs/skills)。
+需要两个平台时，可使用 `--agent codex claude-code`。安装器默认通过共享技能目录和链接提供文件；选择 `--copy` 时，各平台获得独立副本，更新时也需要覆盖这些副本。具体目录和安装方式由安装器处理。参数依据 [skills CLI](https://github.com/vercel-labs/skills)。
 
 ### 使用 Git 独立克隆
 
@@ -55,7 +55,7 @@ git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.claude/sk
 
 | 原安装方式 | 更新方式 |
 | --- | --- |
-| skills CLI 安装 | 用户级安装执行下面的指定技能更新命令；项目级安装改用 `--project` |
+| skills CLI 安装 | 用户级安装执行下面的指定技能更新命令；项目级安装改用 `--project`；复制安装按下文明确指定平台重新安装 |
 | Git 独立克隆 | 在该技能自身的 Git 仓库中拉取更新；存在本地修改时先处理差异 |
 | ZIP / 手动复制 | 从 Release 下载新版，保留旧版备份后替换完整技能目录 |
 | 链接到自己维护的源码 | 更新链接指向的实际源码；发布者另外将审核后的技能文件提交到公开仓库 |
@@ -63,6 +63,14 @@ git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.claude/sk
 ```bash
 npx skills@latest update cs-phd-writing --global
 ```
+
+更新后核对目标平台实际读取的 `SKILL.md` 版本及配套文件。如果使用 `--copy`，或安装器未识别某个平台，重复执行带 `--agent` 的安装命令；保留自己的改动后，再覆盖技能副本。两个平台的复制安装示例：
+
+```bash
+npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --agent codex claude-code --global --copy
+```
+
+项目级复制安装去掉 `--global`。2026-09-05 使用 skills CLI 1.5.23 实测时，指定技能的项目更新只刷新了共享目录，Claude Code 的独立副本仍为旧版；明确指定两个平台重新安装可覆盖这些副本。因此，不能只根据安装器的成功提示判断所有平台都已更新。
 
 Git 克隆安装的 Codex 示例，先检查该目录确实是独立仓库，避免误操作父目录中的论文仓库：
 

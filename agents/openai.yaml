@@ -1,4 +1,4 @@
 interface:
   display_name: "CS PhD Writing"
-  short_description: "面向计算机学科的中文博士学位论文写作与审阅，核查表达、事实和术语"
+  short_description: "英文成果整合为中文计算机博士论文，支持写作、审阅及项目规范接入"
   default_prompt: "使用 $cs-phd-writing，读取当前论文项目约定与相关材料，按本次请求写作或审阅，重点检查中文表达、事实依据和防御性表述。"

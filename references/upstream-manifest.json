@@ -77,6 +77,11 @@
         "path": "codex/dissertation-polisher-zh/SKILL.md",
         "sha256": "f1e50c37daf3a44a45bf12044d275ab12b5432be72fd08930b148fcfce97472e",
         "bytes": 44679
+      },
+      {
+        "path": "README.md",
+        "sha256": "a3bc3744a7f8bffc674633a17bfca6bcfc8e42283b9ce1d11c78a87e2ccc2ac9",
+        "bytes": 8355
       }
     ]
   }

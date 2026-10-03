@@ -1,128 +1,147 @@
 # CS PhD Writing
 
-面向计算机学科的中文博士学位论文写作与审阅，支持将多篇英文小论文组织、重写为中文毕业论文。
+简体中文 | [English](README.en.md)
 
-基于 [doctoral-dissertation-skills](https://github.com/syc9336-rgb/doctoral-dissertation-skills) 和 [dissertation-polisher-zh](https://github.com/ChipsAhoyM/dissertation-polisher-zh) 改写整合，保留上游署名与许可证。
+面向计算机学科的中文博士学位论文写作与审阅技能，适用于 Codex 与 Claude Code。将英文研究成果组织为中文学位论文，结合技术上下文改进表述，并核对研究对象、机制和证据是否一致。
 
-## 适合哪些任务
+[下载正式版本](https://github.com/Jinghao-coding/cs-phd-writing/releases/latest) · [变更记录](CHANGELOG.md) · [详细安装与更新](references/install-and-update.md)
 
-| 任务 | 具体交付 |
+本仓库提供写作指令与参考指南。实际读取 PDF、编辑 Word、编译 LaTeX 或检索文献的能力由运行环境提供；不需要另行安装两个上游技能。操作指南以中文维护，英文 README 用于介绍、安装和使用导航。
+
+## 能做什么
+
+| 任务 | 交付与判断重点 |
 | --- | --- |
-| 从真实材料重建论文结构 | 研究主线、章与节的功能、问题与证据对应；按材料调整已有大纲 |
-| 英文小论文转为中文学位论文 | 成果与章节对应、会议版与扩展版归并、内容重组、中文转写和来源记录 |
-| 组织文献综述、理论框架和研究设计 | 按问题比较已有研究，明确概念与假设，区分实验计划和实际结果 |
-| 组织方法、结果与讨论 | 说明做法、观察与解释各自的功能，核对结论是否有证据支持 |
-| 检查中文与技术表达 | 主谓宾、指代、修饰范围、术语、因果与比较关系；清理防御性表述并保留必要条件 |
-| 组织段落、检查空泛与套话 | 根据段落功能安排论证，检查具体事实与解释；保留正常术语、句型和数学推导 |
-| 审阅章节或全文 | 有原文定位、依据和建议的修改意见，检查重复贡献及跨章一致性 |
-| 规划或审阅论文配图 | 按理解难点选择图，检查机制表达、整体视觉协调、必要标识、图源形式和实际可编辑范围；指南见 [配图规划与审阅](references/figure-design.md) |
-| 核对图表、附录、脚注、引文和中英文版本 | 对象与引用是否对应、材料是否存在、数值与结论是否一致 |
-| 接入学校规范、范文和个人偏好 | 论文项目内的配置与资料指针，区分正式规范、参考写法和个人安排 |
-| 答辩或提交前检查 | 按项目正式要求核对组成部分、引用、已确认信息和实际导出文件 |
+| 组织多篇研究成果 | 研究主线、章节对应、会议版与扩展稿归并，不虚构章间依赖 |
+| 中文转写与润色 | 主谓与动宾搭配、指代、条件和量词作用域、段落衔接；保留公式和事实 |
+| 解释系统机制 | 根据实际对象、状态、事件顺序和接口语义改写，不套用其他系统的机制 |
+| 重组章节与综述 | 标题与内容对应、概念引入顺序、同问题方法比较，避免碎片化和重复 |
+| 展开研究章 | 补足定义、设计理由、推导、运行示例和已有结果分析，不编造实验 |
+| 审阅全文和配图 | 跨章术语与贡献、引文支持、图文关系和可读性；图源形式遵循项目要求 |
+| 接入论文项目 | 学校规范、范文经验与个人偏好分别保存在项目配置中 |
 
-流程入口见 [SKILL.md](SKILL.md)。单段润色、只审不改和讨论大纲均按请求范围处理。
+支持粘贴文本、PDF、DOCX、LaTeX 单文件及多文件工程。阅读范围和工具条件见 [输入读取](references/input-reading.md)。
 
-## 支持的输入
+## 近期更新
 
-| 格式 | 读取逻辑 |
-| --- | --- |
-| PDF | 根据目录或书签按章节分批阅读；图表、公式和复杂排版查看对应页面 |
-| DOCX | 按标题、段落与表格阅读，另行核对公式、图像、题注及修订状态 |
-| LaTeX 单文件 | 读取实际启用的正文、定义、图表及文献 |
-| LaTeX 多文件工程 | 定位主文件，按实际输入顺序、条件和路径规则追踪依赖 |
-| 粘贴文本 | 直接处理片段，不据此声称已审阅全文 |
+v0.4 系列补强了中文表述、章节重组和系统上下文判断。新增指南参考六篇系统论文的指定段落，并提供独立编写的对照示例：释放显存与删除缓存、提交与完成、原子性与恰好一次等概念不能混用。见 [系统上下文表达](references/systems-context-expression.md)。v0.4.2 补充双语 README 并更新安装导航，具体变化见 [CHANGELOG](CHANGELOG.md)。
 
-工具按运行环境选择；扫描件需要实际可用的 OCR 或视觉读取能力。具体策略与覆盖范围见 [输入读取](references/input-reading.md)。
+## 安装
 
-## Agent 如何读取这些规则
+选择一种安装方式，避免在同一平台重复安装同名副本。
 
-技能正文、参考指南和写作示例均用中文；技能名与文件名用英文，技术名称、原文引文和来源署名按需要保留原语言。
+### 使用 skills CLI
 
-| 位置 | 用途 |
-| --- | --- |
-| [SKILL.md](SKILL.md) | 供 Agent 读取的任务入口、核心规则和参考文件选择表 |
-| [references/](references/) | 供 Agent 按任务读取的详细方法、判断依据及例子 |
-| [assets/project-template/](assets/project-template/) | 放入论文项目的配置模板，按需合并已有内容 |
-| [evals/](evals/) | 合成案例和验收要求，用于检查技能行为 |
-
-`references/` 已接入技能入口。例如，新写方法或实验分析时读取 [段落功能](references/paragraph-functions.md)，检查语病时读取 [中文表达](references/chinese-expression.md)，检查空泛或套话时读取 [学术表述检查](references/prose-quality.md)。按请求选择文件，不要求每次加载全部规则。
-
-## 安装与调用
-
-仓库根目录是一份可供 Codex 和 Claude Code 使用的技能包，共用写作规则、参考文件和项目模板。
-
-### 方法一：npx 安装
-
-需要 Node.js 与 npm，按使用的平台选择：
+需要 Node.js 与 npm。在终端按目标平台执行：
 
 ```bash
-# Codex
+# Codex：用户级安装
 npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --agent codex --global
 
-# Claude Code
+# Claude Code：用户级安装
 npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --agent claude-code --global
 ```
 
-同时安装到两者时，使用 `--agent codex claude-code`；去掉 `--global` 则安装到当前项目。安装器用法见 [skills CLI](https://github.com/vercel-labs/skills)。
+同时安装到两者可用 `--agent codex claude-code`。在论文项目目录中去掉 `--global` 可作项目级安装；`--copy` 使用独立副本。仓库安装可能取得尚未打包发布的默认分支内容；需要固定版本时使用下方 Release ZIP。参数见 [skills CLI 官方说明](https://github.com/vercel-labs/skills)。
 
-### 方法二：Git 克隆或手动安装
+### 使用 Release ZIP
 
-将完整仓库克隆或将 Release 技能包解压到目标平台的技能目录，文件夹名为 `cs-phd-writing`。保留全部配套文件。路径和命令见 [安装与更新](references/install-and-update.md)。
+1. 打开 [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases)，下载该版本的 `cs-phd-writing-vX.Y.Z.zip`。
+2. 解压，将完整的 `cs-phd-writing/` 文件夹放入以下一个位置。`SKILL.md` 应直接位于该文件夹下，不多嵌套一层。
+3. 保留 `references/`、`assets/`、`agents/`、许可证等配套文件。附件中的 `SHA256SUMS.txt` 校验 ZIP 与文件清单；`file-manifest.json` 记录包内各文件。
 
-| 平台 | 显式调用示例 |
-| --- | --- |
-| Codex | `使用 $cs-phd-writing，审阅当前论文第三章，只给修改建议。` |
-| Claude Code | `/cs-phd-writing 审阅当前论文第三章，只给修改建议。` |
+| 平台 | 用户级目录 | 项目级目录 |
+| --- | --- | --- |
+| Codex | `~/.agents/skills/cs-phd-writing/` | `<project>/.agents/skills/cs-phd-writing/` |
+| Claude Code | `~/.claude/skills/cs-phd-writing/` | `<project>/.claude/skills/cs-phd-writing/` |
 
-安装后重新调用技能；若当前任务未发现它，可指定 `SKILL.md` 路径读取或开启新任务。Claude Code 的调用约定见 [官方文档](https://code.claude.com/docs/en/skills)。
+路径依据 [Codex 官方文档](https://developers.openai.com/codex/skills/) 与 [Claude Code 官方文档](https://code.claude.com/docs/en/skills)，核对日期为 2026-10-04。既有安装若由客户端或安装器管理，应先确认实际位置，不直接迁移或再装一份。Windows 将 `~` 换为用户目录；以下 Shell 示例面向 macOS/Linux。
 
-## 英文小论文如何转为毕业论文
+### 使用 Git
 
-按“选定稿件与版本 → 研究主线 → 成果与章节对应 → 内容重组与中文转写 → 跨稿事实、符号和引用检查”处理。多篇成果可以共同支撑一章，一篇成果也可承担多个论证功能；前期工作按其作用安排。
+以下示例要求目标目录尚不存在：
 
-```text
-使用 $cs-phd-writing，根据材料索引中的英文论文组织中文博士学位论文。
-先给研究主线和成果与章节对应，不直接改正文。
-区分会议版与扩展版，说明共享背景如何合并，并核对各章的证据。
+```bash
+# Codex
+mkdir -p "$HOME/.agents/skills"
+git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.agents/skills/cs-phd-writing"
+
+# Claude Code
+mkdir -p "$HOME/.claude/skills"
+git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.claude/skills/cs-phd-writing"
 ```
 
-后续可明确要求按已确认大纲转写某章。流程和边界见 [小论文到学位论文](references/paper-to-thesis.md)，对应表见 [模板](assets/project-template/docs/paper-to-thesis-map.md)。Claude Code 使用同样的请求内容，将调用前缀换成 `/cs-phd-writing`。
+Git 克隆跟随默认分支。固定版本、更新已有副本等操作见 [安装与更新](references/install-and-update.md)。
 
-## 接入学校规范、范文分析及个人偏好
+## 开始使用
 
-配置放在自己的论文项目里。首次接入可以直接提供原件、网页或已有资料路径，再提出：
+安装后，在论文项目中发起任务并明确修改范围。Codex 使用 `$cs-phd-writing`，Claude Code 使用 `/cs-phd-writing`。
+
+**结合上下文润色：**
 
 ```text
-使用 $cs-phd-writing，为当前论文接入学校规范、参考范文和我的写作偏好。
-建立或更新 docs/thesis-writing-profile.md，保留已有已确认内容。
-区分正式规范、范文观察和个人安排，标明来源与版本；未确认项留空。
-本次只整理项目配置，不改论文正文。
+使用 $cs-phd-writing，润色当前章节的方法说明。
+先读相邻段落、符号定义和相关算法，检查对象、状态、动作与条件。
+给出可用替换文本；若技术含义需更正，单独说明依据，不补造机制。
 ```
 
-也可以从 [项目模板](assets/project-template/) 选择需要的文件：
+**只审不改：**
 
-| 放入论文项目的位置 | 内容 |
+```text
+使用 $cs-phd-writing，审阅第三章，不修改文件。
+按原文位置说明事实、逻辑和语言问题，区分确定错误与可选风格建议。
+```
+
+**英文成果整合：**
+
+```text
+使用 $cs-phd-writing，根据材料索引中的英文论文提出中文博士论文组织方案。
+区分会议版与扩展稿，说明各章问题、证据和联系，暂不写正文。
+```
+
+Claude Code 将这些请求中的调用前缀换成 `/cs-phd-writing`。正文修改与讨论方案分别处理，不因调用技能自动扩展到全文重写。
+
+## 接入自己的论文项目
+
+学校规范、个人材料与偏好应留在论文项目内。已有 `AGENTS.md`、`CLAUDE.md` 或项目配置时先读取，不用空白模板覆盖。
+
+```text
+使用 $cs-phd-writing，为当前论文整理学校规范、参考范文和写作偏好。
+建立或更新 docs/thesis-writing-profile.md，保留已确认内容和现有材料路径。
+区分正式规范、范文观察和个人安排，记录来源；本次不改正文。
+```
+
+按需使用 [项目模板](assets/project-template/)：
+
+| 文件 | 内容 |
 | --- | --- |
-| `docs/thesis-writing-profile.md` | 学位类型、题目、材料指针、个人和导师偏好、章节约束 |
-| `docs/university-writing-spec.md` | 官方来源、适用版本、条款定位与实际要求 |
-| `docs/reference-thesis-notes.md` | 范文中观察到的做法、拟采用方式及适用理由 |
-| `docs/paper-to-thesis-map.md` | 需要整合小论文时，登记版本、问题、证据和章节对应 |
+| `docs/thesis-writing-profile.md` | 论文入口、已确认信息、材料指针、偏好与章节约束 |
+| `docs/university-writing-spec.md` | 官方规范的来源、版本和条款定位 |
+| `docs/reference-thesis-notes.md` | 范文观察、拟采用方式和适用章节 |
+| `docs/paper-to-thesis-map.md` | 多篇成果的版本、问题、证据和章节对应 |
 
-将 [项目说明片段](assets/project-template/project-instructions.snippet.md) 合并到论文的 `AGENTS.md` 或 `CLAUDE.md`，让后续任务找到配置。已有文件只合并需要的内容，不用空白模板覆盖。
+将 [项目说明片段](assets/project-template/project-instructions.snippet.md) 中适用内容合并进 `AGENTS.md` 或 `CLAUDE.md`。学校要求、论文题目、固定页数等不会从技能安装目录继承。详见 [项目接入](references/project-profile.md)。
 
-学校要求决定适用的格式约束，范文提供写作经验，个人偏好指导当前论文的选择；出现冲突时说明来源及影响。材料路径可以沿用现有目录。技能更新与论文配置分开维护，详情见 [项目接入](references/project-profile.md)。
+## 更新与常见问题
 
-## 获知更新与升级
-
-在仓库 **Watch → Custom → Releases** 中订阅版本发布；通知投递由使用者自己的 GitHub 设置决定。发布内容见 [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases)，具体变化见 [CHANGELOG](CHANGELOG.md)。[GitHub 说明](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
-
-通过 skills CLI 做用户级安装后，可以只更新本技能：
+CLI 用户级安装可只更新本技能：
 
 ```bash
 npx skills@latest update cs-phd-writing --global
 ```
 
-项目级安装改用 `--project`。如果使用复制安装，或某个平台仍显示旧版，重新执行带 `--agent` 的安装命令，更新对应平台的完整副本。Git 克隆、手动复制和链接源码采用各自的更新方式，见 [安装、更新与维护者发布](references/install-and-update.md)。默认分支可能包含尚未单独发布的修改；需要固定版本时使用对应 Release。
+项目级安装使用 `--project`。Git 克隆在确认是技能独立仓库、保留本地修改后执行 `git pull --ff-only`；ZIP 安装保留旧副本后替换完整技能目录。独立复制安装需核对每个平台的实际副本。更新技能不会自动改写论文或覆盖项目配置。
+
+- **找不到技能：** 核对目录层级和 `SKILL.md`，确认安装到了当前平台与作用域；重新开始任务，必要时重启客户端。
+- **仍在使用旧规则：** 检查实际读取路径与版本，避免重复副本；要求重新读取技能入口及相关指南。
+- **PDF、DOCX或编译工具不可用：** 按已有工具处理可读内容，明确未完成的检查；技能本身不安装文档运行时。
+- **想固定版本或获知更新：** 使用指定 Release，在 GitHub 的 Watch 设置中订阅 Releases。默认分支与发布包可能不同。
+
+## 指南与验证
+
+入口 [SKILL.md](SKILL.md) 按任务选择参考文件，不要求每次加载全部指南。可直接查阅 [中文表达](references/chinese-expression.md)、[系统上下文表达](references/systems-context-expression.md)、[段落功能](references/paragraph-functions.md)、[小论文整合](references/paper-to-thesis.md) 和 [全文审阅](references/manuscript-audit.md)。
+
+[evals/](evals/) 提供30个合成案例、验收要求和分版本自检记录。结构校验、链接检查与维护助手自检不等同于独立模型盲测，也不能证明所有领域和模型上的效果。论文样本只分析登记的段落，不声称全文审校或实验复现。
 
 ## 来源与许可证
 
@@ -162,6 +181,3 @@ doctoral-dissertation-skills 中三个参考文件的具体分工与本项目的
 
 本项目以 [Apache License 2.0](LICENSE) 发布，保留 doctoral-dissertation-skills 的 [原始 NOTICE](licenses/doctoral-dissertation-NOTICE.txt) 和 dissertation-polisher-zh 的 [MIT 许可证](licenses/dissertation-polisher-zh-MIT.txt)。作者署名、第三方通知及适用范围见 [NOTICE](NOTICE.md)。
 
-## 验证与适用范围
-
-`evals/` 提供合成案例与验收要求。技能是供 Agent 执行的写作流程，实际读取和编辑能力取决于可用工具；安装成功、结构校验和个别案例审阅均不能证明所有格式、所有模型或全部学科场景下的效果。未读取或未验证的材料应明确说明，不以任意评分替代事实判断。

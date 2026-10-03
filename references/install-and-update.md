@@ -2,6 +2,8 @@
 
 Codex 与 Claude Code 使用仓库根目录的同一份 `SKILL.md` 和配套资源。`agents/openai.yaml` 提供 Codex 显示信息；论文资料和个人配置放在论文项目内。
 
+安装入口：[中文 README](../README.md) · [English README](../README.en.md)。2026-10-04 按 [Codex 官方文档](https://developers.openai.com/codex/skills/) 与 [Claude Code 官方文档](https://code.claude.com/docs/en/skills) 核对下列目录。既有安装先确认实际位置，不因文档更新自动迁移或重复安装。
+
 ## 安装方式
 
 ### 使用 skills CLI
@@ -23,8 +25,8 @@ npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --age
 macOS / Linux 的 Codex 用户目录示例：
 
 ```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/Jinghao-coding/cs-phd-writing.git "${CODEX_HOME:-$HOME/.codex}/skills/cs-phd-writing"
+mkdir -p "$HOME/.agents/skills"
+git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.agents/skills/cs-phd-writing"
 ```
 
 Claude Code 用户目录示例：
@@ -40,7 +42,7 @@ git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.claude/sk
 
 | 平台 | 用户级目录 | 当前项目内目录 |
 | --- | --- | --- |
-| Codex | 默认 `~/.codex/skills/`；设置了 `CODEX_HOME` 时使用其下的 `skills/` | `.agents/skills/` |
+| Codex | `~/.agents/skills/` | `.agents/skills/` |
 | Claude Code | `~/.claude/skills/` | `.claude/skills/` |
 
 `~` 代表用户目录；Windows 手动复制时使用实际用户目录（PowerShell 中为 `$env:USERPROFILE`）。若环境自定义了技能路径，遵循其配置。Claude Code 的目录与调用方式参见 [官方技能文档](https://code.claude.com/docs/en/skills)。
@@ -75,7 +77,7 @@ npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --age
 Git 克隆安装的 Codex 示例，先检查该目录确实是独立仓库，避免误操作父目录中的论文仓库：
 
 ```bash
-cs_phd_skill_dir="${CODEX_HOME:-$HOME/.codex}/skills/cs-phd-writing"
+cs_phd_skill_dir="$HOME/.agents/skills/cs-phd-writing"
 if [ -d "$cs_phd_skill_dir/.git" ]; then
   git -C "$cs_phd_skill_dir" pull --ff-only
 else

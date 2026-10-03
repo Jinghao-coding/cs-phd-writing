@@ -3,7 +3,7 @@ name: cs-phd-writing
 description: "面向计算机学科的中文博士学位论文写作与审阅。支持多篇英文小论文向毕业论文的组织转换、章节与段落编排、中文转写、主谓宾与指代检查、套话审阅、事实和术语核查、配图规划与审阅，以及全文一致性审阅。可读取 PDF、DOCX、LaTeX 工程或粘贴文本；学校规范、范文分析和个人偏好从当前论文项目读取。"
 license: "Apache-2.0"
 metadata:
-  version: "0.4.0"
+  version: "0.4.1"
   language: "zh-CN"
 ---
 
@@ -42,6 +42,7 @@ metadata:
 | 多篇英文小论文整合为中文毕业论文 | [小论文到学位论文](references/paper-to-thesis.md) | 研究主线、成果与章节对应、重组后的正文及来源 |
 | 阅读 PDF、DOCX 或 LaTeX 工程 | [输入读取](references/input-reading.md) | 可核验的阅读顺序、原文位置及实际覆盖范围 |
 | 检查或润色中文、英文转写中文 | [中文表达](references/chinese-expression.md) | 主干、搭配、指代、作用域与段落衔接；保持含义的文本 |
+| 结合系统上下文改写机制、运行过程或性能结论 | [系统上下文表达](references/systems-context-expression.md)，语病检查结合[中文表达](references/chinese-expression.md) | 对象、状态、事件顺序、决策信息与证据强度一致 |
 | 组织段落论证、方法解释或实验分析 | [段落功能](references/paragraph-functions.md) | 本段要建立的判断、需要的证据及与上下文的关系 |
 | 检查套话、空泛分析或用户所说的“AI 味” | [学术表述检查](references/prose-quality.md) | 有依据的具体表述；保留正常句式，不给出 AI 生成概率 |
 | 核对数据、贡献、引文、术语 | [事实与术语](references/evidence-and-terms.md) | 论断、定位、支持程度和处理意见 |

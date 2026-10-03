@@ -111,7 +111,7 @@ Keep university requirements, private materials, and preferences in the thesis p
 ```text
 Use $cs-phd-writing to organize this project's university requirements,
 reference theses, and writing preferences. Create or update
- docs/thesis-writing-profile.md while preserving confirmed information and material paths.
+docs/thesis-writing-profile.md while preserving confirmed information and material paths.
 Record the sources of official rules, reference observations, and personal decisions.
 Do not edit the manuscript in this task.
 ```

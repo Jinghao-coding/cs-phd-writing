@@ -1,69 +1,90 @@
+<div align="center">
+
 # CS PhD Writing
 
-[简体中文](README.md) | English
+**Explain your research clearly. Bring your papers together into a coherent dissertation.**
 
-An agent skill for writing and reviewing Chinese doctoral dissertations in computer science, designed for Codex and Claude Code. It helps organize English research papers into a Chinese dissertation and improve technical prose while preserving the research meaning and evidence.
+A skill for writing and reviewing Chinese doctoral dissertations in computer science, for Codex and Claude Code.
 
-[Download a release](https://github.com/Jinghao-coding/cs-phd-writing/releases/latest) · [Changelog](CHANGELOG.md) · [Detailed installation guide, in Chinese](references/install-and-update.md)
+[![Release](https://img.shields.io/github/v/release/Jinghao-coding/cs-phd-writing?style=flat-square&label=release&color=2563eb)](https://github.com/Jinghao-coding/cs-phd-writing/releases/latest)
+[![License](https://img.shields.io/badge/license-Apache--2.0-64748b?style=flat-square)](LICENSE)
+[![Codex](https://img.shields.io/badge/agent-Codex-0f766e?style=flat-square)](https://developers.openai.com/codex/skills/)
+[![Claude Code](https://img.shields.io/badge/agent-Claude_Code-b45309?style=flat-square)](https://code.claude.com/docs/en/skills)
 
-The skill provides instructions and reference guides. Reading PDFs, editing Word documents, compiling LaTeX, and searching literature require tools in your agent environment. The operational guides remain in Chinese; this English README provides installation and usage guidance. Installing the upstream skills separately is unnecessary.
+[简体中文](README.md) · **English**
 
-## What it does
+[Quick start](#quick-start) · [Examples](#examples) · [Project setup](#project-setup) · [Guides](#guides) · [Changelog](CHANGELOG.md)
 
-| Task | Focus |
-| --- | --- |
-| Organize research contributions | Research questions, chapter roles, and conference/extended-version relationships without inventing dependencies |
-| Rewrite and polish Chinese prose | Grammar, references, condition scope, terminology, and paragraph flow while preserving formulas and facts |
-| Explain systems mechanisms | Actual entities, states, events, interfaces, and evidence rather than generic substitutions |
-| Restructure chapters and surveys | Titles that match content, concepts introduced before their use, and comparisons around shared problems |
-| Expand research chapters | Supported definitions, design rationale, derivations, examples, and evaluation analysis without invented results |
-| Review manuscripts and figures | Consistency, citation support, figure purpose, readability, and project-specific source-format requirements |
-| Verify and adapt references | University rules, authentic metadata, author order, stable citation keys, and software/web citations |
-| Maintain writing context and explain agent systems | Current decisions, evidence provenance, execution objects, memory, and resource semantics |
-| Configure a thesis project | Separate university rules, reference-thesis observations, and personal preferences |
+</div>
 
-Inputs can be pasted text, PDF, DOCX, or single-file and multi-file LaTeX projects. See [input reading](references/input-reading.md) for scope and tool requirements.
+---
 
-## Recent changes
+## From research materials to dissertation prose
 
-Version 0.5.0 adds [writing context](references/writing-context.md), [agent systems prose](references/agent-systems-expression.md), and [bibliography validation](references/bibliography-validation.md). Imported BibTeX is checked against source metadata and the university’s existing bibliography setup; full authorship is preserved separately from display formatting. These are agent workflows, not an installed automatic verification service.
+Organize chapters around research questions, improve Chinese prose in its technical context, and check facts, terminology and citations. University rules, research materials and writing preferences come from the current thesis project, allowing the skill to adapt to different institutions and degree requirements.
 
-The v0.4 series adds stronger Chinese-language checks, chapter restructuring, and context-sensitive systems writing. The [systems prose guide](references/systems-context-expression.md) analyzes selected passages from six papers and provides independently written examples. It distinguishes concepts such as freeing device memory versus deleting cached state, submission versus completion, and atomicity versus exactly-once behavior. Version 0.4.2 adds bilingual READMEs and refreshed installation guidance; see the [changelog](CHANGELOG.md).
+| What you are working on | How the skill helps |
+| :--- | :--- |
+| **Integrating English papers** | Map research questions, publication versions and chapter relationships into a Chinese dissertation |
+| **Polishing prose and explaining mechanisms** | Check grammar, references and logic; clarify entities, states, actions and execution conditions |
+| **Developing chapters and literature reviews** | Explain definitions, design choices, derivations and results; compare approaches around shared problems |
+| **Managing references** | Verify sources, complete author order and citation support; adapt BibTeX data to university styles |
+| **Reviewing manuscripts and figures** | Check terminology, evidence, figures, equations, cross-references and submission materials |
+| **Sustained revision and agent systems writing** | Track current decisions and evidence versions; distinguish roles, calls, memory and resource management |
 
-## Installation
+**Supported inputs:** pasted text, PDF, DOCX, and single-file or multi-file LaTeX projects. The agent environment provides reading, editing, search and compilation tools; the skill provides writing guidance and workflows. Operational guides are maintained in Chinese.
 
-Choose one installation method to avoid duplicate copies for the same agent.
+> **Main branch v0.5.0** includes [writing context](references/writing-context.md), [agent systems prose](references/agent-systems-expression.md) and [bibliography validation](references/bibliography-validation.md). Install from the main branch for these additions, or choose a fixed version from [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases) and consult its release notes.
 
-### skills CLI
+<a id="quick-start"></a>
+## Quick start
 
-Requires Node.js and npm. Run the command for your agent:
+### 1. Install for your agent
+
+The skills CLI requires Node.js and npm. Choose your agent:
+
+**Codex**
 
 ```bash
-# Codex: user-wide installation
 npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --agent codex --global
+```
 
-# Claude Code: user-wide installation
+**Claude Code**
+
+```bash
 npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --agent claude-code --global
 ```
 
-Use `--agent codex claude-code` for both agents. Omit `--global` while in your thesis project for a project installation. Use `--copy` for independent copies. Repository installation may include changes on the default branch that are not yet packaged in a release; use a release ZIP to pin a version. See the [skills CLI documentation](https://github.com/vercel-labs/skills).
+Use `--agent codex claude-code` for both. Omit `--global` in your thesis directory for a project installation. See the [skills CLI](https://github.com/vercel-labs/skills) for options.
 
-### Release ZIP
+### 2. Start a task in your thesis project
 
-1. Open [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases) and download `cs-phd-writing-vX.Y.Z.zip` for the desired version.
-2. Extract the complete `cs-phd-writing/` folder into one of the locations below. `SKILL.md` must be directly inside that folder, without an extra nesting level.
-3. Keep all supporting files, including `references/`, `assets/`, `agents/`, and licenses. `SHA256SUMS.txt` checks the ZIP and manifest; `file-manifest.json` lists hashes of files inside the package.
+```text
+Use $cs-phd-writing to polish the method explanation in Chapter 3.
+Read adjacent paragraphs, symbol definitions and the relevant algorithm first.
+Check entities, states, actions and conditions. Return usable Chinese replacement text.
+Explain any substantive technical corrections separately, with their evidence.
+```
+
+In Claude Code, replace `$cs-phd-writing` with `/cs-phd-writing`.
+
+<details>
+<summary><strong>Other installation methods: Release ZIP / Git</strong></summary>
+
+**Install a fixed version**
+
+Download `cs-phd-writing-vX.Y.Z.zip` from [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases) and place the complete `cs-phd-writing/` folder in one of these locations:
 
 | Agent | User-wide location | Project location |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Codex | `~/.agents/skills/cs-phd-writing/` | `<project>/.agents/skills/cs-phd-writing/` |
 | Claude Code | `~/.claude/skills/cs-phd-writing/` | `<project>/.claude/skills/cs-phd-writing/` |
 
-Locations were checked on 2026-10-04 against the official [Codex](https://developers.openai.com/codex/skills/) and [Claude Code](https://code.claude.com/docs/en/skills) documentation. For an existing client-managed installation, check its actual location before moving it or adding another copy. On Windows, replace `~` with your user directory; the shell examples below target macOS/Linux.
+Keep `SKILL.md` directly inside that folder, together with all supporting files. Use `SHA256SUMS.txt` to verify the ZIP and manifest. Check the actual path for existing installations. On Windows, replace `~` with your user directory.
 
-### Git clone
+**Install with Git to follow the main branch**
 
-These examples require that the destination directory does not already exist:
+These macOS / Linux examples assume that the destination directory does not exist:
 
 ```bash
 # Codex
@@ -75,104 +96,107 @@ mkdir -p "$HOME/.claude/skills"
 git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.claude/skills/cs-phd-writing"
 ```
 
-A clone follows the default branch. See [installation and updates](references/install-and-update.md) for more details.
+Locations follow the official [Codex](https://developers.openai.com/codex/skills/) and [Claude Code](https://code.claude.com/docs/en/skills) documentation. See the [detailed installation guide](references/install-and-update.md) for more options.
 
-## Usage
+</details>
 
-Start a task in your thesis project and specify the scope. Invoke `$cs-phd-writing` in Codex or `/cs-phd-writing` in Claude Code.
+<a id="examples"></a>
+## Common tasks
 
-**Polish prose in context:**
+### Integrate papers and plan chapters
 
 ```text
-Use $cs-phd-writing to polish the method explanation in the current chapter.
-Read adjacent paragraphs, symbol definitions, and the relevant algorithm first.
-Check entities, states, actions, and conditions. Return usable Chinese replacement text.
-Explain substantive technical corrections separately; do not invent mechanisms.
+Use $cs-phd-writing to propose a dissertation structure from the indexed English papers.
+Distinguish conference and extended versions. Explain each chapter's research question,
+evidence and relationship to the other chapters. Provide a plan only for this task.
 ```
 
-**Review without editing:**
+### Review a chapter and locate issues
 
 ```text
 Use $cs-phd-writing to review Chapter 3 without modifying files.
-Identify factual, logical, and language issues with source locations.
+Locate factual, logical and language issues in the source.
 Distinguish definite errors from optional style changes.
 ```
 
-**Organize English papers into a dissertation:**
+### Verify citations and organize BibTeX
 
 ```text
-Use $cs-phd-writing to propose a Chinese dissertation structure from the indexed papers.
-Distinguish conference papers from extended versions. Explain each chapter's question,
-evidence, and relationship to the others. Do not draft the manuscript yet.
+Use $cs-phd-writing to organize this imported BibTeX batch.
+Read the university rules and current style first. Verify original sources,
+complete author order and support for the cited claims. Follow the project's key convention
+and update affected references when keys change. Preserve verified software versions
+and actual web access dates; list missing information separately.
 ```
 
-In Claude Code, replace the invocation prefix with `/cs-phd-writing`. Discussion, review, and manuscript editing have different scopes; invoking the skill does not authorize a full rewrite.
-
+<a id="project-setup"></a>
 ## Connect your thesis project
 
-Keep university requirements, private materials, and preferences in the thesis project. Read existing `AGENTS.md`, `CLAUDE.md`, and project configuration first; do not overwrite them with blank templates.
+Each thesis project keeps its own university requirements, research materials and writing decisions. The skill reads existing `AGENTS.md`, `CLAUDE.md` and project configuration, then selects the guidance relevant to the current task.
 
 ```text
-Use $cs-phd-writing to organize this project's university requirements,
-reference theses, and writing preferences. Create or update
-docs/thesis-writing-profile.md while preserving confirmed information and material paths.
-Record the sources of official rules, reference observations, and personal decisions.
-Do not edit the manuscript in this task.
+Use $cs-phd-writing to read the university rules, department requirements and thesis configuration.
+Identify the rules for my degree type and submission cohort, with source locations
+and differences requiring clarification. Update docs/thesis-writing-profile.md,
+preserving confirmed information. Keep manuscript editing outside this task.
 ```
 
-Choose only the files you need from the [project templates](assets/project-template/):
+Choose the files you need from the [project templates](assets/project-template/):
 
-| File | Purpose |
-| --- | --- |
-| `docs/thesis-writing-profile.md` | Entry file, confirmed information, material pointers, preferences, and chapter constraints |
-| `docs/university-writing-spec.md` | Official sources, versions, and rule locations |
-| `docs/reference-thesis-notes.md` | Observed writing practices and how they apply to this project |
-| `docs/paper-to-thesis-map.md` | Paper versions, questions, evidence, and chapter mapping |
+| Project file | Contents |
+| :--- | :--- |
+| `docs/thesis-writing-profile.md` | Entry file, material pointers, writing preferences and chapter constraints |
+| `docs/university-writing-spec.md` | Official rules, versions, source locations and bibliography configuration |
+| `docs/reference-thesis-notes.md` | Observed writing methods, adoption rationale and scope |
+| `docs/paper-to-thesis-map.md` | Publication versions, research questions, evidence and chapter mapping |
 
-Merge the applicable [project instructions snippet](assets/project-template/project-instructions.snippet.md) into `AGENTS.md` or `CLAUDE.md`. A thesis title, university rule, or page target is not inherited from the skill's installation directory. See [project configuration](references/project-profile.md).
+See [project configuration](references/project-profile.md), or merge the [project instructions snippet](assets/project-template/project-instructions.snippet.md) into your existing project instructions.
 
-## Updates and troubleshooting
+<a id="guides"></a>
+## Guide directory
 
-For a user-wide CLI installation, update only this skill:
+[SKILL.md](SKILL.md) is the execution entrypoint and routes each task to the relevant guides.
+
+| Topic | Guides |
+| :--- | :--- |
+| **Language and argument** | [Chinese expression](references/chinese-expression.md) · [Paragraph functions](references/paragraph-functions.md) · [Academic prose](references/prose-quality.md) |
+| **Structure and research** | [Thesis structure](references/thesis-structure.md) · [Paper integration](references/paper-to-thesis.md) · [Literature synthesis](references/research-and-synthesis.md) |
+| **Technical context** | [Systems mechanisms](references/systems-context-expression.md) · [Agent systems](references/agent-systems-expression.md) · [Writing context](references/writing-context.md) |
+| **Evidence and citations** | [Facts and terminology](references/evidence-and-terms.md) · [Bibliography validation](references/bibliography-validation.md) |
+| **Reading and delivery** | [Input reading](references/input-reading.md) · [Figure planning](references/figure-design.md) · [Manuscript review](references/manuscript-audit.md) |
+
+The [evaluation directory](evals/) contains **42 synthetic cases**, acceptance criteria and versioned manual self-review records covering language, facts, context, references and editing scope.
+
+## Updates and help
+
+For a user-wide CLI installation:
 
 ```bash
 npx skills@latest update cs-phd-writing --global
 ```
 
-Use `--project` for project installations. For a Git installation, confirm you are in the skill's own repository, preserve local changes, then run `git pull --ff-only`. For ZIP installations, preserve the old copy and replace the complete skill directory. Check each independent copy if multiple agents are installed. Updating the skill does not rewrite your thesis or replace its configuration.
+Use `--project` for project installations. For Git installations, resolve local changes in the skill's own repository and run `git pull --ff-only`. For ZIP installations, replace the complete directory with the new version. See [installation and updates](references/install-and-update.md).
 
-- **Skill not found:** Check the directory nesting, `SKILL.md`, agent, and installation scope. Start a new task or restart the client if needed.
-- **Old instructions still used:** Check the actual loaded path and version, remove ambiguity from duplicate installations, and ask the agent to reread the relevant guides.
-- **Document or compilation tools unavailable:** Work with accessible content and report uncompleted checks. This skill does not install document runtimes.
-- **Pinned versions and notifications:** Use a specific release and subscribe to Releases in GitHub's Watch settings. The default branch and release package may differ.
+<details>
+<summary><strong>Skill missing or an older version still loading?</strong></summary>
 
-## Reference import example
+- Check folder nesting, `SKILL.md`, the target agent and installation scope.
+- Verify the loaded path, duplicate copies and version.
+- Reread the skill after updating, or start a new task; restart the client if needed.
+- Ensure your agent environment has the tools needed for PDF, DOCX editing or LaTeX compilation.
+- Subscribe through GitHub's **Watch → Custom → Releases** for release notifications.
 
-```text
-Use $cs-phd-writing to review this imported BibTeX batch.
-Read the university rules and current bibliography setup first. Verify the original
-sources, complete author order, and support for the cited claims. Preserve the
-project's key convention; synchronize all affected references if keys change.
-Keep verified software versions and web access dates, and report missing evidence.
-```
-
-## Guides and validation
-
-[SKILL.md](SKILL.md) routes tasks to the necessary references. Useful entry points include [Chinese expression](references/chinese-expression.md), [systems prose in context](references/systems-context-expression.md), [paragraph functions](references/paragraph-functions.md), [paper-to-thesis integration](references/paper-to-thesis.md), and [manuscript review](references/manuscript-audit.md). These guides are in Chinese and do not all need to be loaded for every task.
-
-[evals/](evals/) contains 42 synthetic cases, acceptance criteria, and versioned self-review records. Format checks, link checks, and maintainer self-reviews are not independent blind model evaluations or guarantees of performance across all domains and models. Paper analysis covers the recorded passages, not full-paper proofreading or experiment reproduction.
+</details>
 
 ## Sources and license
 
-This project adapts selected guidance from two upstream skills:
+This project adapts selected guidance from two upstream skills. The adapted guides are included in this repository:
 
-| Upstream and pinned revision | Adapted guidance |
-| --- | --- |
-| [doctoral-dissertation-skills](https://github.com/syc9336-rgb/doctoral-dissertation-skills/tree/95b0af625e34e4d26835e719352c52c2e907a43c) | Research-driven organization, chapter and paragraph roles, evidence, and separation of manuscript text from editing commentary |
-| [dissertation-polisher-zh](https://github.com/ChipsAhoyM/dissertation-polisher-zh/tree/e88ee2b1746e3c90c48ec16c9b98b4be3ac33ef4) | Chapter review, scope of author references, terminology and symbol consistency, and located review feedback |
+| Upstream | Adapted guidance |
+| :--- | :--- |
+| [doctoral-dissertation-skills · 95b0af6](https://github.com/syc9336-rgb/doctoral-dissertation-skills/tree/95b0af625e34e4d26835e719352c52c2e907a43c) | Research-driven chapter organization, paragraph functions and evidence rules |
+| [dissertation-polisher-zh · e88ee2b](https://github.com/ChipsAhoyM/dissertation-polisher-zh/tree/e88ee2b1746e3c90c48ec16c9b98b4be3ac33ef4) | Chapter review, scope of author references, terminology consistency and located feedback |
 
-The adapted instructions are included in this package; upstream skills are not runtime dependencies and updates are not automatically imported. Upstream paragraph, style, and expression-pattern references are reorganized into the local guides. Patterns are prompts for contextual review, not prohibited-word lists. Mathematical reasoning, necessary qualifications, and useful navigation are preserved.
+Reading scope for systems papers, agent tutorials and bibliography tools is recorded in the relevant guides. See the [adaptation history](references/upstream-adaptation.md), [source manifest](references/upstream-manifest.json) and [attribution notice](NOTICE.md) for full provenance.
 
-A supplementary Wikipedia writing-observations reference is documented in [prose quality](references/prose-quality.md); it is neither a thesis standard nor an AI-authorship detector. The systems-paper sources and inspected passages are recorded in [systems prose](references/systems-context-expression.md). External papers retain their own rights and are not bundled.
-
-See [adaptation history](references/upstream-adaptation.md), the [source manifest](references/upstream-manifest.json), and [NOTICE](NOTICE.md) for provenance and attribution. This skill is distributed under [Apache License 2.0](LICENSE), with the upstream [NOTICE](licenses/doctoral-dissertation-NOTICE.txt) and [MIT license](licenses/dissertation-polisher-zh-MIT.txt) retained.
+Distributed under [Apache License 2.0](LICENSE), retaining the upstream [NOTICE](licenses/doctoral-dissertation-NOTICE.txt) and [MIT license](licenses/dissertation-polisher-zh-MIT.txt).

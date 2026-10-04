@@ -18,11 +18,15 @@ The skill provides instructions and reference guides. Reading PDFs, editing Word
 | Restructure chapters and surveys | Titles that match content, concepts introduced before their use, and comparisons around shared problems |
 | Expand research chapters | Supported definitions, design rationale, derivations, examples, and evaluation analysis without invented results |
 | Review manuscripts and figures | Consistency, citation support, figure purpose, readability, and project-specific source-format requirements |
+| Verify and adapt references | University rules, authentic metadata, author order, stable citation keys, and software/web citations |
+| Maintain writing context and explain agent systems | Current decisions, evidence provenance, execution objects, memory, and resource semantics |
 | Configure a thesis project | Separate university rules, reference-thesis observations, and personal preferences |
 
 Inputs can be pasted text, PDF, DOCX, or single-file and multi-file LaTeX projects. See [input reading](references/input-reading.md) for scope and tool requirements.
 
 ## Recent changes
+
+Version 0.5.0 adds [writing context](references/writing-context.md), [agent systems prose](references/agent-systems-expression.md), and [bibliography validation](references/bibliography-validation.md). Imported BibTeX is checked against source metadata and the university’s existing bibliography setup; full authorship is preserved separately from display formatting. These are agent workflows, not an installed automatic verification service.
 
 The v0.4 series adds stronger Chinese-language checks, chapter restructuring, and context-sensitive systems writing. The [systems prose guide](references/systems-context-expression.md) analyzes selected passages from six papers and provides independently written examples. It distinguishes concepts such as freeing device memory versus deleting cached state, submission versus completion, and atomicity versus exactly-once behavior. Version 0.4.2 adds bilingual READMEs and refreshed installation guidance; see the [changelog](CHANGELOG.md).
 
@@ -142,11 +146,21 @@ Use `--project` for project installations. For a Git installation, confirm you a
 - **Document or compilation tools unavailable:** Work with accessible content and report uncompleted checks. This skill does not install document runtimes.
 - **Pinned versions and notifications:** Use a specific release and subscribe to Releases in GitHub's Watch settings. The default branch and release package may differ.
 
+## Reference import example
+
+```text
+Use $cs-phd-writing to review this imported BibTeX batch.
+Read the university rules and current bibliography setup first. Verify the original
+sources, complete author order, and support for the cited claims. Preserve the
+project's key convention; synchronize all affected references if keys change.
+Keep verified software versions and web access dates, and report missing evidence.
+```
+
 ## Guides and validation
 
 [SKILL.md](SKILL.md) routes tasks to the necessary references. Useful entry points include [Chinese expression](references/chinese-expression.md), [systems prose in context](references/systems-context-expression.md), [paragraph functions](references/paragraph-functions.md), [paper-to-thesis integration](references/paper-to-thesis.md), and [manuscript review](references/manuscript-audit.md). These guides are in Chinese and do not all need to be loaded for every task.
 
-[evals/](evals/) contains 30 synthetic cases, acceptance criteria, and versioned self-review records. Format checks, link checks, and maintainer self-reviews are not independent blind model evaluations or guarantees of performance across all domains and models. Paper analysis covers the recorded passages, not full-paper proofreading or experiment reproduction.
+[evals/](evals/) contains 42 synthetic cases, acceptance criteria, and versioned self-review records. Format checks, link checks, and maintainer self-reviews are not independent blind model evaluations or guarantees of performance across all domains and models. Paper analysis covers the recorded passages, not full-paper proofreading or experiment reproduction.
 
 ## Sources and license
 

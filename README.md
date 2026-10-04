@@ -34,7 +34,7 @@
 
 **支持材料：** 粘贴文本、PDF、DOCX、LaTeX 单文件及多文件工程。文件读取、编辑、检索和编译由运行环境中的工具执行；技能提供写作规则与操作指南。
 
-> **主分支 v0.5.0** 已加入[写作上下文](references/writing-context.md)、[Agent 系统表述](references/agent-systems-expression.md)和[文献校验](references/bibliography-validation.md)。安装主分支可使用这些内容；固定版本请查看 [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases) 中对应版本的说明。
+> **主分支 v0.6.0** 加入上下文修订、段落衔接与英中转写、技术语义核对、只读差异工具和多参考评估。保留学校文献适配、Agent 系统表述及持续写作上下文。固定版本见 [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases)。
 
 <a id="quick-start"></a>
 ## 快速开始
@@ -153,15 +153,26 @@ git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.claude/sk
 
 [SKILL.md](SKILL.md) 是执行入口，按任务加载相关指南。
 
-| 主题 | 参考指南 |
-| :--- | :--- |
-| **语言与论证** | [中文表达](references/chinese-expression.md) · [段落功能](references/paragraph-functions.md) · [学术表述](references/prose-quality.md) |
-| **结构与研究** | [论文结构](references/thesis-structure.md) · [小论文整合](references/paper-to-thesis.md) · [文献综合](references/research-and-synthesis.md) |
-| **技术上下文** | [系统机制表述](references/systems-context-expression.md) · [Agent 系统](references/agent-systems-expression.md) · [持续写作上下文](references/writing-context.md) |
-| **证据与引用** | [事实与术语](references/evidence-and-terms.md) · [文献校验与格式适配](references/bibliography-validation.md) |
-| **阅读与交付** | [输入读取](references/input-reading.md) · [配图规划](references/figure-design.md) · [全文审阅](references/manuscript-audit.md) |
+| 主题 | 解决什么问题 | 参考指南 |
+| :--- | :--- | :--- |
+| **中文语法与搭配** | 定位语病、歧义与可选风格，保留正确文本 | [中文表达](references/chinese-expression.md) · [修订流程](references/revision-workflow.md) |
+| **段落与英中转写** | 连接句间信息，梳理论证，转写自然中文 | [段落功能](references/paragraph-functions.md) · [衔接与转写](references/cohesion-and-translation.md) |
+| **学术语气与简洁表达** | 减少空泛、重复和自评，保持论断强度 | [学术表述](references/prose-quality.md) |
+| **技术语义与上下文** | 保持对象、动作、条件、数字和证据含义 | [语义核对](references/revision-workflow.md) · [系统机制](references/systems-context-expression.md) · [Agent 系统](references/agent-systems-expression.md) · [持续上下文](references/writing-context.md) |
+| **结构与研究** | 组织章节、整合成果，围绕问题综合文献 | [论文结构](references/thesis-structure.md) · [小论文整合](references/paper-to-thesis.md) · [文献综合](references/research-and-synthesis.md) |
+| **证据与引用** | 核验事实、作者顺序、引用支持与学校样式 | [事实与术语](references/evidence-and-terms.md) · [文献校验](references/bibliography-validation.md) |
+| **阅读与交付** | 读取材料，规划图文，核对全文 | [输入读取](references/input-reading.md) · [配图规划](references/figure-design.md) · [全文审阅](references/manuscript-audit.md) |
+| **工具与修订评估** | 比较公式、引用和数字，检查术语候选与过度修改 | [工具入口](references/language-tools.md) · [评估方法](evals/revision-evaluation.md) · [研究来源](references/language-research-sources.md) |
 
-[评估目录](evals/)提供 **42 个合成案例**、验收要求及分版本人工自查记录，覆盖语言、事实、上下文、文献与编辑范围。
+[评估目录](evals/)提供 **62 个合成案例**、**2 个公开真实修订分析切片**、多参考验收要求及版本记录。两个真实切片来自同一篇论文，分别讨论清晰性修改和科学含义变化。评估分开检查问题修复、含义保持、可读性、过度修改和文档完整性。
+
+只读辅助检查使用 Python 标准库，无额外依赖：
+
+```bash
+python3 <skill-dir>/scripts/check_revision.py before.tex after.tex
+```
+
+脚本输出公式、引用和数字差异；可用 `--glossary glossary.json` 加载项目词表。使用方法与可选 textlint、Vale 等工具见[工具入口](references/language-tools.md)。
 
 ## 更新与帮助
 

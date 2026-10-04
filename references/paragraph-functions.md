@@ -1,5 +1,7 @@
 # 段落功能与论证组织
 
+本指南用于判断段落的论证任务。具体的反向提纲、主题连续性和概念引入顺序见[衔接与转写](cohesion-and-translation.md)；不按功能清单强制套用段落模板。
+
 改写说明（2026-09-05）：参考 doctoral-dissertation-skills 的 [paragraph_functions.md](https://github.com/syc9336-rgb/doctoral-dissertation-skills/blob/95b0af625e34e4d26835e719352c52c2e907a43c/skills/doctoral-dissertation/references/paragraph_functions.md)，按计算机学位论文重新编排，补充算法、系统、证明、消融及多成果整合。来源许可见 [上游记录](upstream-adaptation.md)。
 
 用于新写段落、重组章节或检查论证缺口。先判断本段要让读者明确什么，再核对已有材料是否足以支持；写作时只选择相关功能。功能可以跨段完成，一段也可保留必要的定义或限定，不按下表顺序凑段，不要求每段套同一种句型。

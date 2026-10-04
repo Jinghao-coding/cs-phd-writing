@@ -34,7 +34,7 @@ Organize chapters around research questions, improve Chinese prose in its techni
 
 **Supported inputs:** pasted text, PDF, DOCX, and single-file or multi-file LaTeX projects. The agent environment provides reading, editing, search and compilation tools; the skill provides writing guidance and workflows. Operational guides are maintained in Chinese.
 
-> **Main branch v0.5.0** includes [writing context](references/writing-context.md), [agent systems prose](references/agent-systems-expression.md) and [bibliography validation](references/bibliography-validation.md). Install from the main branch for these additions, or choose a fixed version from [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases) and consult its release notes.
+> **Main branch v0.6.0** adds context-aware revision, paragraph cohesion, English-to-Chinese rewriting, semantic checks, read-only diagnostics and multi-reference evaluation. University bibliography adaptation, agent-system writing and persistent writing context remain available. See [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases) for tagged packages.
 
 <a id="quick-start"></a>
 ## Quick start
@@ -157,15 +157,26 @@ See [project configuration](references/project-profile.md), or merge the [projec
 
 [SKILL.md](SKILL.md) is the execution entrypoint and routes each task to the relevant guides.
 
-| Topic | Guides |
-| :--- | :--- |
-| **Language and argument** | [Chinese expression](references/chinese-expression.md) · [Paragraph functions](references/paragraph-functions.md) · [Academic prose](references/prose-quality.md) |
-| **Structure and research** | [Thesis structure](references/thesis-structure.md) · [Paper integration](references/paper-to-thesis.md) · [Literature synthesis](references/research-and-synthesis.md) |
-| **Technical context** | [Systems mechanisms](references/systems-context-expression.md) · [Agent systems](references/agent-systems-expression.md) · [Writing context](references/writing-context.md) |
-| **Evidence and citations** | [Facts and terminology](references/evidence-and-terms.md) · [Bibliography validation](references/bibliography-validation.md) |
-| **Reading and delivery** | [Input reading](references/input-reading.md) · [Figure planning](references/figure-design.md) · [Manuscript review](references/manuscript-audit.md) |
+| Topic | What it helps resolve | Guides |
+| :--- | :--- | :--- |
+| **Chinese grammar** | Distinguish errors, ambiguity and optional style; preserve valid prose | [Chinese expression](references/chinese-expression.md) · [Revision workflow](references/revision-workflow.md) |
+| **Paragraphs and translation** | Connect information, reconstruct arguments and translate into natural Chinese | [Paragraph functions](references/paragraph-functions.md) · [Cohesion and translation](references/cohesion-and-translation.md) |
+| **Academic prose** | Reduce vague claims and repetition while retaining appropriate confidence | [Academic prose](references/prose-quality.md) |
+| **Technical meaning and context** | Preserve entities, actions, conditions, numbers and evidence | [Semantic checks](references/revision-workflow.md) · [Systems mechanisms](references/systems-context-expression.md) · [Agent systems](references/agent-systems-expression.md) · [Writing context](references/writing-context.md) |
+| **Structure and research** | Organize chapters, integrate papers and synthesize related work | [Thesis structure](references/thesis-structure.md) · [Paper integration](references/paper-to-thesis.md) · [Literature synthesis](references/research-and-synthesis.md) |
+| **Evidence and citations** | Verify facts, author order, claim support and university styles | [Facts and terminology](references/evidence-and-terms.md) · [Bibliography validation](references/bibliography-validation.md) |
+| **Reading and delivery** | Read source materials, plan figures and review the manuscript | [Input reading](references/input-reading.md) · [Figure planning](references/figure-design.md) · [Manuscript review](references/manuscript-audit.md) |
+| **Tools and evaluation** | Inspect protected-content differences, terminology and overediting | [Language tools](references/language-tools.md) · [Evaluation method](evals/revision-evaluation.md) · [Research sources](references/language-research-sources.md) |
 
-The [evaluation directory](evals/) contains **42 synthetic cases**, acceptance criteria and versioned manual self-review records covering language, facts, context, references and editing scope.
+The [evaluation directory](evals/) contains **62 synthetic cases**, **2 analyses of real revision excerpts**, multiple acceptable answers and versioned records. The two real excerpts come from one paper and distinguish clarity edits from changes to scientific meaning. Evaluation covers problem resolution, meaning preservation, readability, overediting and document integrity separately.
+
+The read-only helper uses the Python standard library:
+
+```bash
+python3 <skill-dir>/scripts/check_revision.py before.tex after.tex
+```
+
+It reports formula, reference and number differences. Add `--glossary glossary.json` for a project glossary. See [language tools](references/language-tools.md) for configuration and optional textlint, Vale and other integrations.
 
 ## Updates and help
 

@@ -1,0 +1,213 @@
+{
+  "checked_on": "2026-10-05",
+  "records": [
+    {
+      "repository": "Master-cai/Research-Paper-Writing-Skills",
+      "commit": "77e7c2c1ba06f7d71844873147665437a03aac1b",
+      "read_path": "README.md",
+      "sha256": "37c5e07ce0c58c6ea3fb54e844d33da724e710095198fea459e70d974311b05b",
+      "url": "https://github.com/Master-cai/Research-Paper-Writing-Skills/blob/77e7c2c1ba06f7d71844873147665437a03aac1b/README.md",
+      "license_api": "MIT",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "Orchestra-Research/AI-research-SKILLs",
+      "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+      "read_path": "README.md",
+      "sha256": "d5442649de72ecd33a9e90e820d76d5d5fe658777d39f1f8977641e1d264f3bb",
+      "url": "https://github.com/Orchestra-Research/AI-research-SKILLs/blob/773a52944ba4747a18bd4ae9ade53fff041adcbc/README.md",
+      "license_api": "MIT",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset",
+      "read_files": [
+        {
+          "path": "20-ml-paper-writing/systems-paper-writing/SKILL.md",
+          "sha256": "ee31b50b25192efcfcbe3252d7e15d88ec27bbd94817640b0357090f94c0e297"
+        },
+        {
+          "path": "20-ml-paper-writing/systems-paper-writing/references/section-blueprints.md",
+          "sha256": "289bafaef560edfd5e3b98b1eb65902fd4bf4fc289c98f5b83c4b7a13fc4d69b"
+        }
+      ]
+    },
+    {
+      "repository": "huguryildiz/ieee-acm-paper-writing",
+      "commit": "9849bc7b3b6fb2113b4464d26e4465d66ff18706",
+      "read_path": "README.md",
+      "sha256": "a6bb2eb4f5ae9d1280864a802313ce10ce2c870d85220017b44b0698f042a4fe",
+      "url": "https://github.com/huguryildiz/ieee-acm-paper-writing/blob/9849bc7b3b6fb2113b4464d26e4465d66ff18706/README.md",
+      "license_api": "MIT",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
+      "read_path": "README.md",
+      "sha256": "2d4a9f2268c6ed70fc0d0d769921963da6b82966bd71c4b0225e35b0779b2447",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/154988403bb5a18e9d3c0ce4e6d5e2e4b184a298/README.md",
+      "license_api": "MIT",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "u7079256/paperjury-codex",
+      "commit": "6383d0ca3c1b6cec3e9c8d7fda75092d67857768",
+      "read_path": "README.md",
+      "sha256": "f5cb4792aa52bf4118d898247e80c001d89bc66638fec833c9eb1d131865da72",
+      "url": "https://github.com/u7079256/paperjury-codex/blob/6383d0ca3c1b6cec3e9c8d7fda75092d67857768/README.md",
+      "license_api": "MIT",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "WUBING2023/PaperSpine",
+      "commit": "f7e3dabaf499b2aef1eabdd1cd5d64f173d7dcc3",
+      "read_path": "README.md",
+      "sha256": "aa7a61728cf8d1c8c4a454b31c502d0fc4e4d6f53d7a138f67de18f6d114a00b",
+      "url": "https://github.com/WUBING2023/PaperSpine/blob/f7e3dabaf499b2aef1eabdd1cd5d64f173d7dcc3/README.md",
+      "license_api": "MIT",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "Ar9av/PaperOrchestra",
+      "commit": "36c3cc4b10370b1f905adcd4e5601e8b624c2dc3",
+      "read_path": "README.md",
+      "sha256": "92b7c7f95f47073543461b158c4529acaeff8bcf20552b7bbec72d46fba7b599",
+      "url": "https://github.com/Ar9av/PaperOrchestra/blob/36c3cc4b10370b1f905adcd4e5601e8b624c2dc3/README.md",
+      "license_api": "NOASSERTION",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "HillZhang1999/NaSGEC",
+      "commit": "13044f16a68b07ce57a3fa423199e046a97e6244",
+      "read_path": "README.md",
+      "sha256": "3b88649c459ef95804d3bd706fa2cb2968a5c5b3fa4dad8a684dac0cb045d8c3",
+      "url": "https://github.com/HillZhang1999/NaSGEC/blob/13044f16a68b07ce57a3fa423199e046a97e6244/README.md",
+      "license_api": "unspecified",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "HillZhang1999/MuCGEC",
+      "commit": "39221934ee4ccf07801879136a75dd7e11319977",
+      "read_path": "README.md",
+      "sha256": "0382ac9b2eb7fa7685cbecd552430fe91dda3bff447161374c8d4c92d78c5426",
+      "url": "https://github.com/HillZhang1999/MuCGEC/blob/39221934ee4ccf07801879136a75dd7e11319977/README.md",
+      "license_api": "Apache-2.0",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "xlxwalex/FCGEC",
+      "commit": "851cfb043e9cca8bc2f866d46987e10b24b1b9d6",
+      "read_path": "README.md",
+      "sha256": "923eae467d3e125b0974b4a4cf4b4b306f0852594186f75da50b976505a8b3c0",
+      "url": "https://github.com/xlxwalex/FCGEC/blob/851cfb043e9cca8bc2f866d46987e10b24b1b9d6/README.md",
+      "license_api": "Apache-2.0",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "vipulraheja/iterater",
+      "commit": "41adc0818356f78b362a9382a3732e0529f3fe35",
+      "read_path": "README.md",
+      "sha256": "63fe88f9bc21723bd7fedb69ecce4898cf025d44a98b601a57cdf46de0656762",
+      "url": "https://github.com/vipulraheja/iterater/blob/41adc0818356f78b362a9382a3732e0529f3fe35/README.md",
+      "license_api": "Apache-2.0",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "allenai/aries",
+      "commit": "5691bae71a101225ed345d0ffc42e47609f03bbb",
+      "read_path": "README.md",
+      "sha256": "a5b05f950f682674cda44c14943904e319ac00a8e499fde21e8a697e2e5ccbbc",
+      "url": "https://github.com/allenai/aries/blob/5691bae71a101225ed345d0ffc42e47609f03bbb/README.md",
+      "license_api": "Apache-2.0",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "textlint/textlint",
+      "commit": "60c2c794ef7ff9687b9ab2b5fd9cc82be7f032a9",
+      "read_path": "README.md",
+      "sha256": "c5377ae6d94f21544fed1ba28851bc8d4f3cfe3a2d54779ab1065c52b4ef8e43",
+      "url": "https://github.com/textlint/textlint/blob/60c2c794ef7ff9687b9ab2b5fd9cc82be7f032a9/README.md",
+      "license_api": "MIT",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "darkyzhou/textlint-rule-preset-zh-technical-writing",
+      "commit": "ae2411e7bc9a6361385fc3786b25f9926970aa59",
+      "read_path": "README.md",
+      "sha256": "28cec067bdac495347e30e2a5da870869e997263f342bec64bb3f70554438f70",
+      "url": "https://github.com/darkyzhou/textlint-rule-preset-zh-technical-writing/blob/ae2411e7bc9a6361385fc3786b25f9926970aa59/README.md",
+      "license_api": "MIT",
+      "archived": true,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "vale-cli/vale",
+      "commit": "cfb21a4ce87238bcfb44b90e8e0db9e0e91d6c09",
+      "read_path": "README.md",
+      "sha256": "3b9b4d6fd1346a8f8579260753f134afbaacf1fd9cacc0daf00e16a3f073f961",
+      "url": "https://github.com/vale-cli/vale/blob/cfb21a4ce87238bcfb44b90e8e0db9e0e91d6c09/README.md",
+      "license_api": "MIT",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "shibing624/pycorrector",
+      "commit": "fc8aa56c336276fbd8cdd3a49eef505dc67b8a6e",
+      "read_path": "README.md",
+      "sha256": "8ff15d9a1eff31c48aef27dd0dea579e61fb569778a4538df7a8f0dec03ac2f8",
+      "url": "https://github.com/shibing624/pycorrector/blob/fc8aa56c336276fbd8cdd3a49eef505dc67b8a6e/README.md",
+      "license_api": "Apache-2.0",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "languagetool-org/languagetool",
+      "commit": "bd0b8ccdedbe426094049e2ccda5230ce36fc4c4",
+      "read_path": "README.md",
+      "sha256": "999c7c74959a7bef9b355b09f23146c144988eae5cfb6a23acc5e5674d5f4d7b",
+      "url": "https://github.com/languagetool-org/languagetool/blob/bd0b8ccdedbe426094049e2ccda5230ce36fc4c4/README.md",
+      "license_api": "LGPL-2.1",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    },
+    {
+      "repository": "blader/humanizer",
+      "commit": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+      "read_path": "README.md",
+      "sha256": "a07a054f230dca1e3d25e32ba6c808905b743cc6fa56bf8b6868cee0b12a0432",
+      "url": "https://github.com/blader/humanizer/blob/225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8/README.md",
+      "license_api": "MIT",
+      "archived": false,
+      "reading_scope": "README; detailed skill passages and publication abstracts reviewed separately in this research session",
+      "adoption": "method reference; independently written guidance, no bundled code or dataset"
+    }
+  ]
+}

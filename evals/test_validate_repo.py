@@ -1,5 +1,6 @@
 """Mutation tests: broken repository metadata must actually fail validation."""
 import importlib.util
+import re
 from pathlib import Path
 import sys
 import tempfile
@@ -37,7 +38,7 @@ class RepoChecks(unittest.TestCase):
         self.assertTrue(any('noncontinuous' in e for e in v.case_errors(self.root)))
     def test_current_version_conflict_history_unchanged(self):
         self.assertFalse(v.version_errors(self.root))
-        p=self.root/'README.md';p.write_text(p.read_text().replace('主分支 v0.6.0','主分支 v9.9.9'))
+        p=self.root/'README.md';p.write_text(re.sub(r'主分支 v\d+\.\d+\.\d+', '主分支 v9.9.9', p.read_text()))
         self.assertTrue(any('conflict' in e for e in v.version_errors(self.root)))
     def test_missing_distribution_file(self):
         (self.root/'LICENSE').unlink()

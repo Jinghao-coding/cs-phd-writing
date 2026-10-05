@@ -46,7 +46,7 @@ metadata:
 | --- | --- | --- |
 | 局部纠错、润色、压缩、重组、英中转写 | [修订流程](references/revision-workflow.md) | 句法与指代→[中文表达](references/chinese-expression.md)；信息承接与翻译→[衔接与转写](references/cohesion-and-translation.md)；系统对象或事件语义→[系统上下文](references/systems-context-expression.md)；来源与强度→[事实与术语](references/evidence-and-terms.md) |
 | 新写研究章、整章或全文审阅 | [写作与审阅](references/writing-and-review.md) | 章间主线→[论文结构](references/thesis-structure.md)；文献综合与理论框架→[研究与综合](references/research-and-synthesis.md)；段落论证→[段落功能](references/paragraph-functions.md)；具体改写→修订流程 |
-| 小论文整合成学位论文 | [小论文到学位论文](references/paper-to-thesis.md) | 先确认材料版本、成果与章节关系，再进入写作与审阅；完整产物见[研究章示例](examples/paper-to-chapter/README.md) |
+| 小论文整合成学位论文 | [小论文到学位论文](references/paper-to-thesis.md) | 先确认材料版本、成果与章节关系，再进入写作与审阅 |
 | 引文核验、BibTeX导入、键迁移、软件或网页引用 | [文献校验](references/bibliography-validation.md) | 学校约束不清时读取项目接入；事实支持不足时读取事实与术语 |
 | 接入学校规范、模板、范文或个人偏好 | [项目接入](references/project-profile.md) | 范文组织分析→论文结构；后续任务沿当前项目指针读取 |
 | 配图规划、图意或图源审阅 | [配图规划与审阅](references/figure-design.md) | 关联的正文与原始数据；按任务选矢量、栅格或混合图源 |

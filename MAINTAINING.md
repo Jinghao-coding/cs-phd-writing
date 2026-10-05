@@ -23,7 +23,6 @@ Markdown检查覆盖常见行内链接、图片、引用式目标定义、显式
 ## 可选构建与行为验证
 
 - [多文件工程](evals/integration/README.md)支持隔离准备、实际执行后收集补丁、哈希、范围和可选XeLaTeX构建。
-- [研究章示例](examples/paper-to-chapter/README.md)可从project目录执行两遍XeLaTeX；ctex按平台选择已安装字体。构建输出放临时目录，避免混入分发包。
 - 模型写作效果在发布前按实际需要运行，保存模型/宿主信息和五维证据；每次文档修改不强制调用模型。
 - 本轮真实记录见[验证记录](evals/validation-2026-10-05.md)。
 

@@ -34,7 +34,9 @@ python3 scripts/validate_repo.py
 
 ## 示例与构建
 
-[实际研究章](../examples/paper-to-chapter/output/chapter.tex)具备输入、前文定义、成稿、来源映射与待验证记录。材料由本项目构造，表中数据为教学合成值。正文展开条件作用、2→1→0状态变化、触发路径、复杂度及其频率区别，同时保留W收益与V不利结果。
+后续调整：按用户要求从当前分发包删除example；本节保留当时实际构建记录，产物链接固定到删除前提交。
+
+[当轮研究章](https://github.com/Jinghao-coding/cs-phd-writing/blob/6d2b2161928ebd3e01517b5c1a3870df1b0df4bf/examples/paper-to-chapter/output/chapter.tex)具备输入、前文定义、成稿、来源映射与待验证记录。材料由本项目构造，表中数据为教学合成值。正文展开条件作用、2→1→0状态变化、触发路径、复杂度及其频率区别，同时保留W收益与V不利结果。
 
 本机使用XeLaTeX（TeX Live 2026），每个入口运行两遍：
 

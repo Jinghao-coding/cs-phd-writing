@@ -26,9 +26,7 @@ REQUIRED = ['SKILL.md', 'README.md', 'README.en.md', 'CHANGELOG.md', 'LICENSE',
             'evals/integration/project/chapters/background.tex', 'evals/integration/project/chapters/reclaim.tex',
             'evals/integration/project/shared/notation.tex', 'evals/integration/project/algorithms/reclaim.tex',
             'evals/integration/project/tables/results.tex', 'evals/integration/project/archive/reclaim-v1.tex',
-            'evals/integration/project/AGENTS.md', 'examples/paper-to-chapter/output/chapter.tex',
-            'examples/paper-to-chapter/inputs/paper.md', 'examples/paper-to-chapter/source-map.md',
-            'examples/paper-to-chapter/review.md']
+            'evals/integration/project/AGENTS.md']
 
 
 def prose(text, inline=True):

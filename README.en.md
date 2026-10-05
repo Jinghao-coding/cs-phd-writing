@@ -34,25 +34,7 @@ Organize chapters around research questions, improve Chinese prose in its techni
 
 **Supported inputs:** pasted text, PDF, DOCX, and single-file or multi-file LaTeX projects. The agent environment provides reading, editing, search and compilation tools; the skill provides writing guidance and workflows. Operational guides are maintained in Chinese.
 
-> **Main branch v0.7.0** adds located revision diagnostics, evidence-use tracking across chapters, and inspectable multi-file task records. [Download the release](https://github.com/Jinghao-coding/cs-phd-writing/releases/tag/v0.7.0) · [Changelog](CHANGELOG.md)
-
-### Changes from v0.6.0
-
-| Task | What changes in v0.7.0 |
-| --- | --- |
-| Selecting guidance for editing or review | Start with one primary workflow, load additional guides for concrete issues, and stop when context is sufficient |
-| Checking technical content during revision | Detect local number/reference swaps, unit and percentage-marker changes, and indented code edits, with locations and context |
-| Updating results, assumptions or terminology | Record where core evidence is used and check affected abstracts, chapters, captions and conclusions |
-| Resuming an author's draft | Re-read current files before writing, regenerate local edits when content changes, and inspect the resulting diff |
-| Maintaining the skill or inspecting execution | Run standard-library checks and CI; use isolated multi-file tasks with saved inputs, patches and separate evaluation dimensions |
-
-The current regression suite passes 36 tests. Six independent Agent tasks have saved outputs, with both correct-text samples preserved in every run. On the same development task, the current skill and v0.6.0 produced identical manuscript edits; demonstrated gains concern diagnostic coverage, workflow guidance and maintenance checks. See the [validation record](evals/validation-0.7.0.md).
-
-Local edits start with the [revision workflow](references/revision-workflow.md), then load syntax, systems semantics or evidence guidance only when a concrete issue requires it. Stop loading when the available context is sufficient.
-
-For `A为18 ms，B为24 ms` → `A为24 ms，B为18 ms`, global numeric counts are unchanged, but the checker now emits two located `local_replacement` candidates. `25\%` → `25` produces a marker-change candidate. See [usage, JSON excerpts and supported syntax](references/language-tools.md).
-
-[Multi-file tasks and runner](evals/integration/README.md) · [Layered evaluation](evals/revision-evaluation.md) · [Actual validation record](evals/validation-2026-10-05.md)
+> **Main branch v0.7.0** · [Download the release](https://github.com/Jinghao-coding/cs-phd-writing/releases/tag/v0.7.0) · [Changelog](CHANGELOG.md)
 
 <a id="quick-start"></a>
 ## Quick start

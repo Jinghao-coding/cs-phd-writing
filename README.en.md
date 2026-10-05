@@ -4,7 +4,7 @@
 
 **Explain your research clearly. Bring your papers together into a coherent dissertation.**
 
-A skill for writing and reviewing Chinese doctoral dissertations in computer science, for Codex and Claude Code.
+A skill for writing and reviewing Chinese doctoral dissertations in computer science, for tools supporting Agent Skills, including Codex, Claude Code, Cursor and OpenCode.
 
 [![Release](https://img.shields.io/github/v/release/Jinghao-coding/cs-phd-writing?style=flat-square&label=release&color=2563eb)](https://github.com/Jinghao-coding/cs-phd-writing/releases/latest)
 [![License](https://img.shields.io/badge/license-Apache--2.0-64748b?style=flat-square)](LICENSE)
@@ -41,7 +41,28 @@ Organize chapters around research questions, improve Chinese prose in its techni
 
 ### 1. Install for your agent
 
-The skills CLI requires Node.js and npm. Choose your agent:
+**Recommended: send this request to your agent and let it install the skill.**
+
+```text
+Please install the cs-phd-writing skill:
+https://github.com/Jinghao-coding/cs-phd-writing
+
+Identify your current agent tool, its skill support and its actual skill directory.
+Check for an existing installation; reuse it and preserve local edits instead of cloning another copy.
+Install the complete skill using the tool's documented method, preferring the user-wide directory; keep SKILL.md and all supporting resources.
+Verify the skill name, version and path, confirm the tool can discover or load it, and tell me how to invoke it.
+If the tool has no native skill mechanism, keep the complete package in one stable directory and explain how to explicitly load SKILL.md and relevant guides for a task.
+```
+
+See the [skills CLI list](https://github.com/vercel-labs/skills#supported-agents) for supported tools and identifiers. Agents without native skill discovery can read the package as file-based writing guidance. File editing, PDF reading and compilation depend on the host's available tools.
+
+**Manual installation:** the skills CLI requires Node.js and npm. Run this command and select the target agent:
+
+```bash
+npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --global
+```
+
+You can also specify the target explicitly, for example:
 
 **Codex**
 
@@ -60,13 +81,13 @@ Use `--agent codex claude-code` for both. Omit `--global` in your thesis directo
 ### 2. Start a task in your thesis project
 
 ```text
-Use $cs-phd-writing to polish the method explanation in Chapter 3.
+Use cs-phd-writing to polish the method explanation in Chapter 3.
 Read adjacent paragraphs, symbol definitions and the relevant algorithm first.
 Check entities, states, actions and conditions. Return usable Chinese replacement text.
 Explain any substantive technical corrections separately, with their evidence.
 ```
 
-In Claude Code, replace `$cs-phd-writing` with `/cs-phd-writing`.
+The examples use plain task requests. Codex also accepts `$cs-phd-writing`, and Claude Code accepts `/cs-phd-writing`. For other tools, use their skill invocation mechanism or ask the agent to read `SKILL.md` from the installation directory.
 
 <details>
 <summary><strong>Other installation methods: Release ZIP / Git</strong></summary>
@@ -106,7 +127,7 @@ Locations follow the official [Codex](https://developers.openai.com/codex/skills
 ### Integrate papers and plan chapters
 
 ```text
-Use $cs-phd-writing to propose a dissertation structure from the indexed English papers.
+Use cs-phd-writing to propose a dissertation structure from the indexed English papers.
 Distinguish conference and extended versions. Explain each chapter's research question,
 evidence and relationship to the other chapters. Provide a plan only for this task.
 ```
@@ -114,7 +135,7 @@ evidence and relationship to the other chapters. Provide a plan only for this ta
 ### Review a chapter and locate issues
 
 ```text
-Use $cs-phd-writing to review Chapter 3 without modifying files.
+Use cs-phd-writing to review Chapter 3 without modifying files.
 Locate factual, logical and language issues in the source.
 Distinguish definite errors from optional style changes.
 ```
@@ -122,7 +143,7 @@ Distinguish definite errors from optional style changes.
 ### Verify citations and organize BibTeX
 
 ```text
-Use $cs-phd-writing to organize this imported BibTeX batch.
+Use cs-phd-writing to organize this imported BibTeX batch.
 Read the university rules and current style first. Verify original sources,
 complete author order and support for the cited claims. Follow the project's key convention
 and update affected references when keys change. Preserve verified software versions
@@ -135,7 +156,7 @@ and actual web access dates; list missing information separately.
 Each thesis project keeps its own university requirements, research materials and writing decisions. The skill reads existing `AGENTS.md`, `CLAUDE.md` and project configuration, then selects the guidance relevant to the current task.
 
 ```text
-Use $cs-phd-writing to read the university rules, department requirements and thesis configuration.
+Use cs-phd-writing to read the university rules, department requirements and thesis configuration.
 Identify the rules for my degree type and submission cohort, with source locations
 and differences requiring clarification. Update docs/thesis-writing-profile.md,
 preserving confirmed information. Keep manuscript editing outside this task.

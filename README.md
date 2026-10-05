@@ -4,7 +4,7 @@
 
 **把真实研究写清楚，把多篇成果组织成一篇博士论文。**
 
-面向计算机学科的中文博士论文写作与审阅技能，适用于 Codex 和 Claude Code。
+面向计算机学科的中文博士论文写作与审阅技能，可用于支持 Agent Skills 的工具，如 Codex、Claude Code、Cursor、OpenCode 等。
 
 [![Release](https://img.shields.io/github/v/release/Jinghao-coding/cs-phd-writing?style=flat-square&label=release&color=2563eb)](https://github.com/Jinghao-coding/cs-phd-writing/releases/latest)
 [![License](https://img.shields.io/badge/license-Apache--2.0-64748b?style=flat-square)](LICENSE)
@@ -41,7 +41,28 @@
 
 ### 1. 安装到你的助手
 
-使用 skills CLI，需要 Node.js 与 npm。选择对应平台执行：
+**推荐：把下面这段话发给你的 Agent，让它完成安装。**
+
+```text
+请帮我安装 cs-phd-writing 技能：
+https://github.com/Jinghao-coding/cs-phd-writing
+
+先确认你当前所在的 Agent 工具、技能支持方式和实际技能目录。
+检查是否已经安装；优先复用已有安装并保留本地修改，不重复克隆仓库。
+按当前工具的官方方式安装完整技能，默认使用用户级目录；保留 SKILL.md 和全部配套资源。
+安装后核对技能名称、版本和文件路径，并确认当前工具能发现或加载它，告诉我如何调用。
+如果当前工具没有原生技能机制，请将完整技能保存在一个固定目录，说明如何在任务中显式读取 SKILL.md 及按需指南。
+```
+
+支持的工具及标识可查阅 [skills CLI 列表](https://github.com/vercel-labs/skills#supported-agents)。不使用原生技能机制时，Agent也可将本项目作为文件形式的写作指南读取；文件读写、PDF读取和编译能力由宿主工具提供。
+
+**手动安装：** 使用 skills CLI，需要 Node.js 与 npm。运行下面的命令并选择目标Agent：
+
+```bash
+npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --global
+```
+
+也可明确指定平台，例如：
 
 **Codex**
 
@@ -60,12 +81,12 @@ npx skills@latest add Jinghao-coding/cs-phd-writing --skill cs-phd-writing --age
 ### 2. 在论文项目中发起任务
 
 ```text
-使用 $cs-phd-writing，润色第三章的方法说明。
+使用 cs-phd-writing，润色第三章的方法说明。
 先读相邻段落、符号定义和相关算法，检查对象、状态、动作与条件。
 给出可用替换文本；涉及技术含义的更正，单独说明依据。
 ```
 
-Claude Code 使用 `/cs-phd-writing` 替换示例中的 `$cs-phd-writing`。
+示例使用普通任务描述。Codex也可用 `$cs-phd-writing`，Claude Code可用 `/cs-phd-writing`；其他工具按其技能调用方式选择，或要求Agent读取安装目录中的 `SKILL.md`。
 
 <details>
 <summary><strong>其他安装方式：Release ZIP / Git</strong></summary>
@@ -105,7 +126,7 @@ git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.claude/sk
 ### 整合成果，规划论文
 
 ```text
-使用 $cs-phd-writing，根据材料索引中的英文论文提出博士论文组织方案。
+使用 cs-phd-writing，根据材料索引中的英文论文提出博士论文组织方案。
 区分会议版与扩展稿，说明各章的研究问题、证据和相互关系。
 本次只给组织方案，暂不写正文。
 ```
@@ -113,14 +134,14 @@ git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.claude/sk
 ### 审阅章节，定位问题
 
 ```text
-使用 $cs-phd-writing，审阅第三章，不修改文件。
+使用 cs-phd-writing，审阅第三章，不修改文件。
 按原文位置说明事实、逻辑和语言问题，区分确定错误与可选风格建议。
 ```
 
 ### 核验引用，整理 BibTeX
 
 ```text
-使用 $cs-phd-writing，整理本次导入的 BibTeX。
+使用 cs-phd-writing，整理本次导入的 BibTeX。
 先读取学校规范和当前样式，核对原始来源、完整作者顺序及所引论断。
 沿用项目引用键约定；改键时同步受影响引用。
 软件与网页保留可核验的版本和实际访问日期，缺项单独列出。
@@ -132,7 +153,7 @@ git clone https://github.com/Jinghao-coding/cs-phd-writing.git "$HOME/.claude/sk
 每个论文项目维护自己的学校要求、研究资料和写作约定。技能读取已有的 `AGENTS.md`、`CLAUDE.md` 及项目配置，按当前任务选用相关规则。
 
 ```text
-使用 $cs-phd-writing，读取学校规范、学院补充要求和现有论文配置。
+使用 cs-phd-writing，读取学校规范、学院补充要求和现有论文配置。
 按我的学位类型与适用批次整理条款，记录原文位置和需要确认的差异。
 更新 docs/thesis-writing-profile.md，保留已确认内容；本次不改正文。
 ```

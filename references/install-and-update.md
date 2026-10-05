@@ -1,8 +1,20 @@
 # 安装、更新与版本发布
 
-Codex 与 Claude Code 使用仓库根目录的同一份 `SKILL.md` 和配套资源。`agents/openai.yaml` 提供 Codex 显示信息；论文资料和个人配置放在论文项目内。
+支持Agent Skills的工具使用仓库根目录的同一份 `SKILL.md` 和配套资源；可通过 [skills CLI支持列表](https://github.com/vercel-labs/skills#supported-agents)确认当前工具及安装标识。`agents/openai.yaml` 提供 Codex 显示信息；论文资料和个人配置放在论文项目内。
 
 安装入口：[中文 README](../README.md) · [English README](../README.en.md)。2026-10-04 按 [Codex 官方文档](https://developers.openai.com/codex/skills/) 与 [Claude Code 官方文档](https://code.claude.com/docs/en/skills) 核对下列目录。既有安装先确认实际位置，不因文档更新自动迁移或重复安装。
+
+## 让Agent识别环境并安装
+
+可直接使用README的[安装请求](../README.md#quick-start)。执行安装的Agent应先识别当前宿主和已有安装，再查宿主配置或官方说明确定技能目录；目录未知时不能直接套用Codex或Claude Code路径。
+
+原生支持技能时，沿宿主已有管理方式或skills CLI安装完整目录；多工具共享安装优先复用同一份源文件，仅在宿主支持时使用链接，避免为每个工具重复创建Git仓库。安装现有技能时先读取本地状态，保留作者修改，沿原安装方式更新。
+
+没有原生技能发现机制但能读取文件时，将完整包放在一个稳定目录，并在任务中明确要求读取该目录的SKILL.md及相关指南。只有文本输入能力时，可向其提供当前任务所需指南内容；本地读写和编译由用户或外部工具完成。不要把存放文件等同于宿主已经注册技能。
+
+安装后分别确认文件存在、技能名称与版本、宿主实际发现或加载结果，并给出该宿主的调用方式。按宿主需要刷新技能或开启新任务。技能自身无需模型服务；修订检查脚本需要Python，skills CLI需要Node.js/npm，缺少运行时可改用Release ZIP安装。本文列出的Codex/Claude Code目录是具体示例，其他工具以当时配置和官方说明为准。
+
+2026-10-05核对了 [Agent Skills介绍](https://agentskills.io/home)及 [skills CLI官方README](https://github.com/vercel-labs/skills)的跨工具安装入口与共享目录方式。
 
 ## 安装方式
 

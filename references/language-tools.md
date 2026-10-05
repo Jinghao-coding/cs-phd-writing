@@ -11,7 +11,52 @@ python3 <skill-dir>/scripts/check_revision.py before.tex after.tex
 python3 <skill-dir>/scripts/check_revision.py before.tex after.tex --glossary glossary.json
 ```
 
-输入可以是纯文本、Markdown或LaTeX。脚本按原始文本比较常见数学定界符、equation/align/gather/multline环境及标准引用宏；项目自定义宏、注释中的文字和数值对应关系由编辑器diff与语义核对补查。程序输出JSON；`protected_changes`是需核对的公式/引用/代码差异，`number_changes`是数字差异，`terminology_candidates`是词表候选。合法的技术更正或等价数值换算也可能产生差异。输出没有“语义通过”或“质量总分”；变更位置可用编辑器diff查看。命令退出0表示分析完成，退出2表示输入或配置错误。
+输入可以是UTF-8纯文本、Markdown或LaTeX。退出0表示分析完成，退出2表示文件、编码或配置错误；不表示论文语义正确。文件只读，不自动修复。
+
+### 输出与兼容性
+
+原有 `protected_changes`、`number_changes`、`terminology_candidates` 字段保持可用；schema_version=2新增 `objects`、`local_candidates`、`diff_hunks` 和 `coverage_warnings`。旧消费者可继续读取原字段，新消费者应忽略未知字段。全局数字统计沿用旧口径（包括代码/公式等原始文本中的数字），局部数字只抽取代码、公式和引用以外的区域；这些区域由完整受保护对象覆盖。代码围栏与正文术语排除共享同一识别器。
+
+输入：
+
+```text
+before: A为18 ms，B为24 ms
+ after: A为24 ms，B为18 ms
+```
+
+实际输出的首项摘录（完整输出还含两个对象列表和diff区间）：
+
+```json
+{
+  "number_changes": {"removed": [], "added": []},
+  "local_candidates": [{
+    "candidate_type": "local_replacement",
+    "object_type": "number",
+    "before": {"text": "18 ms", "start": 2, "end": 7, "line": 1, "column": 3, "context": "A为18 ms"},
+    "after": {"text": "24 ms", "start": 2, "end": 7, "line": 1, "column": 3, "context": "A为24 ms"},
+    "match_basis": "unique_clause_slot"
+  }]
+}
+```
+
+以上为字段摘录，不是完整schema。每个对象含类型、原始文本、起止位置、结束行列、局部子句及所在段落；偏移以Unicode码点从0计、区间左闭右开，行列从1计，制表符计一个字符。CLI用Python文本读取将CRLF/CR规范为LF，偏移对应规范化后的字符串，不是文件字节偏移。位置会因前文编辑移动，不能单靠偏移判断对象搬移。
+
+| 候选类型 | 含义与处理 |
+| --- | --- |
+| local_replacement | 同类型对象在唯一子句词法槽中替换；核对归属和合法更正 |
+| unit_or_marker_changed | 数值相同，支持的单位或百分比标记变化，如12 ms→12 s、25\%→25 |
+| context_or_position_changed | 唯一同文本对象的邻近子句发生变化；可能是正常润色或引用支撑语句变化 |
+| unmatched_old / unmatched_new | 无可靠一对一匹配；可能是增删、搬移、拆合或修改，保留单侧位置与不确定性 |
+
+匹配先保留文本和子句一致的对象，再尝试唯一子句槽，最后匹配唯一同文本对象。重复对象无法唯一配对时不强行指定归属。完整子句/段落移动可不产生对象候选，位置变化仍见objects和diff_hunks；检查器不能断言移动后科学含义保持。普通表述修改不产生受保护对象的增删，但可能产生中性的上下文候选；不能把它称为对象损坏。等价换算24 ms→18 ms与降低25%仍会报告词法差异。
+
+### 支持范围与人工入口
+
+支持0–3空格缩进的反引号/波浪线围栏、较长闭合围栏和未闭合至文件尾的代码区；正文术语扫描默认跳过这些区域，局部allow短语只屏蔽自身。四空格代码块、列表嵌套围栏、行内代码、LaTeX verbatim/listings/minted未作为代码区域解析，命中需人工区分。
+
+识别常见数学定界符 `$`、`$$`、`\(`、`\[`及equation/align/gather/multline（含星号）环境；识别常见cite系列、label/ref/eqref/autoref/cref/Cref/pageref宏及平衡参数。支持数字的符号、小数/逗号、指数与常见SI/存储单位（具体集合见脚本UNIT）。未支持的单位、自定义宏、TeX注释、条件编译、宏展开、嵌套数学环境以及复杂转义须在编辑器中核对，脚本不是完整LaTeX解析器；未闭合宏参数会给coverage_warnings，空警告不代表结构已全面覆盖。
+
+先在编辑器diff定位候选，再读对象所在段落、相邻定义和来源。确认是合法修改、需更正还是无法判断；保留合法重排与等价表达。词法匹配不能恢复科学归属，语义核对仍按[修订流程](revision-workflow.md)。
 
 项目词表示例：
 

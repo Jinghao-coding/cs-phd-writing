@@ -1,0 +1,1480 @@
+{
+  "abstract.tex": {
+    "protected_changes": {
+      "removed": [],
+      "added": []
+    },
+    "number_changes": {
+      "removed": [
+        "80",
+        "20"
+      ],
+      "added": [
+        "72",
+        "100",
+        "28",
+        "110",
+        "10"
+      ]
+    },
+    "terminology_candidates": [],
+    "schema_version": 2,
+    "local_candidates": [
+      {
+        "candidate_type": "local_replacement",
+        "object_type": "number",
+        "before": {
+          "kind": "number",
+          "text": "80 KiB",
+          "start": 52,
+          "end": 58,
+          "line": 2,
+          "column": 39,
+          "end_position": {
+            "line": 2,
+            "column": 45
+          },
+          "context": "延迟回收策略的峰值保留空间为80 KiB",
+          "context_start": 38,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为80 KiB，比基线100 KiB降低20\\%。\n",
+          "paragraph_start": 0
+        },
+        "after": {
+          "kind": "number",
+          "text": "72 KiB",
+          "start": 52,
+          "end": 58,
+          "line": 2,
+          "column": 39,
+          "end_position": {
+            "line": 2,
+            "column": 45
+          },
+          "context": "延迟回收策略的峰值保留空间为72 KiB",
+          "context_start": 38,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unique_clause_slot",
+        "uncertainty": "Lexical match only; verify association and meaning in context."
+      },
+      {
+        "candidate_type": "unmatched_old",
+        "object_type": "number",
+        "before": {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 62,
+          "end": 69,
+          "line": 2,
+          "column": 49,
+          "end_position": {
+            "line": 2,
+            "column": 56
+          },
+          "context": "比基线100 KiB降低20\\%",
+          "context_start": 59,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为80 KiB，比基线100 KiB降低20\\%。\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_old",
+        "object_type": "number",
+        "before": {
+          "kind": "number",
+          "text": "20\\%",
+          "start": 71,
+          "end": 75,
+          "line": 2,
+          "column": 58,
+          "end_position": {
+            "line": 2,
+            "column": 62
+          },
+          "context": "比基线100 KiB降低20\\%",
+          "context_start": 59,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为80 KiB，比基线100 KiB降低20\\%。\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 62,
+          "end": 69,
+          "line": 2,
+          "column": 49,
+          "end_position": {
+            "line": 2,
+            "column": 56
+          },
+          "context": "比基线100 KiB降低28\\%",
+          "context_start": 59,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "28\\%",
+          "start": 71,
+          "end": 75,
+          "line": 2,
+          "column": 58,
+          "end_position": {
+            "line": 2,
+            "column": 62
+          },
+          "context": "比基线100 KiB降低28\\%",
+          "context_start": 59,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "110 KiB",
+          "start": 93,
+          "end": 100,
+          "line": 2,
+          "column": 80,
+          "end_position": {
+            "line": 2,
+            "column": 87
+          },
+          "context": "该策略的峰值保留空间为110 KiB",
+          "context_start": 82,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 104,
+          "end": 111,
+          "line": 2,
+          "column": 91,
+          "end_position": {
+            "line": 2,
+            "column": 98
+          },
+          "context": "比基线100 KiB增加10\\%",
+          "context_start": 101,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "10\\%",
+          "start": 113,
+          "end": 117,
+          "line": 2,
+          "column": 100,
+          "end_position": {
+            "line": 2,
+            "column": 104
+          },
+          "context": "比基线100 KiB增加10\\%",
+          "context_start": 101,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      }
+    ],
+    "diff_hunks": [
+      {
+        "before": {
+          "start": 52,
+          "end": 54,
+          "line": 2,
+          "column": 39,
+          "end_position": {
+            "line": 2,
+            "column": 41
+          }
+        },
+        "after": {
+          "start": 52,
+          "end": 54,
+          "line": 2,
+          "column": 39,
+          "end_position": {
+            "line": 2,
+            "column": 41
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 72,
+          "end": 72,
+          "line": 2,
+          "column": 59,
+          "end_position": {
+            "line": 2,
+            "column": 59
+          }
+        },
+        "after": {
+          "start": 72,
+          "end": 114,
+          "line": 2,
+          "column": 59,
+          "end_position": {
+            "line": 2,
+            "column": 101
+          }
+        }
+      }
+    ],
+    "objects": {
+      "before": [
+        {
+          "kind": "number",
+          "text": "80 KiB",
+          "start": 52,
+          "end": 58,
+          "line": 2,
+          "column": 39,
+          "end_position": {
+            "line": 2,
+            "column": 45
+          },
+          "context": "延迟回收策略的峰值保留空间为80 KiB",
+          "context_start": 38,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为80 KiB，比基线100 KiB降低20\\%。\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 62,
+          "end": 69,
+          "line": 2,
+          "column": 49,
+          "end_position": {
+            "line": 2,
+            "column": 56
+          },
+          "context": "比基线100 KiB降低20\\%",
+          "context_start": 59,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为80 KiB，比基线100 KiB降低20\\%。\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "20\\%",
+          "start": 71,
+          "end": 75,
+          "line": 2,
+          "column": 58,
+          "end_position": {
+            "line": 2,
+            "column": 62
+          },
+          "context": "比基线100 KiB降低20\\%",
+          "context_start": 59,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为80 KiB，比基线100 KiB降低20\\%。\n",
+          "paragraph_start": 0
+        }
+      ],
+      "after": [
+        {
+          "kind": "number",
+          "text": "72 KiB",
+          "start": 52,
+          "end": 58,
+          "line": 2,
+          "column": 39,
+          "end_position": {
+            "line": 2,
+            "column": 45
+          },
+          "context": "延迟回收策略的峰值保留空间为72 KiB",
+          "context_start": 38,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 62,
+          "end": 69,
+          "line": 2,
+          "column": 49,
+          "end_position": {
+            "line": 2,
+            "column": 56
+          },
+          "context": "比基线100 KiB降低28\\%",
+          "context_start": 59,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "28\\%",
+          "start": 71,
+          "end": 75,
+          "line": 2,
+          "column": 58,
+          "end_position": {
+            "line": 2,
+            "column": 62
+          },
+          "context": "比基线100 KiB降低28\\%",
+          "context_start": 59,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "110 KiB",
+          "start": 93,
+          "end": 100,
+          "line": 2,
+          "column": 80,
+          "end_position": {
+            "line": 2,
+            "column": 87
+          },
+          "context": "该策略的峰值保留空间为110 KiB",
+          "context_start": 82,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 104,
+          "end": 111,
+          "line": 2,
+          "column": 91,
+          "end_position": {
+            "line": 2,
+            "column": 98
+          },
+          "context": "比基线100 KiB增加10\\%",
+          "context_start": 101,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "10\\%",
+          "start": 113,
+          "end": 117,
+          "line": 2,
+          "column": 100,
+          "end_position": {
+            "line": 2,
+            "column": 104
+          },
+          "context": "比基线100 KiB增加10\\%",
+          "context_start": 101,
+          "paragraph": "\\chapter*{摘要}\n本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\\%；在轨迹V中，该策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。\n",
+          "paragraph_start": 0
+        }
+      ]
+    },
+    "coverage_warnings": {
+      "before": [],
+      "after": []
+    },
+    "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+    "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+  },
+  "chapters/reclaim.tex": {
+    "protected_changes": {
+      "removed": [],
+      "added": [
+        [
+          "math",
+          "$i$"
+        ],
+        [
+          "math",
+          "$r_i=0$"
+        ]
+      ]
+    },
+    "number_changes": {
+      "removed": [],
+      "added": [
+        "0",
+        "100",
+        "110",
+        "10"
+      ]
+    },
+    "terminology_candidates": [],
+    "schema_version": 2,
+    "local_candidates": [
+      {
+        "candidate_type": "context_or_position_changed",
+        "object_type": "math",
+        "before": {
+          "kind": "math",
+          "text": "$r_i$",
+          "start": 55,
+          "end": 60,
+          "line": 3,
+          "column": 20,
+          "end_position": {
+            "line": 3,
+            "column": 25
+          },
+          "context": "$r_i$ 表示对象退役后的等待时长",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        "after": {
+          "kind": "math",
+          "text": "$r_i$",
+          "start": 55,
+          "end": 60,
+          "line": 3,
+          "column": 20,
+          "end_position": {
+            "line": 3,
+            "column": 25
+          },
+          "context": "$r_i$ 表示对象 $i$ 当前的读者引用计数",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unique_identical_object",
+        "uncertainty": "Lexical match only; verify association and meaning in context."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "math",
+        "after": {
+          "kind": "math",
+          "text": "$i$",
+          "start": 66,
+          "end": 69,
+          "line": 3,
+          "column": 31,
+          "end_position": {
+            "line": 3,
+            "column": 34
+          },
+          "context": "$r_i$ 表示对象 $i$ 当前的读者引用计数",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "math",
+        "after": {
+          "kind": "math",
+          "text": "$r_i=0$",
+          "start": 151,
+          "end": 158,
+          "line": 3,
+          "column": 116,
+          "end_position": {
+            "line": 3,
+            "column": 123
+          },
+          "context": "回收要求对象已经退役且 $r_i=0$",
+          "context_start": 139,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "110 KiB",
+          "start": 363,
+          "end": 370,
+          "line": 8,
+          "column": 97,
+          "end_position": {
+            "line": 8,
+            "column": 104
+          },
+          "context": "延迟回收策略的峰值保留空间为110 KiB",
+          "context_start": 349,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 374,
+          "end": 381,
+          "line": 8,
+          "column": 108,
+          "end_position": {
+            "line": 8,
+            "column": 115
+          },
+          "context": "比基线100 KiB增加10\\%",
+          "context_start": 371,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "10\\%",
+          "start": 383,
+          "end": 387,
+          "line": 8,
+          "column": 117,
+          "end_position": {
+            "line": 8,
+            "column": 121
+          },
+          "context": "比基线100 KiB增加10\\%",
+          "context_start": 371,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      }
+    ],
+    "diff_hunks": [
+      {
+        "before": {
+          "start": 65,
+          "end": 68,
+          "line": 3,
+          "column": 30,
+          "end_position": {
+            "line": 3,
+            "column": 33
+          }
+        },
+        "after": {
+          "start": 65,
+          "end": 72,
+          "line": 3,
+          "column": 30,
+          "end_position": {
+            "line": 3,
+            "column": 37
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 69,
+          "end": 81,
+          "line": 3,
+          "column": 34,
+          "end_position": {
+            "line": 3,
+            "column": 46
+          }
+        },
+        "after": {
+          "start": 73,
+          "end": 75,
+          "line": 3,
+          "column": 38,
+          "end_position": {
+            "line": 3,
+            "column": 40
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 85,
+          "end": 88,
+          "line": 3,
+          "column": 50,
+          "end_position": {
+            "line": 3,
+            "column": 53
+          }
+        },
+        "after": {
+          "start": 79,
+          "end": 91,
+          "line": 3,
+          "column": 44,
+          "end_position": {
+            "line": 3,
+            "column": 56
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 89,
+          "end": 91,
+          "line": 3,
+          "column": 54,
+          "end_position": {
+            "line": 3,
+            "column": 56
+          }
+        },
+        "after": {
+          "start": 92,
+          "end": 96,
+          "line": 3,
+          "column": 57,
+          "end_position": {
+            "line": 3,
+            "column": 61
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 93,
+          "end": 95,
+          "line": 3,
+          "column": 58,
+          "end_position": {
+            "line": 3,
+            "column": 60
+          }
+        },
+        "after": {
+          "start": 98,
+          "end": 101,
+          "line": 3,
+          "column": 63,
+          "end_position": {
+            "line": 3,
+            "column": 66
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 98,
+          "end": 98,
+          "line": 3,
+          "column": 63,
+          "end_position": {
+            "line": 3,
+            "column": 63
+          }
+        },
+        "after": {
+          "start": 104,
+          "end": 159,
+          "line": 3,
+          "column": 69,
+          "end_position": {
+            "line": 3,
+            "column": 124
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 102,
+          "end": 102,
+          "line": 3,
+          "column": 67,
+          "end_position": {
+            "line": 3,
+            "column": 67
+          }
+        },
+        "after": {
+          "start": 163,
+          "end": 174,
+          "line": 3,
+          "column": 128,
+          "end_position": {
+            "line": 3,
+            "column": 139
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 271,
+          "end": 271,
+          "line": 8,
+          "column": 77,
+          "end_position": {
+            "line": 8,
+            "column": 77
+          }
+        },
+        "after": {
+          "start": 343,
+          "end": 436,
+          "line": 8,
+          "column": 77,
+          "end_position": {
+            "line": 8,
+            "column": 170
+          }
+        }
+      }
+    ],
+    "objects": {
+      "before": [
+        {
+          "kind": "reference",
+          "text": "\\label{ch:reclaim}",
+          "start": 17,
+          "end": 35,
+          "line": 2,
+          "column": 1,
+          "end_position": {
+            "line": 2,
+            "column": 19
+          },
+          "context": "\\label{ch:reclaim}",
+          "context_start": 17,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "math",
+          "text": "$r_i$",
+          "start": 55,
+          "end": 60,
+          "line": 3,
+          "column": 20,
+          "end_position": {
+            "line": 3,
+            "column": 25
+          },
+          "context": "$r_i$ 表示对象退役后的等待时长",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "72 KiB",
+          "start": 218,
+          "end": 224,
+          "line": 8,
+          "column": 24,
+          "end_position": {
+            "line": 8,
+            "column": 30
+          },
+          "context": "延迟回收策略的峰值保留空间为72 KiB",
+          "context_start": 204,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 228,
+          "end": 235,
+          "line": 8,
+          "column": 34,
+          "end_position": {
+            "line": 8,
+            "column": 41
+          },
+          "context": "基线为100 KiB",
+          "context_start": 225,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "28\\%",
+          "start": 238,
+          "end": 242,
+          "line": 8,
+          "column": 44,
+          "end_position": {
+            "line": 8,
+            "column": 48
+          },
+          "context": "降低28\\%",
+          "context_start": 236,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "reference",
+          "text": "\\ref{tab:space}",
+          "start": 245,
+          "end": 260,
+          "line": 8,
+          "column": 51,
+          "end_position": {
+            "line": 8,
+            "column": 66
+          },
+          "context": "表~\\ref{tab:space}给出两组轨迹的合成值",
+          "context_start": 243,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        }
+      ],
+      "after": [
+        {
+          "kind": "reference",
+          "text": "\\label{ch:reclaim}",
+          "start": 17,
+          "end": 35,
+          "line": 2,
+          "column": 1,
+          "end_position": {
+            "line": 2,
+            "column": 19
+          },
+          "context": "\\label{ch:reclaim}",
+          "context_start": 17,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "math",
+          "text": "$r_i$",
+          "start": 55,
+          "end": 60,
+          "line": 3,
+          "column": 20,
+          "end_position": {
+            "line": 3,
+            "column": 25
+          },
+          "context": "$r_i$ 表示对象 $i$ 当前的读者引用计数",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "math",
+          "text": "$i$",
+          "start": 66,
+          "end": 69,
+          "line": 3,
+          "column": 31,
+          "end_position": {
+            "line": 3,
+            "column": 34
+          },
+          "context": "$r_i$ 表示对象 $i$ 当前的读者引用计数",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "math",
+          "text": "$r_i=0$",
+          "start": 151,
+          "end": 158,
+          "line": 3,
+          "column": 116,
+          "end_position": {
+            "line": 3,
+            "column": 123
+          },
+          "context": "回收要求对象已经退役且 $r_i=0$",
+          "context_start": 139,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "72 KiB",
+          "start": 290,
+          "end": 296,
+          "line": 8,
+          "column": 24,
+          "end_position": {
+            "line": 8,
+            "column": 30
+          },
+          "context": "延迟回收策略的峰值保留空间为72 KiB",
+          "context_start": 276,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 300,
+          "end": 307,
+          "line": 8,
+          "column": 34,
+          "end_position": {
+            "line": 8,
+            "column": 41
+          },
+          "context": "基线为100 KiB",
+          "context_start": 297,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "28\\%",
+          "start": 310,
+          "end": 314,
+          "line": 8,
+          "column": 44,
+          "end_position": {
+            "line": 8,
+            "column": 48
+          },
+          "context": "降低28\\%",
+          "context_start": 308,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "reference",
+          "text": "\\ref{tab:space}",
+          "start": 317,
+          "end": 332,
+          "line": 8,
+          "column": 51,
+          "end_position": {
+            "line": 8,
+            "column": 66
+          },
+          "context": "表~\\ref{tab:space}给出两组轨迹的合成值",
+          "context_start": 315,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "110 KiB",
+          "start": 363,
+          "end": 370,
+          "line": 8,
+          "column": 97,
+          "end_position": {
+            "line": 8,
+            "column": 104
+          },
+          "context": "延迟回收策略的峰值保留空间为110 KiB",
+          "context_start": 349,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 374,
+          "end": 381,
+          "line": 8,
+          "column": 108,
+          "end_position": {
+            "line": 8,
+            "column": 115
+          },
+          "context": "比基线100 KiB增加10\\%",
+          "context_start": 371,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "10\\%",
+          "start": 383,
+          "end": 387,
+          "line": 8,
+          "column": 117,
+          "end_position": {
+            "line": 8,
+            "column": 121
+          },
+          "context": "比基线100 KiB增加10\\%",
+          "context_start": 371,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。退役表示对象已移出索引，回收表示释放其存储空间。对象退役后仍可能被读者引用，因此仅凭退役状态无法判断对象是否可以回收。回收要求对象已经退役且 $r_i=0$，具体条件及检查与释放的互斥假设见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。在轨迹V中，延迟回收策略的峰值保留空间为110 KiB，比基线100 KiB增加10\\%。这两组教学合成轨迹表明，延迟回收策略的峰值保留空间随轨迹而异，轨迹W中的降低并未在轨迹V中出现。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        }
+      ]
+    },
+    "coverage_warnings": {
+      "before": [],
+      "after": []
+    },
+    "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+    "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+  },
+  "docs/context.md": {
+    "protected_changes": {
+      "removed": [],
+      "added": []
+    },
+    "number_changes": {
+      "removed": [],
+      "added": [
+        "72",
+        "28%",
+        "110",
+        "10%"
+      ]
+    },
+    "terminology_candidates": [],
+    "schema_version": 2,
+    "local_candidates": [
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "72 KiB",
+          "start": 235,
+          "end": 241,
+          "line": 7,
+          "column": 95,
+          "end_position": {
+            "line": 7,
+            "column": 101
+          },
+          "context": "chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%",
+          "context_start": 193,
+          "paragraph": "| 依据 | 来源 | 使用位置 | 状态 |\n| --- | --- | --- | --- |\n| R1 峰值空间 | tables/results.tex，教学合成值 | abstract.tex；chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%；同步说明V的110 KiB、增加10%；数据为教学合成值 |\n| A1 回收条件 | algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 已核验：方法段采用退役且引用计数为零的条件；保留作者关于读者退出递减计数及安全回收条件的补充 |\n",
+          "paragraph_start": 91
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "28%",
+          "start": 244,
+          "end": 247,
+          "line": 7,
+          "column": 104,
+          "end_position": {
+            "line": 7,
+            "column": 107
+          },
+          "context": "chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%",
+          "context_start": 193,
+          "paragraph": "| 依据 | 来源 | 使用位置 | 状态 |\n| --- | --- | --- | --- |\n| R1 峰值空间 | tables/results.tex，教学合成值 | abstract.tex；chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%；同步说明V的110 KiB、增加10%；数据为教学合成值 |\n| A1 回收条件 | algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 已核验：方法段采用退役且引用计数为零的条件；保留作者关于读者退出递减计数及安全回收条件的补充 |\n",
+          "paragraph_start": 91
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "110 KiB",
+          "start": 254,
+          "end": 261,
+          "line": 7,
+          "column": 114,
+          "end_position": {
+            "line": 7,
+            "column": 121
+          },
+          "context": "同步说明V的110 KiB、增加10%",
+          "context_start": 248,
+          "paragraph": "| 依据 | 来源 | 使用位置 | 状态 |\n| --- | --- | --- | --- |\n| R1 峰值空间 | tables/results.tex，教学合成值 | abstract.tex；chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%；同步说明V的110 KiB、增加10%；数据为教学合成值 |\n| A1 回收条件 | algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 已核验：方法段采用退役且引用计数为零的条件；保留作者关于读者退出递减计数及安全回收条件的补充 |\n",
+          "paragraph_start": 91
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "number",
+        "after": {
+          "kind": "number",
+          "text": "10%",
+          "start": 264,
+          "end": 267,
+          "line": 7,
+          "column": 124,
+          "end_position": {
+            "line": 7,
+            "column": 127
+          },
+          "context": "同步说明V的110 KiB、增加10%",
+          "context_start": 248,
+          "paragraph": "| 依据 | 来源 | 使用位置 | 状态 |\n| --- | --- | --- | --- |\n| R1 峰值空间 | tables/results.tex，教学合成值 | abstract.tex；chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%；同步说明V的110 KiB、增加10%；数据为教学合成值 |\n| A1 回收条件 | algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 已核验：方法段采用退役且引用计数为零的条件；保留作者关于读者退出递减计数及安全回收条件的补充 |\n",
+          "paragraph_start": 91
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      }
+    ],
+    "diff_hunks": [
+      {
+        "before": {
+          "start": 220,
+          "end": 222,
+          "line": 7,
+          "column": 80,
+          "end_position": {
+            "line": 7,
+            "column": 82
+          }
+        },
+        "after": {
+          "start": 220,
+          "end": 220,
+          "line": 7,
+          "column": 80,
+          "end_position": {
+            "line": 7,
+            "column": 80
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 223,
+          "end": 227,
+          "line": 7,
+          "column": 83,
+          "end_position": {
+            "line": 7,
+            "column": 87
+          }
+        },
+        "after": {
+          "start": 221,
+          "end": 232,
+          "line": 7,
+          "column": 81,
+          "end_position": {
+            "line": 7,
+            "column": 92
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 228,
+          "end": 232,
+          "line": 7,
+          "column": 88,
+          "end_position": {
+            "line": 7,
+            "column": 92
+          }
+        },
+        "after": {
+          "start": 233,
+          "end": 276,
+          "line": 7,
+          "column": 93,
+          "end_position": {
+            "line": 7,
+            "column": 136
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 299,
+          "end": 300,
+          "line": 8,
+          "column": 65,
+          "end_position": {
+            "line": 8,
+            "column": 66
+          }
+        },
+        "after": {
+          "start": 343,
+          "end": 344,
+          "line": 8,
+          "column": 65,
+          "end_position": {
+            "line": 8,
+            "column": 66
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 301,
+          "end": 301,
+          "line": 8,
+          "column": 67,
+          "end_position": {
+            "line": 8,
+            "column": 67
+          }
+        },
+        "after": {
+          "start": 345,
+          "end": 389,
+          "line": 8,
+          "column": 67,
+          "end_position": {
+            "line": 8,
+            "column": 111
+          }
+        }
+      }
+    ],
+    "objects": {
+      "before": [
+        {
+          "kind": "number",
+          "text": "2026",
+          "start": 7,
+          "end": 11,
+          "line": 1,
+          "column": 8,
+          "end_position": {
+            "line": 1,
+            "column": 12
+          },
+          "context": "# 历史导航（2026-10-04）",
+          "context_start": 0,
+          "paragraph": "# 历史导航（2026-10-04）",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "10",
+          "start": 12,
+          "end": 14,
+          "line": 1,
+          "column": 13,
+          "end_position": {
+            "line": 1,
+            "column": 15
+          },
+          "context": "# 历史导航（2026-10-04）",
+          "context_start": 0,
+          "paragraph": "# 历史导航（2026-10-04）",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "04",
+          "start": 15,
+          "end": 17,
+          "line": 1,
+          "column": 16,
+          "end_position": {
+            "line": 1,
+            "column": 18
+          },
+          "context": "# 历史导航（2026-10-04）",
+          "context_start": 0,
+          "paragraph": "# 历史导航（2026-10-04）",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "80 KiB",
+          "start": 26,
+          "end": 32,
+          "line": 3,
+          "column": 7,
+          "end_position": {
+            "line": 3,
+            "column": 13
+          },
+          "context": "先前摘要使用80 KiB",
+          "context_start": 20,
+          "paragraph": "先前摘要使用80 KiB。旧记录称“读者退出时无需更新引用计数”。作者随后已在研究章手工更正这句话；继续任务时应读取当前文件，不恢复旧句。",
+          "paragraph_start": 20
+        }
+      ],
+      "after": [
+        {
+          "kind": "number",
+          "text": "2026",
+          "start": 7,
+          "end": 11,
+          "line": 1,
+          "column": 8,
+          "end_position": {
+            "line": 1,
+            "column": 12
+          },
+          "context": "# 历史导航（2026-10-04）",
+          "context_start": 0,
+          "paragraph": "# 历史导航（2026-10-04）",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "10",
+          "start": 12,
+          "end": 14,
+          "line": 1,
+          "column": 13,
+          "end_position": {
+            "line": 1,
+            "column": 15
+          },
+          "context": "# 历史导航（2026-10-04）",
+          "context_start": 0,
+          "paragraph": "# 历史导航（2026-10-04）",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "04",
+          "start": 15,
+          "end": 17,
+          "line": 1,
+          "column": 16,
+          "end_position": {
+            "line": 1,
+            "column": 18
+          },
+          "context": "# 历史导航（2026-10-04）",
+          "context_start": 0,
+          "paragraph": "# 历史导航（2026-10-04）",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "80 KiB",
+          "start": 26,
+          "end": 32,
+          "line": 3,
+          "column": 7,
+          "end_position": {
+            "line": 3,
+            "column": 13
+          },
+          "context": "先前摘要使用80 KiB",
+          "context_start": 20,
+          "paragraph": "先前摘要使用80 KiB。旧记录称“读者退出时无需更新引用计数”。作者随后已在研究章手工更正这句话；继续任务时应读取当前文件，不恢复旧句。",
+          "paragraph_start": 20
+        },
+        {
+          "kind": "number",
+          "text": "72 KiB",
+          "start": 235,
+          "end": 241,
+          "line": 7,
+          "column": 95,
+          "end_position": {
+            "line": 7,
+            "column": 101
+          },
+          "context": "chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%",
+          "context_start": 193,
+          "paragraph": "| 依据 | 来源 | 使用位置 | 状态 |\n| --- | --- | --- | --- |\n| R1 峰值空间 | tables/results.tex，教学合成值 | abstract.tex；chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%；同步说明V的110 KiB、增加10%；数据为教学合成值 |\n| A1 回收条件 | algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 已核验：方法段采用退役且引用计数为零的条件；保留作者关于读者退出递减计数及安全回收条件的补充 |\n",
+          "paragraph_start": 91
+        },
+        {
+          "kind": "number",
+          "text": "28%",
+          "start": 244,
+          "end": 247,
+          "line": 7,
+          "column": 104,
+          "end_position": {
+            "line": 7,
+            "column": 107
+          },
+          "context": "chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%",
+          "context_start": 193,
+          "paragraph": "| 依据 | 来源 | 使用位置 | 状态 |\n| --- | --- | --- | --- |\n| R1 峰值空间 | tables/results.tex，教学合成值 | abstract.tex；chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%；同步说明V的110 KiB、增加10%；数据为教学合成值 |\n| A1 回收条件 | algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 已核验：方法段采用退役且引用计数为零的条件；保留作者关于读者退出递减计数及安全回收条件的补充 |\n",
+          "paragraph_start": 91
+        },
+        {
+          "kind": "number",
+          "text": "110 KiB",
+          "start": 254,
+          "end": 261,
+          "line": 7,
+          "column": 114,
+          "end_position": {
+            "line": 7,
+            "column": 121
+          },
+          "context": "同步说明V的110 KiB、增加10%",
+          "context_start": 248,
+          "paragraph": "| 依据 | 来源 | 使用位置 | 状态 |\n| --- | --- | --- | --- |\n| R1 峰值空间 | tables/results.tex，教学合成值 | abstract.tex；chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%；同步说明V的110 KiB、增加10%；数据为教学合成值 |\n| A1 回收条件 | algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 已核验：方法段采用退役且引用计数为零的条件；保留作者关于读者退出递减计数及安全回收条件的补充 |\n",
+          "paragraph_start": 91
+        },
+        {
+          "kind": "number",
+          "text": "10%",
+          "start": 264,
+          "end": 267,
+          "line": 7,
+          "column": 124,
+          "end_position": {
+            "line": 7,
+            "column": 127
+          },
+          "context": "同步说明V的110 KiB、增加10%",
+          "context_start": 248,
+          "paragraph": "| 依据 | 来源 | 使用位置 | 状态 |\n| --- | --- | --- | --- |\n| R1 峰值空间 | tables/results.tex，教学合成值 | abstract.tex；chapters/reclaim.tex 结果节 | 已核验：摘要与研究章均采用W的72 KiB、降低28%；同步说明V的110 KiB、增加10%；数据为教学合成值 |\n| A1 回收条件 | algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 已核验：方法段采用退役且引用计数为零的条件；保留作者关于读者退出递减计数及安全回收条件的补充 |\n",
+          "paragraph_start": 91
+        }
+      ]
+    },
+    "coverage_warnings": {
+      "before": [],
+      "after": []
+    },
+    "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+    "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+  }
+}

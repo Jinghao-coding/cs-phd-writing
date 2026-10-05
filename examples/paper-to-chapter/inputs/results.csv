@@ -1,0 +1,3 @@
+provenance,trace,metric,unit,aggregation,periodic_scan,event_check
+synthetic_teaching,W,retained_space,KiB,peak,100,72
+synthetic_teaching,V,retained_space,KiB,peak,100,110

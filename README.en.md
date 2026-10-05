@@ -34,7 +34,22 @@ Organize chapters around research questions, improve Chinese prose in its techni
 
 **Supported inputs:** pasted text, PDF, DOCX, and single-file or multi-file LaTeX projects. The agent environment provides reading, editing, search and compilation tools; the skill provides writing guidance and workflows. Operational guides are maintained in Chinese.
 
-> **Main branch v0.6.0** adds context-aware revision, paragraph cohesion, English-to-Chinese rewriting, semantic checks, read-only diagnostics and multi-reference evaluation. University bibliography adaptation, agent-system writing and persistent writing context remain available. See [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases) for tagged packages.
+> **Main branch v0.6.0, with unreleased changes**: local diagnostics now locate changes to numbers, references, units and code. The package includes isolated multi-file tasks, actual run records and a complete paper-to-chapter example. The version number is unchanged; see the [changelog](CHANGELOG.md) and [maintenance commands](MAINTAINING.md).
+
+## See the output: a paper expanded into a dissertation chapter
+
+The [complete teaching example](examples/paper-to-chapter/README.md) includes source materials, an actual Chinese LaTeX chapter, a source map and a review record. All data are explicitly synthetic.
+
+- **Inputs:** a compact method paragraph, object states, locking assumptions, retirement/release pseudocode and a synthetic results table.
+- **Before:** “The reclaimer releases a retired object only when its reference count reaches zero.”
+- **After (actual Chinese text):** “退役时调用检查，可以覆盖对象移出索引时已经没有读者的情形；读者退出时调用检查，可以覆盖最后一个读者在退役之后才退出的情形。” The chapter develops a running 2→1→0 reference-count example, compares per-event and per-scan costs, and reports both W's 28% decrease and V's 10% increase.
+- **Evidence:** the [pseudocode](examples/paper-to-chapter/inputs/algorithm.txt) and [source map](examples/paper-to-chapter/source-map.md) distinguish supplied explanations, deductions under stated assumptions, and claims that need new implementation or experiments. The latter remain outside the chapter.
+
+Local edits start with the [revision workflow](references/revision-workflow.md), then load syntax, systems semantics or evidence guidance only when a concrete issue requires it. Stop loading when the available context is sufficient.
+
+For `A为18 ms，B为24 ms` → `A为24 ms，B为18 ms`, global numeric counts are unchanged, but the checker now emits two located `local_replacement` candidates. `25\%` → `25` produces a marker-change candidate. See [usage, JSON excerpts and supported syntax](references/language-tools.md).
+
+[Multi-file tasks and runner](evals/integration/README.md) · [Layered evaluation](evals/revision-evaluation.md) · [Actual validation record](evals/validation-2026-10-05.md)
 
 <a id="quick-start"></a>
 ## Quick start

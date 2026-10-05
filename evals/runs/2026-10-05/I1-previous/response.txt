@@ -1,0 +1,39 @@
+已完成修订。实际替换后的研究章正文如下：
+
+```latex
+\chapter{共享对象回收}
+\label{ch:reclaim}
+索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。
+\input{algorithms/reclaim}
+读者退出临界区后递减引用计数。
+仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。
+\section{结果}
+教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\%。表~\ref{tab:space}给出两组轨迹的合成值。
+\input{tables/results}
+```
+
+摘要同步为：
+
+```latex
+\chapter*{摘要}
+本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\%。
+```
+
+更正依据：
+
+- `chapters/reclaim.tex:3`：依据 `shared/notation.tex:2` 和 `algorithms/reclaim.tex:3`，将 `$r_i$` 从“退役后的等待时长”更正为对象当前的读者引用计数。
+- `chapters/reclaim.tex:3`：依据 `algorithms/reclaim.tex:4` 的 `$retired_i \land (r_i=0)$`，将释放条件中的“或”更正为“且”。算法中的互斥保护及移出索引后不能产生新引用的假设保留在原输入文件中。
+- `abstract.tex:2`：依据 `tables/results.tex` 的W轨迹，峰值保留空间从旧值80 KiB更正为72 KiB，相对基线100 KiB降低28%。研究章结果节已正确，保留原文；结论仍限定于教学合成轨迹W。
+
+本轮采用 `main.tex`，其 `includeonly` 启用研究章，摘要和符号约定通过 `input` 载入；`main-full.tex` 为另行授权的全文入口，归档旧稿未采用。保留了作者关于读者退出后递减引用计数、仅在已退役且无读者引用时回收的补充。已更新 `docs/context.md` 中R1、A1对应使用位置的核验状态。
+
+实际验证：核算了 `(100-72)/100=28%`；检查了研究章标签、表引用目标和算法、表格输入文件；文件哈希比对确认仅修改研究章、摘要、上下文记录三个授权文件。按任务限制未编译。
+
+输出位置：
+
+- [研究章](/Users/jinghao/cs-phd-writing-validation/I1-previous/project/chapters/reclaim.tex)
+- [摘要](/Users/jinghao/cs-phd-writing-validation/I1-previous/project/abstract.tex)
+- [核验记录](/Users/jinghao/cs-phd-writing-validation/I1-previous/project/docs/context.md)
+- [本回复](/Users/jinghao/cs-phd-writing-validation/I1-previous/response.md)
+
+无执行阻碍。

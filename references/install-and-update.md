@@ -98,3 +98,5 @@ fi
 5. 核对 Release 指向的提交、版本号和附件。订阅者之后可按通知决定是否更新。
 
 发布是明确的维护操作，不由普通论文润色任务自动触发。具体发布操作参见 [GitHub 发布指南](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)。
+
+本地维护先执行[维护说明](../MAINTAINING.md)中的标准库校验命令；CI运行相同确定性检查。模型行为评测按发布前需要另行执行并保存实际补丁。

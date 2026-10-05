@@ -34,7 +34,22 @@
 
 **支持材料：** 粘贴文本、PDF、DOCX、LaTeX 单文件及多文件工程。文件读取、编辑、检索和编译由运行环境中的工具执行；技能提供写作规则与操作指南。
 
-> **主分支 v0.6.0** 加入上下文修订、段落衔接与英中转写、技术语义核对、只读差异工具和多参考评估。保留学校文献适配、Agent 系统表述及持续写作上下文。固定版本见 [Releases](https://github.com/Jinghao-coding/cs-phd-writing/releases)。
+> **主分支 v0.6.0，含未发布改进**：修订检查现可定位局部数值、引用、单位和代码差异；提供隔离的多文件任务、实际运行记录及完整研究章示例。版本号保持不变，变化见[变更记录](CHANGELOG.md)，验证方法见[维护说明](MAINTAINING.md)。
+
+## 直接看产物：小论文展开为研究章
+
+[完整教学示例](examples/paper-to-chapter/README.md)包含输入、实际LaTeX成稿、来源映射和审阅记录；数据为独立构造的合成值。
+
+- **输入材料：** 压缩方法、对象状态定义、互斥假设、退役与读者退出伪代码、合成结果表。
+- **修改前：** “The reclaimer releases a retired object only when its reference count reaches zero.”
+- **修改后：** “退役时调用检查，可以覆盖对象移出索引时已经没有读者的情形；读者退出时调用检查，可以覆盖最后一个读者在退役之后才退出的情形。”成稿进一步展开2→1→0的贯穿示例、单次检查与扫描的代价，以及W下降28%、V增加10%的不同结果。
+- **依据：** [伪代码](examples/paper-to-chapter/inputs/algorithm.txt)和[来源映射](examples/paper-to-chapter/source-map.md)将原有说明、可推导示例与待验证判断分开。缺少实现或实验的判断留在正文外。
+
+局部改写先进入[修订流程](references/revision-workflow.md)，再按已发现的句法、系统语义或证据问题扩读。已有上下文足够时停止扩读。
+
+只读检查 `A为18 ms，B为24 ms` → `A为24 ms，B为18 ms` 时，全局数字集合不变，现会输出两条带位置及子句的 `local_replacement` 候选；`25\%` → `25` 输出标记变化。用法、JSON摘录及支持边界见[工具说明](references/language-tools.md)。
+
+[工程任务与运行入口](evals/integration/README.md) · [分层评测](evals/revision-evaluation.md) · [本轮实际验证](evals/validation-2026-10-05.md)
 
 <a id="quick-start"></a>
 ## 快速开始

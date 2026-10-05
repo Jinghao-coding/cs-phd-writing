@@ -1,0 +1,30 @@
+当前采用的入口是 **`main.tex`**，路径按工程根目录解析。项目说明明确指定这一入口；`main-full.tex` 是另行授权的全文构建入口，不能据其文件名将它认作当前版本。依据：[AGENTS.md 第 3 行](/Users/jinghao/cs-phd-writing-validation/I3-current/project/AGENTS.md:3)。
+
+**当前正文的阅读顺序**
+
+按 [main.tex 第 2–8 行](/Users/jinghao/cs-phd-writing-validation/I3-current/project/main.tex:2) 展开，应依次阅读：
+
+1. [abstract.tex](/Users/jinghao/cs-phd-writing-validation/I3-current/project/abstract.tex:1)：摘要。
+2. [shared/notation.tex](/Users/jinghao/cs-phd-writing-validation/I3-current/project/shared/notation.tex:1)：符号约定。
+3. [chapters/reclaim.tex](/Users/jinghao/cs-phd-writing-validation/I3-current/project/chapters/reclaim.tex:1)：先读章首方法段；第 4 行插入 [algorithms/reclaim.tex](/Users/jinghao/cs-phd-writing-validation/I3-current/project/algorithms/reclaim.tex:1)，再回到研究章第 5–8 行；第 9 行插入 [tables/results.tex](/Users/jinghao/cs-phd-writing-validation/I3-current/project/tables/results.tex:1)。
+
+`\includeonly{chapters/reclaim}` 只限制 `\include`，不屏蔽摘要和符号约定的 `\input`。研究章内两个 `\input` 也会启用，其路径从工程根目录解析，分别指向根目录下的 `algorithms/` 和 `tables/`，不是 `chapters/` 下的同名目录。
+
+**启用与未启用材料**
+
+| 材料 | 当前状态及用途 |
+| --- | --- |
+| `abstract.tex`、`shared/notation.tex`、`chapters/reclaim.tex`、`algorithms/reclaim.tex`、`tables/results.tex` | 当前入口启用；其中算法和结果表是在研究章中展开的直接材料。 |
+| [chapters/background.tex](/Users/jinghao/cs-phd-writing-validation/I3-current/project/chapters/background.tex:1) | `main.tex` 中虽有 `\include`，但被 `\includeonly` 排除，当前不读取其正文；可作为上下文材料单独查阅。 |
+| [main-full.tex](/Users/jinghao/cs-phd-writing-validation/I3-current/project/main-full.tex:1) | 备用全文入口；没有 `\includeonly`，其顺序为摘要、符号约定、观测模型、共享对象回收及其嵌套材料。本次不切换入口或构建。 |
+| [archive/reclaim-v1.tex](/Users/jinghao/cs-phd-writing-validation/I3-current/project/archive/reclaim-v1.tex:1) | 明确标为旧稿；当前入口中的引用被注释，全文入口也未引用。不能用来覆盖当前材料。 |
+| [docs/context.md](/Users/jinghao/cs-phd-writing-validation/I3-current/project/docs/context.md:1) | 2026-10-04 的历史导航，提供依据与使用位置的线索，不作为当前事实的最终依据。 |
+
+**版本判断与直接证据位置**
+
+- **结果以当前表格为准。** [tables/results.tex 第 3–7 行](/Users/jinghao/cs-phd-writing-validation/I3-current/project/tables/results.tex:3) 明确标注教学合成值、单位 KiB、非系统实测：W 的基线为 100，延迟回收为 72；V 分别为 100、110。由表内数值计算，W 降低 28%，V 增加 10%。[研究章第 8 行](/Users/jinghao/cs-phd-writing-validation/I3-current/project/chapters/reclaim.tex:8) 的 W 结果已与表格一致；[摘要第 2 行](/Users/jinghao/cs-phd-writing-validation/I3-current/project/abstract.tex:2) 仍为 80 KiB、降低 20%，与旧稿数值相同，尚未同步。当前启用文件中存在新旧内容混用，不能把“已启用”等同于“内容已更新”。
+- **触发条件以算法为准。** [algorithms/reclaim.tex 第 3–5 行](/Users/jinghao/cs-phd-writing-validation/I3-current/project/algorithms/reclaim.tex:3) 给出输入、条件 `retired_i ∧ (r_i=0)`，并说明检查与释放处于同一互斥区、移出索引后不能产生新引用。核对规则时应连同这些假设读取。[研究章第 3 行](/Users/jinghao/cs-phd-writing-validation/I3-current/project/chapters/reclaim.tex:3) 的“已退役或引用计数为零”与算法冲突；第 6 行的“已经退役且不再被读者引用”与算法一致。旧稿“移出索引便释放”不应沿用。
+- **符号定义和作者补充应分别追到当前文件。** [shared/notation.tex 第 2 行](/Users/jinghao/cs-phd-writing-validation/I3-current/project/shared/notation.tex:2) 与算法都将 `r_i` 定义为读者引用计数，研究章第 3 行却写成退役后的等待时长，存在定义冲突。[研究章第 5 行](/Users/jinghao/cs-phd-writing-validation/I3-current/project/chapters/reclaim.tex:5) 明确记载“读者退出临界区后递减引用计数”；历史导航第 3 行也指出作者已更正旧记录，应保留这项当前补充。
+- **章间关系应从原文取得。** 未启用的 [background.tex 第 2 行](/Users/jinghao/cs-phd-writing-validation/I3-current/project/chapters/background.tex:2) 只说明轨迹观测与回收策略共享研究对象，并明确尚无联合部署记录，不能据主题关联认定已经形成联合系统。
+
+已读取上述全部项目文件，并检查了包含隐藏及忽略文件的文件清单。所提供工程中没有 PDF 或实验原始日志；当前直接依据是源码、教学伪代码和合成结果表，不能据此声称核查了最终版式或真实系统实测。此次入口、依赖和材料版本定位没有执行阻碍；未编译、未修改任何项目文件。

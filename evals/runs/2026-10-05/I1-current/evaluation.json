@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-05",
+  "timezone": "Asia/Shanghai",
+  "status": "actual_independent_agent_execution",
+  "evaluator": "maintenance assistant, after execution; not independent human review",
+  "input_and_skill": "manifest.json; baseline/; skill-snapshot.tar.gz when present",
+  "output": "response.txt; project/; output.patch",
+  "dimensions": "See ../README.md, I1 comparison or current-task table",
+  "negative_samples": {
+    "mis_edits": 0,
+    "total": 2,
+    "evidence": "project/chapters/reclaim.tex lines 5-6"
+  },
+  "file_scope_violations": [],
+  "failure": "none in task execution",
+  "not_run": [
+    "Agent-stage build",
+    "independent human review",
+    "other hosts/models",
+    "held-out evaluation"
+  ],
+  "note": "No semantic scope expansion identified in the inspected patch."
+}

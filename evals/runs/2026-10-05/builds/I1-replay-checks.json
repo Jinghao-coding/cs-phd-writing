@@ -1,0 +1,28 @@
+{
+  "collected_at": "2026-10-05T10:22:48.863498+00:00",
+  "model": "no new model invocation",
+  "method": "deterministic replay of saved I1-current changed files with platform-default font entry",
+  "changed_files": [
+    "abstract.tex",
+    "chapters/reclaim.tex",
+    "docs/context.md"
+  ],
+  "out_of_scope": [],
+  "baseline_intact": true,
+  "skill_intact": true,
+  "negative_text_samples": 2,
+  "negative_text_changed": 0,
+  "semantic_assessment": "requires separate reviewer; no total score",
+  "build": {
+    "command": [
+      "/Library/TeX/texbin/xelatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-output-directory=/Users/jinghao/cs-phd-writing-validation/I1-build-replay/build",
+      "main.tex"
+    ],
+    "status": "completed",
+    "exit_code": 0
+  }
+}

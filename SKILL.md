@@ -38,32 +38,26 @@ metadata:
 - **配图服务理解。** 按论证中的理解难点选择图，不要求每个机制配图。图须清晰、美观，与当前论文整体风格协调；标识用于辨认研究对象或动作，不随意添加装饰性 icon。图源形式遵循当前请求与项目要求，可采用矢量、栅格或混合方式；如实说明可编辑范围。具体判断与交付见 [配图规划与审阅](references/figure-design.md)。
 - **保护作者工作。** 语言编辑默认保留公式、数值、引用键、标签、宏命令和图表含义。用户已要求修改这些内容时按范围处理，并检查受影响的引用及说明；不能把保留原则变成重复确认流程。
 
-## 按请求使用参考文件
+## 主流程与按问题扩读
 
-| 请求 | 读取 | 交付重点 |
+先选一个主入口。多文件输入先沿[输入读取](references/input-reading.md)定位实际入口和采用版本，再进入主流程；无需把所有指南读一遍。
+
+| 当前任务 | 主入口 | 出现具体问题后扩读 |
 | --- | --- | --- |
-| 多篇英文小论文整合为中文毕业论文 | [小论文到学位论文](references/paper-to-thesis.md) | 研究主线、成果与章节对应、重组后的正文及来源 |
-| 阅读 PDF、DOCX 或 LaTeX 工程 | [输入读取](references/input-reading.md) | 可核验的阅读顺序、原文位置及实际覆盖范围 |
-| 段落衔接、反向提纲或英文转写中文 | [衔接与转写](references/cohesion-and-translation.md) | 主题连续、概念顺序、自然中文和命题保持 |
-| 改写范围、技术更正或前后语义核对 | [修订流程](references/revision-workflow.md) | 修改意图、可定位问题及完成条件、语义核对 |
-| 项目词表或自动语言检查 | [工具入口](references/language-tools.md) | 只读差异、术语候选及逐项处理 |
-| 检查或润色中文 | [中文表达](references/chinese-expression.md) | 主干、搭配、指代、作用域与段落衔接；保持含义的文本 |
-| 结合系统上下文改写机制、运行过程或性能结论 | [系统上下文表达](references/systems-context-expression.md)，语病检查结合[中文表达](references/chinese-expression.md) | 对象、状态、事件顺序、决策信息与证据强度一致 |
-| 组织段落论证、方法解释或实验分析 | [段落功能](references/paragraph-functions.md) | 本段要建立的判断、需要的证据及与上下文的关系 |
-| 检查套话、空泛分析或用户所说的“AI 味” | [学术表述检查](references/prose-quality.md) | 有依据的具体表述；保留正常句式，不给出 AI 生成概率 |
-| 持续修订、恢复任务或处理新旧决定 | [写作上下文](references/writing-context.md) | 有效要求、证据版本、待核事项及编辑范围 |
-| 描述Agent、工具调用、记忆与资源编排 | [Agent系统表述](references/agent-systems-expression.md) | 执行对象、动态依赖、状态与评价指标的准确区分 |
-| 核验引文、导入BibTeX、统一引用键、引用软件或网页 | [文献校验与格式适配](references/bibliography-validation.md) | 学校条款、真实元数据与作者顺序、键映射及实际输出 |
-| 核对数据、贡献、引文、术语 | [事实与术语](references/evidence-and-terms.md) | 论断、定位、支持程度和处理意见 |
-| 组织总论点、宏观背景、提纲、研究章节或绪论 | [论文结构](references/thesis-structure.md) | 问题、标题与内容对应、小节合并、证据与研究关系 |
-| 组织文献综述、理论框架、研究设计或方法结果讨论 | [研究与综合](references/research-and-synthesis.md) | 文献比较、问题与方法证据对应、已完成研究与计划的区分 |
-| 写章节、审阅章节或全文 | [写作与审阅](references/writing-and-review.md)，再按问题读取上列文件 | 可用正文，或带原文定位的审阅结果 |
-| 机制抽象难懂、规划配图或检查图的表达与编辑源 | [配图规划与审阅](references/figure-design.md) | 是否需要图、图应解释什么、视觉协调、图源形式与实际可编辑范围 |
-| 核对图表、附录、脚注、引文、中英文版本或提交完整性 | [全文与提交审阅](references/manuscript-audit.md) | 对象检查、来源支持、版本对应和实际缺项 |
-| 将博士论文加入持续写作参考 | [论文结构](references/thesis-structure.md)、[项目接入](references/project-profile.md) | 有来源定位的论证分析、拟采用做法及项目读取入口 |
-| 接入学校规范、模板或个人偏好 | [项目接入](references/project-profile.md) | 项目内配置；通用技能不写入个人资料 |
+| 局部纠错、润色、压缩、重组、英中转写 | [修订流程](references/revision-workflow.md) | 句法与指代→[中文表达](references/chinese-expression.md)；信息承接与翻译→[衔接与转写](references/cohesion-and-translation.md)；系统对象或事件语义→[系统上下文](references/systems-context-expression.md)；来源与强度→[事实与术语](references/evidence-and-terms.md) |
+| 新写研究章、整章或全文审阅 | [写作与审阅](references/writing-and-review.md) | 章间主线→[论文结构](references/thesis-structure.md)；文献综合与理论框架→[研究与综合](references/research-and-synthesis.md)；段落论证→[段落功能](references/paragraph-functions.md)；具体改写→修订流程 |
+| 小论文整合成学位论文 | [小论文到学位论文](references/paper-to-thesis.md) | 先确认材料版本、成果与章节关系，再进入写作与审阅；完整产物见[研究章示例](examples/paper-to-chapter/README.md) |
+| 引文核验、BibTeX导入、键迁移、软件或网页引用 | [文献校验](references/bibliography-validation.md) | 学校约束不清时读取项目接入；事实支持不足时读取事实与术语 |
+| 接入学校规范、模板、范文或个人偏好 | [项目接入](references/project-profile.md) | 范文组织分析→论文结构；后续任务沿当前项目指针读取 |
+| 配图规划、图意或图源审阅 | [配图规划与审阅](references/figure-design.md) | 关联的正文与原始数据；按任务选矢量、栅格或混合图源 |
+| 恢复任务、跨章更新或新旧决定冲突 | [写作上下文](references/writing-context.md) | 核对当前文件、使用位置和版本后，返回相应主流程 |
+| 提交完整性、英文摘要与中文正文对应、附录/脚注/图表检查 | [全文与提交审阅](references/manuscript-audit.md) | 英文语言检查→[工具入口](references/language-tools.md)；实际改写→修订流程 |
 
-不要每次运行全部检查。整章或全文审阅先查事实与结构，再查中文，最后查格式；局部修改只扩大到直接受影响的上下文和重复术语。
+Agent角色、工具调用、动态依赖或记忆语义出现具体疑点时，扩读[Agent系统表述](references/agent-systems-expression.md)；套话或空泛分析扩读[学术表述检查](references/prose-quality.md)；项目词表和修订差异扩读[工具入口](references/language-tools.md)。这些是问题分支，不与主流程并列启动。
+
+**停止扩读：已有上下文足以解决当前问题时，不继续加载仅主题相关的指南。** 整章或全文先查事实与结构，再查中文，最后查格式；局部任务只扩到直接受影响的定义、引用和使用位置。英文摘要、理论证明、测量研究及协议语义按实际主张处理，不统一成性能优化叙事。
+
+规则主要维护位置：前后语义核对在修订流程；中文句法、搭配与自然表达在中文表达；对象、状态、事件和接口语义在系统上下文；事实、来源及论断支持在事实与术语；决定、版本、使用位置和任务恢复在写作上下文。其他指南保留场景提醒并链接主要位置，修改规则时核对引用方，不复制整套检查表。
 
 技能维护与效果评估按[修订评估](evals/revision-evaluation.md)，来源采用记录见[语言研究来源](references/language-research-sources.md)。这些材料用于维护，不在普通润色时全部加载。
 

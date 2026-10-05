@@ -1,0 +1,6 @@
+已修改 [chapters/reclaim.tex 第3行](/Users/jinghao/cs-phd-writing-validation/I4-current/project/chapters/reclaim.tex:3) 的两处技术错误：
+
+- 将 `$r_i$` 从“对象退役后的等待时长”更正为“对象 $i$ 当前的读者引用计数”，依据 [符号约定第2行](/Users/jinghao/cs-phd-writing-validation/I4-current/project/shared/notation.tex:2) 和 [算法输入第3行](/Users/jinghao/cs-phd-writing-validation/I4-current/project/algorithms/reclaim.tex:3)。
+- 将回收条件中的“或”更正为“且”，依据 [算法第4行](/Users/jinghao/cs-phd-writing-validation/I4-current/project/algorithms/reclaim.tex:4) 的 `$retired_i \land (r_i=0)$`，避免允许对象仍被引用时释放存储。
+
+已核对实际差异：仅方法首段变化，作者关于读者退出后递减引用计数及回收条件的两句修正均保留；结果节和其他工程文件保持原样。按要求未构建。执行无阻碍。

@@ -1,0 +1,369 @@
+{
+  "chapters/reclaim.tex": {
+    "protected_changes": {
+      "removed": [],
+      "added": [
+        [
+          "math",
+          "$i$"
+        ]
+      ]
+    },
+    "number_changes": {
+      "removed": [],
+      "added": []
+    },
+    "terminology_candidates": [],
+    "schema_version": 2,
+    "local_candidates": [
+      {
+        "candidate_type": "context_or_position_changed",
+        "object_type": "math",
+        "before": {
+          "kind": "math",
+          "text": "$r_i$",
+          "start": 55,
+          "end": 60,
+          "line": 3,
+          "column": 20,
+          "end_position": {
+            "line": 3,
+            "column": 25
+          },
+          "context": "$r_i$ 表示对象退役后的等待时长",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        "after": {
+          "kind": "math",
+          "text": "$r_i$",
+          "start": 55,
+          "end": 60,
+          "line": 3,
+          "column": 20,
+          "end_position": {
+            "line": 3,
+            "column": 25
+          },
+          "context": "$r_i$ 表示对象 $i$ 当前的读者引用计数",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unique_identical_object",
+        "uncertainty": "Lexical match only; verify association and meaning in context."
+      },
+      {
+        "candidate_type": "unmatched_new",
+        "object_type": "math",
+        "after": {
+          "kind": "math",
+          "text": "$i$",
+          "start": 66,
+          "end": 69,
+          "line": 3,
+          "column": 31,
+          "end_position": {
+            "line": 3,
+            "column": 34
+          },
+          "context": "$r_i$ 表示对象 $i$ 当前的读者引用计数",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        "match_basis": "unresolved",
+        "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+      }
+    ],
+    "diff_hunks": [
+      {
+        "before": {
+          "start": 65,
+          "end": 68,
+          "line": 3,
+          "column": 30,
+          "end_position": {
+            "line": 3,
+            "column": 33
+          }
+        },
+        "after": {
+          "start": 65,
+          "end": 72,
+          "line": 3,
+          "column": 30,
+          "end_position": {
+            "line": 3,
+            "column": 37
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 69,
+          "end": 73,
+          "line": 3,
+          "column": 34,
+          "end_position": {
+            "line": 3,
+            "column": 38
+          }
+        },
+        "after": {
+          "start": 73,
+          "end": 79,
+          "line": 3,
+          "column": 38,
+          "end_position": {
+            "line": 3,
+            "column": 44
+          }
+        }
+      },
+      {
+        "before": {
+          "start": 80,
+          "end": 81,
+          "line": 3,
+          "column": 45,
+          "end_position": {
+            "line": 3,
+            "column": 46
+          }
+        },
+        "after": {
+          "start": 86,
+          "end": 87,
+          "line": 3,
+          "column": 51,
+          "end_position": {
+            "line": 3,
+            "column": 52
+          }
+        }
+      }
+    ],
+    "objects": {
+      "before": [
+        {
+          "kind": "reference",
+          "text": "\\label{ch:reclaim}",
+          "start": 17,
+          "end": 35,
+          "line": 2,
+          "column": 1,
+          "end_position": {
+            "line": 2,
+            "column": 19
+          },
+          "context": "\\label{ch:reclaim}",
+          "context_start": 17,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "math",
+          "text": "$r_i$",
+          "start": 55,
+          "end": 60,
+          "line": 3,
+          "column": 20,
+          "end_position": {
+            "line": 3,
+            "column": 25
+          },
+          "context": "$r_i$ 表示对象退役后的等待时长",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "72 KiB",
+          "start": 218,
+          "end": 224,
+          "line": 8,
+          "column": 24,
+          "end_position": {
+            "line": 8,
+            "column": 30
+          },
+          "context": "延迟回收策略的峰值保留空间为72 KiB",
+          "context_start": 204,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 228,
+          "end": 235,
+          "line": 8,
+          "column": 34,
+          "end_position": {
+            "line": 8,
+            "column": 41
+          },
+          "context": "基线为100 KiB",
+          "context_start": 225,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "28\\%",
+          "start": 238,
+          "end": 242,
+          "line": 8,
+          "column": 44,
+          "end_position": {
+            "line": 8,
+            "column": 48
+          },
+          "context": "降低28\\%",
+          "context_start": 236,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "reference",
+          "text": "\\ref{tab:space}",
+          "start": 245,
+          "end": 260,
+          "line": 8,
+          "column": 51,
+          "end_position": {
+            "line": 8,
+            "column": 66
+          },
+          "context": "表~\\ref{tab:space}给出两组轨迹的合成值",
+          "context_start": 243,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        }
+      ],
+      "after": [
+        {
+          "kind": "reference",
+          "text": "\\label{ch:reclaim}",
+          "start": 17,
+          "end": 35,
+          "line": 2,
+          "column": 1,
+          "end_position": {
+            "line": 2,
+            "column": 19
+          },
+          "context": "\\label{ch:reclaim}",
+          "context_start": 17,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "math",
+          "text": "$r_i$",
+          "start": 55,
+          "end": 60,
+          "line": 3,
+          "column": 20,
+          "end_position": {
+            "line": 3,
+            "column": 25
+          },
+          "context": "$r_i$ 表示对象 $i$ 当前的读者引用计数",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "math",
+          "text": "$i$",
+          "start": 66,
+          "end": 69,
+          "line": 3,
+          "column": 31,
+          "end_position": {
+            "line": 3,
+            "column": 34
+          },
+          "context": "$r_i$ 表示对象 $i$ 当前的读者引用计数",
+          "context_start": 55,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "72 KiB",
+          "start": 224,
+          "end": 230,
+          "line": 8,
+          "column": 24,
+          "end_position": {
+            "line": 8,
+            "column": 30
+          },
+          "context": "延迟回收策略的峰值保留空间为72 KiB",
+          "context_start": 210,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "100 KiB",
+          "start": 234,
+          "end": 241,
+          "line": 8,
+          "column": 34,
+          "end_position": {
+            "line": 8,
+            "column": 41
+          },
+          "context": "基线为100 KiB",
+          "context_start": 231,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "number",
+          "text": "28\\%",
+          "start": 244,
+          "end": 248,
+          "line": 8,
+          "column": 44,
+          "end_position": {
+            "line": 8,
+            "column": 48
+          },
+          "context": "降低28\\%",
+          "context_start": 242,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        },
+        {
+          "kind": "reference",
+          "text": "\\ref{tab:space}",
+          "start": 251,
+          "end": 266,
+          "line": 8,
+          "column": 51,
+          "end_position": {
+            "line": 8,
+            "column": 66
+          },
+          "context": "表~\\ref{tab:space}给出两组轨迹的合成值",
+          "context_start": 249,
+          "paragraph": "\\chapter{共享对象回收}\n\\label{ch:reclaim}\n索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。\n\\input{algorithms/reclaim}\n读者退出临界区后递减引用计数。\n仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。\n\\section{结果}\n教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，基线为100 KiB，降低28\\%。表~\\ref{tab:space}给出两组轨迹的合成值。\n\\input{tables/results}\n",
+          "paragraph_start": 0
+        }
+      ]
+    },
+    "coverage_warnings": {
+      "before": [],
+      "after": []
+    },
+    "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+    "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+  }
+}

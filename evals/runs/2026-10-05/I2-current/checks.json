@@ -1,0 +1,15 @@
+{
+  "collected_at": "2026-10-05T10:17:48.518624+00:00",
+  "model": "inherited parent model; exact backend ID not exposed",
+  "method": "Codex desktop independent subagent, fork_turns=none",
+  "changed_files": [],
+  "out_of_scope": [],
+  "baseline_intact": true,
+  "skill_intact": true,
+  "negative_text_samples": 2,
+  "negative_text_changed": 0,
+  "semantic_assessment": "requires separate reviewer; no total score",
+  "build": {
+    "status": "not_run"
+  }
+}

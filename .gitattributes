@@ -1,0 +1,3 @@
+# Preserve verbatim unified-diff context lines and compiler output.
+evals/runs/**/output.patch whitespace=-blank-at-eol
+evals/runs/**/builds/*.txt whitespace=-blank-at-eol

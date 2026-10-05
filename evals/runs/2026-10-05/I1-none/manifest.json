@@ -1,0 +1,22 @@
+{
+  "prepared_at": "2026-10-05T10:12:54.096063+00:00",
+  "task": "I1",
+  "variant": "none",
+  "project_sha256": {
+    "AGENTS.md": "c329678061e1adc15ec85bf20b7a090c6f665e07b9daf0b90f148afd8836d4df",
+    "abstract.tex": "48c7ba642453dd759bab223d61e72fccc49e3377ef3fb9e14a1ff7ced451b1da",
+    "algorithms/reclaim.tex": "950d2dc89267d43b769a9f639c8a555d8eb8a2f44edf6b794e12c8c599e83dc5",
+    "archive/reclaim-v1.tex": "6600a960a654c8a5c7d55c413e782b42e6f13fd54aa31a00f153494a78a60429",
+    "chapters/background.tex": "9463ace825e7c15ed06f633c9b5eed3bfba7c33f53d9529da4fd4b2463be0c6f",
+    "chapters/reclaim.tex": "0f606ff20a6aa8e7643d10b5a1db7fa9eba77ec8904ae25311430dca27fe7328",
+    "docs/context.md": "bf7b73872fea3fa3cd41390825b696a03fa52a4ad4135c2c151a2952060aa944",
+    "main-full.tex": "7a46819932fbd9a458c99e0f01db68c9e87aa148c51b90ba0f86ffc2a8e48d92",
+    "main.tex": "4e1c80695914921c4cca95ea2977e97ce622a709917f191335f53bc675575322",
+    "shared/notation.tex": "17c47e2fdcf0f5a9bd7e6e9907166d71ef6dad998dab7b00bdcd4838f3097865",
+    "tables/results.tex": "94b4d8f91d70054e0c86ccc40bdd3313c73f0a9b775139d3a3849436f2abc842"
+  },
+  "skill_sha256": {},
+  "host": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "python": "3.14.8",
+  "execution_status": "not_run"
+}

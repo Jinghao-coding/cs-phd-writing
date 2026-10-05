@@ -1,0 +1,54 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+entering extended mode
+(./main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-07-20>
+(/Users/jinghao/Library/texmf/tex/latex/ctex/ctexrep.cls
+(/Users/jinghao/Library/texmf/tex/latex/ctex/config/ctexbackend.cfg)
+(/Users/jinghao/Library/texmf/tex/latex/l3kernel/expl3.sty
+(/Users/jinghao/Library/texmf/tex/latex/l3backend/l3backend-xetex.def))
+Document Class: ctexrep 2026/07/14 v2.6.4 Chinese adapter for class report (CTE
+X)
+(/Users/jinghao/Library/texmf/tex/latex/ctex/ctexhook.sty)
+(/Users/jinghao/Library/texmf/tex/latex/ctex/ctexpatch.sty)
+(/Users/jinghao/Library/texmf/tex/latex/base/fix-cm.sty
+(/Users/jinghao/Library/texmf/tex/latex/base/ts1enc.def))
+(/Users/jinghao/Library/texmf/tex/latex/ctex/config/ctexopts.cfg)
+(/Users/jinghao/Library/texmf/tex/latex/base/report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(/Users/jinghao/Library/texmf/tex/latex/base/size10.clo))
+(/Users/jinghao/Library/texmf/tex/latex/ctex/engine/ctex-engine-xetex.def
+(/Users/jinghao/Library/texmf/tex/xelatex/xecjk/xeCJK.sty
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3packages/xtemplate/xtempla
+te.sty)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/Users/jinghao/Library/texmf/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/Users/jinghao/Library/texmf/tex/xelatex/xecjk/xeCJK.cfg)))
+(/Users/jinghao/Library/texmf/tex/latex/zhnumber/zhnumber.sty
+(/Users/jinghao/Library/texmf/tex/latex/zhnumber/zhnumber-utf8.cfg))
+(/Users/jinghao/Library/texmf/tex/latex/ctex/scheme/ctex-scheme-chinese-report.
+def (/Users/jinghao/Library/texmf/tex/latex/ctex/config/ctex-name-utf8.cfg))
+(/Users/jinghao/Library/texmf/tex/latex/ctex/ctex-c5size.clo)
+(/Users/jinghao/Library/texmf/tex/latex/ctex/fontset/ctex-fontset-mac.def
+(/Users/jinghao/Library/texmf/tex/latex/ctex/fontset/ctex-fontset-macnew.def)))
+ (/Users/jinghao/Library/texmf/tex/latex/ctex/config/ctex.cfg)
+(/Users/jinghao/cs-phd-writing-validation/fixture-build-main/main.aux
+No file chapters/background.aux.
+
+(/Users/jinghao/cs-phd-writing-validation/fixture-build-main/chapters/reclaim.a
+ux)) (./abstract.tex) (./shared/notation.tex [1]) [2] (./chapters/reclaim.tex
+第一章
+(./algorithms/reclaim.tex) (./tables/results.tex)) [3]
+(/Users/jinghao/cs-phd-writing-validation/fixture-build-main/main.aux
+No file chapters/background.aux.
+
+(/Users/jinghao/cs-phd-writing-validation/fixture-build-main/chapters/reclaim.a
+ux)) )
+Output written on /Users/jinghao/cs-phd-writing-validation/fixture-build-main/m
+ain.pdf (3 pages).
+Transcript written on /Users/jinghao/cs-phd-writing-validation/fixture-build-ma
+in/main.log.

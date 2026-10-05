@@ -1,0 +1,1237 @@
+{
+  "number_swap": {
+    "before": "A为18 ms，B为24 ms",
+    "after": "A为24 ms，B为18 ms",
+    "v0.6.0": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [],
+      "interpretation": "Review candidates in context; counts do not verify scope, order, causality or scientific meaning."
+    },
+    "working_snapshot": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [],
+      "schema_version": 2,
+      "local_candidates": [
+        {
+          "candidate_type": "local_replacement",
+          "object_type": "number",
+          "before": {
+            "kind": "number",
+            "text": "18 ms",
+            "start": 2,
+            "end": 7,
+            "line": 1,
+            "column": 3,
+            "end_position": {
+              "line": 1,
+              "column": 8
+            },
+            "context": "A为18 ms",
+            "context_start": 0,
+            "paragraph": "A为18 ms，B为24 ms",
+            "paragraph_start": 0
+          },
+          "after": {
+            "kind": "number",
+            "text": "24 ms",
+            "start": 2,
+            "end": 7,
+            "line": 1,
+            "column": 3,
+            "end_position": {
+              "line": 1,
+              "column": 8
+            },
+            "context": "A为24 ms",
+            "context_start": 0,
+            "paragraph": "A为24 ms，B为18 ms",
+            "paragraph_start": 0
+          },
+          "match_basis": "unique_clause_slot",
+          "uncertainty": "Lexical match only; verify association and meaning in context."
+        },
+        {
+          "candidate_type": "local_replacement",
+          "object_type": "number",
+          "before": {
+            "kind": "number",
+            "text": "24 ms",
+            "start": 10,
+            "end": 15,
+            "line": 1,
+            "column": 11,
+            "end_position": {
+              "line": 1,
+              "column": 16
+            },
+            "context": "B为24 ms",
+            "context_start": 8,
+            "paragraph": "A为18 ms，B为24 ms",
+            "paragraph_start": 0
+          },
+          "after": {
+            "kind": "number",
+            "text": "18 ms",
+            "start": 10,
+            "end": 15,
+            "line": 1,
+            "column": 11,
+            "end_position": {
+              "line": 1,
+              "column": 16
+            },
+            "context": "B为18 ms",
+            "context_start": 8,
+            "paragraph": "A为24 ms，B为18 ms",
+            "paragraph_start": 0
+          },
+          "match_basis": "unique_clause_slot",
+          "uncertainty": "Lexical match only; verify association and meaning in context."
+        }
+      ],
+      "diff_hunks": [
+        {
+          "before": {
+            "start": 1,
+            "end": 1,
+            "line": 1,
+            "column": 2,
+            "end_position": {
+              "line": 1,
+              "column": 2
+            }
+          },
+          "after": {
+            "start": 1,
+            "end": 9,
+            "line": 1,
+            "column": 2,
+            "end_position": {
+              "line": 1,
+              "column": 10
+            }
+          }
+        },
+        {
+          "before": {
+            "start": 7,
+            "end": 15,
+            "line": 1,
+            "column": 8,
+            "end_position": {
+              "line": 1,
+              "column": 16
+            }
+          },
+          "after": {
+            "start": 15,
+            "end": 15,
+            "line": 1,
+            "column": 16,
+            "end_position": {
+              "line": 1,
+              "column": 16
+            }
+          }
+        }
+      ],
+      "objects": {
+        "before": [
+          {
+            "kind": "number",
+            "text": "18 ms",
+            "start": 2,
+            "end": 7,
+            "line": 1,
+            "column": 3,
+            "end_position": {
+              "line": 1,
+              "column": 8
+            },
+            "context": "A为18 ms",
+            "context_start": 0,
+            "paragraph": "A为18 ms，B为24 ms",
+            "paragraph_start": 0
+          },
+          {
+            "kind": "number",
+            "text": "24 ms",
+            "start": 10,
+            "end": 15,
+            "line": 1,
+            "column": 11,
+            "end_position": {
+              "line": 1,
+              "column": 16
+            },
+            "context": "B为24 ms",
+            "context_start": 8,
+            "paragraph": "A为18 ms，B为24 ms",
+            "paragraph_start": 0
+          }
+        ],
+        "after": [
+          {
+            "kind": "number",
+            "text": "24 ms",
+            "start": 2,
+            "end": 7,
+            "line": 1,
+            "column": 3,
+            "end_position": {
+              "line": 1,
+              "column": 8
+            },
+            "context": "A为24 ms",
+            "context_start": 0,
+            "paragraph": "A为24 ms，B为18 ms",
+            "paragraph_start": 0
+          },
+          {
+            "kind": "number",
+            "text": "18 ms",
+            "start": 10,
+            "end": 15,
+            "line": 1,
+            "column": 11,
+            "end_position": {
+              "line": 1,
+              "column": 16
+            },
+            "context": "B为18 ms",
+            "context_start": 8,
+            "paragraph": "A为24 ms，B为18 ms",
+            "paragraph_start": 0
+          }
+        ]
+      },
+      "coverage_warnings": {
+        "before": [],
+        "after": []
+      },
+      "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+      "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+    }
+  },
+  "reference_swap": {
+    "before": "A采用方法甲\\cite{a}。B采用方法乙\\cite{b}。",
+    "after": "A采用方法甲\\cite{b}。B采用方法乙\\cite{a}。",
+    "v0.6.0": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [],
+      "interpretation": "Review candidates in context; counts do not verify scope, order, causality or scientific meaning."
+    },
+    "working_snapshot": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [],
+      "schema_version": 2,
+      "local_candidates": [
+        {
+          "candidate_type": "local_replacement",
+          "object_type": "reference",
+          "before": {
+            "kind": "reference",
+            "text": "\\cite{a}",
+            "start": 6,
+            "end": 14,
+            "line": 1,
+            "column": 7,
+            "end_position": {
+              "line": 1,
+              "column": 15
+            },
+            "context": "A采用方法甲\\cite{a}",
+            "context_start": 0,
+            "paragraph": "A采用方法甲\\cite{a}。B采用方法乙\\cite{b}。",
+            "paragraph_start": 0
+          },
+          "after": {
+            "kind": "reference",
+            "text": "\\cite{b}",
+            "start": 6,
+            "end": 14,
+            "line": 1,
+            "column": 7,
+            "end_position": {
+              "line": 1,
+              "column": 15
+            },
+            "context": "A采用方法甲\\cite{b}",
+            "context_start": 0,
+            "paragraph": "A采用方法甲\\cite{b}。B采用方法乙\\cite{a}。",
+            "paragraph_start": 0
+          },
+          "match_basis": "unique_clause_slot",
+          "uncertainty": "Lexical match only; verify association and meaning in context."
+        },
+        {
+          "candidate_type": "local_replacement",
+          "object_type": "reference",
+          "before": {
+            "kind": "reference",
+            "text": "\\cite{b}",
+            "start": 21,
+            "end": 29,
+            "line": 1,
+            "column": 22,
+            "end_position": {
+              "line": 1,
+              "column": 30
+            },
+            "context": "B采用方法乙\\cite{b}",
+            "context_start": 15,
+            "paragraph": "A采用方法甲\\cite{a}。B采用方法乙\\cite{b}。",
+            "paragraph_start": 0
+          },
+          "after": {
+            "kind": "reference",
+            "text": "\\cite{a}",
+            "start": 21,
+            "end": 29,
+            "line": 1,
+            "column": 22,
+            "end_position": {
+              "line": 1,
+              "column": 30
+            },
+            "context": "B采用方法乙\\cite{a}",
+            "context_start": 15,
+            "paragraph": "A采用方法甲\\cite{b}。B采用方法乙\\cite{a}。",
+            "paragraph_start": 0
+          },
+          "match_basis": "unique_clause_slot",
+          "uncertainty": "Lexical match only; verify association and meaning in context."
+        }
+      ],
+      "diff_hunks": [
+        {
+          "before": {
+            "start": 12,
+            "end": 13,
+            "line": 1,
+            "column": 13,
+            "end_position": {
+              "line": 1,
+              "column": 14
+            }
+          },
+          "after": {
+            "start": 12,
+            "end": 13,
+            "line": 1,
+            "column": 13,
+            "end_position": {
+              "line": 1,
+              "column": 14
+            }
+          }
+        },
+        {
+          "before": {
+            "start": 27,
+            "end": 28,
+            "line": 1,
+            "column": 28,
+            "end_position": {
+              "line": 1,
+              "column": 29
+            }
+          },
+          "after": {
+            "start": 27,
+            "end": 28,
+            "line": 1,
+            "column": 28,
+            "end_position": {
+              "line": 1,
+              "column": 29
+            }
+          }
+        }
+      ],
+      "objects": {
+        "before": [
+          {
+            "kind": "reference",
+            "text": "\\cite{a}",
+            "start": 6,
+            "end": 14,
+            "line": 1,
+            "column": 7,
+            "end_position": {
+              "line": 1,
+              "column": 15
+            },
+            "context": "A采用方法甲\\cite{a}",
+            "context_start": 0,
+            "paragraph": "A采用方法甲\\cite{a}。B采用方法乙\\cite{b}。",
+            "paragraph_start": 0
+          },
+          {
+            "kind": "reference",
+            "text": "\\cite{b}",
+            "start": 21,
+            "end": 29,
+            "line": 1,
+            "column": 22,
+            "end_position": {
+              "line": 1,
+              "column": 30
+            },
+            "context": "B采用方法乙\\cite{b}",
+            "context_start": 15,
+            "paragraph": "A采用方法甲\\cite{a}。B采用方法乙\\cite{b}。",
+            "paragraph_start": 0
+          }
+        ],
+        "after": [
+          {
+            "kind": "reference",
+            "text": "\\cite{b}",
+            "start": 6,
+            "end": 14,
+            "line": 1,
+            "column": 7,
+            "end_position": {
+              "line": 1,
+              "column": 15
+            },
+            "context": "A采用方法甲\\cite{b}",
+            "context_start": 0,
+            "paragraph": "A采用方法甲\\cite{b}。B采用方法乙\\cite{a}。",
+            "paragraph_start": 0
+          },
+          {
+            "kind": "reference",
+            "text": "\\cite{a}",
+            "start": 21,
+            "end": 29,
+            "line": 1,
+            "column": 22,
+            "end_position": {
+              "line": 1,
+              "column": 30
+            },
+            "context": "B采用方法乙\\cite{a}",
+            "context_start": 15,
+            "paragraph": "A采用方法甲\\cite{b}。B采用方法乙\\cite{a}。",
+            "paragraph_start": 0
+          }
+        ]
+      },
+      "coverage_warnings": {
+        "before": [],
+        "after": []
+      },
+      "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+      "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+    }
+  },
+  "percent": {
+    "before": "25\\%",
+    "after": "25",
+    "v0.6.0": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [],
+      "interpretation": "Review candidates in context; counts do not verify scope, order, causality or scientific meaning."
+    },
+    "working_snapshot": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [],
+      "schema_version": 2,
+      "local_candidates": [
+        {
+          "candidate_type": "unit_or_marker_changed",
+          "object_type": "number",
+          "before": {
+            "kind": "number",
+            "text": "25\\%",
+            "start": 0,
+            "end": 4,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 5
+            },
+            "context": "25\\%",
+            "context_start": 0,
+            "paragraph": "25\\%",
+            "paragraph_start": 0
+          },
+          "after": {
+            "kind": "number",
+            "text": "25",
+            "start": 0,
+            "end": 2,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 3
+            },
+            "context": "25",
+            "context_start": 0,
+            "paragraph": "25",
+            "paragraph_start": 0
+          },
+          "match_basis": "unique_clause_slot",
+          "uncertainty": "Lexical match only; verify association and meaning in context."
+        }
+      ],
+      "diff_hunks": [
+        {
+          "before": {
+            "start": 2,
+            "end": 4,
+            "line": 1,
+            "column": 3,
+            "end_position": {
+              "line": 1,
+              "column": 5
+            }
+          },
+          "after": {
+            "start": 2,
+            "end": 2,
+            "line": 1,
+            "column": 3,
+            "end_position": {
+              "line": 1,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "objects": {
+        "before": [
+          {
+            "kind": "number",
+            "text": "25\\%",
+            "start": 0,
+            "end": 4,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 5
+            },
+            "context": "25\\%",
+            "context_start": 0,
+            "paragraph": "25\\%",
+            "paragraph_start": 0
+          }
+        ],
+        "after": [
+          {
+            "kind": "number",
+            "text": "25",
+            "start": 0,
+            "end": 2,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 3
+            },
+            "context": "25",
+            "context_start": 0,
+            "paragraph": "25",
+            "paragraph_start": 0
+          }
+        ]
+      },
+      "coverage_warnings": {
+        "before": [],
+        "after": []
+      },
+      "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+      "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+    }
+  },
+  "unit": {
+    "before": "12 ms",
+    "after": "12 s",
+    "v0.6.0": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [],
+      "interpretation": "Review candidates in context; counts do not verify scope, order, causality or scientific meaning."
+    },
+    "working_snapshot": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [],
+      "schema_version": 2,
+      "local_candidates": [
+        {
+          "candidate_type": "unit_or_marker_changed",
+          "object_type": "number",
+          "before": {
+            "kind": "number",
+            "text": "12 ms",
+            "start": 0,
+            "end": 5,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 6
+            },
+            "context": "12 ms",
+            "context_start": 0,
+            "paragraph": "12 ms",
+            "paragraph_start": 0
+          },
+          "after": {
+            "kind": "number",
+            "text": "12 s",
+            "start": 0,
+            "end": 4,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 5
+            },
+            "context": "12 s",
+            "context_start": 0,
+            "paragraph": "12 s",
+            "paragraph_start": 0
+          },
+          "match_basis": "unique_clause_slot",
+          "uncertainty": "Lexical match only; verify association and meaning in context."
+        }
+      ],
+      "diff_hunks": [
+        {
+          "before": {
+            "start": 3,
+            "end": 4,
+            "line": 1,
+            "column": 4,
+            "end_position": {
+              "line": 1,
+              "column": 5
+            }
+          },
+          "after": {
+            "start": 3,
+            "end": 3,
+            "line": 1,
+            "column": 4,
+            "end_position": {
+              "line": 1,
+              "column": 4
+            }
+          }
+        }
+      ],
+      "objects": {
+        "before": [
+          {
+            "kind": "number",
+            "text": "12 ms",
+            "start": 0,
+            "end": 5,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 6
+            },
+            "context": "12 ms",
+            "context_start": 0,
+            "paragraph": "12 ms",
+            "paragraph_start": 0
+          }
+        ],
+        "after": [
+          {
+            "kind": "number",
+            "text": "12 s",
+            "start": 0,
+            "end": 4,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 5
+            },
+            "context": "12 s",
+            "context_start": 0,
+            "paragraph": "12 s",
+            "paragraph_start": 0
+          }
+        ]
+      },
+      "coverage_warnings": {
+        "before": [],
+        "after": []
+      },
+      "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+      "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+    }
+  },
+  "indented_code": {
+    "before": "  ```\nx=a\n  ```",
+    "after": "  ```\nx=b\n  ```",
+    "v0.6.0": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [],
+      "interpretation": "Review candidates in context; counts do not verify scope, order, causality or scientific meaning."
+    },
+    "working_snapshot": {
+      "protected_changes": {
+        "removed": [
+          [
+            "code",
+            "  ```\nx=a\n  ```"
+          ]
+        ],
+        "added": [
+          [
+            "code",
+            "  ```\nx=b\n  ```"
+          ]
+        ]
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [],
+      "schema_version": 2,
+      "local_candidates": [
+        {
+          "candidate_type": "local_replacement",
+          "object_type": "code",
+          "before": {
+            "kind": "code",
+            "text": "  ```\nx=a\n  ```",
+            "start": 0,
+            "end": 15,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 3,
+              "column": 6
+            },
+            "context": "  ```\nx=a\n  ```",
+            "context_start": 0,
+            "paragraph": "  ```\nx=a\n  ```",
+            "paragraph_start": 0
+          },
+          "after": {
+            "kind": "code",
+            "text": "  ```\nx=b\n  ```",
+            "start": 0,
+            "end": 15,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 3,
+              "column": 6
+            },
+            "context": "  ```\nx=b\n  ```",
+            "context_start": 0,
+            "paragraph": "  ```\nx=b\n  ```",
+            "paragraph_start": 0
+          },
+          "match_basis": "unique_clause_slot",
+          "uncertainty": "Lexical match only; verify association and meaning in context."
+        }
+      ],
+      "diff_hunks": [
+        {
+          "before": {
+            "start": 8,
+            "end": 9,
+            "line": 2,
+            "column": 3,
+            "end_position": {
+              "line": 2,
+              "column": 4
+            }
+          },
+          "after": {
+            "start": 8,
+            "end": 9,
+            "line": 2,
+            "column": 3,
+            "end_position": {
+              "line": 2,
+              "column": 4
+            }
+          }
+        }
+      ],
+      "objects": {
+        "before": [
+          {
+            "kind": "code",
+            "text": "  ```\nx=a\n  ```",
+            "start": 0,
+            "end": 15,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 3,
+              "column": 6
+            },
+            "context": "  ```\nx=a\n  ```",
+            "context_start": 0,
+            "paragraph": "  ```\nx=a\n  ```",
+            "paragraph_start": 0
+          }
+        ],
+        "after": [
+          {
+            "kind": "code",
+            "text": "  ```\nx=b\n  ```",
+            "start": 0,
+            "end": 15,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 3,
+              "column": 6
+            },
+            "context": "  ```\nx=b\n  ```",
+            "context_start": 0,
+            "paragraph": "  ```\nx=b\n  ```",
+            "paragraph_start": 0
+          }
+        ]
+      },
+      "coverage_warnings": {
+        "before": [],
+        "after": []
+      },
+      "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+      "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+    }
+  },
+  "equivalent": {
+    "before": "24 ms降至18 ms",
+    "after": "降低25%",
+    "v0.6.0": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [
+          "24",
+          "18"
+        ],
+        "added": [
+          "25%"
+        ]
+      },
+      "terminology_candidates": [],
+      "interpretation": "Review candidates in context; counts do not verify scope, order, causality or scientific meaning."
+    },
+    "working_snapshot": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [
+          "24",
+          "18"
+        ],
+        "added": [
+          "25%"
+        ]
+      },
+      "terminology_candidates": [],
+      "schema_version": 2,
+      "local_candidates": [
+        {
+          "candidate_type": "unmatched_old",
+          "object_type": "number",
+          "before": {
+            "kind": "number",
+            "text": "24 ms",
+            "start": 0,
+            "end": 5,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 6
+            },
+            "context": "24 ms降至18 ms",
+            "context_start": 0,
+            "paragraph": "24 ms降至18 ms",
+            "paragraph_start": 0
+          },
+          "match_basis": "unresolved",
+          "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+        },
+        {
+          "candidate_type": "unmatched_old",
+          "object_type": "number",
+          "before": {
+            "kind": "number",
+            "text": "18 ms",
+            "start": 7,
+            "end": 12,
+            "line": 1,
+            "column": 8,
+            "end_position": {
+              "line": 1,
+              "column": 13
+            },
+            "context": "24 ms降至18 ms",
+            "context_start": 0,
+            "paragraph": "24 ms降至18 ms",
+            "paragraph_start": 0
+          },
+          "match_basis": "unresolved",
+          "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+        },
+        {
+          "candidate_type": "unmatched_new",
+          "object_type": "number",
+          "after": {
+            "kind": "number",
+            "text": "25%",
+            "start": 2,
+            "end": 5,
+            "line": 1,
+            "column": 3,
+            "end_position": {
+              "line": 1,
+              "column": 6
+            },
+            "context": "降低25%",
+            "context_start": 0,
+            "paragraph": "降低25%",
+            "paragraph_start": 0
+          },
+          "match_basis": "unresolved",
+          "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+        }
+      ],
+      "diff_hunks": [
+        {
+          "before": {
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 1
+            }
+          },
+          "after": {
+            "start": 0,
+            "end": 2,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 3
+            }
+          }
+        },
+        {
+          "before": {
+            "start": 1,
+            "end": 12,
+            "line": 1,
+            "column": 2,
+            "end_position": {
+              "line": 1,
+              "column": 13
+            }
+          },
+          "after": {
+            "start": 3,
+            "end": 5,
+            "line": 1,
+            "column": 4,
+            "end_position": {
+              "line": 1,
+              "column": 6
+            }
+          }
+        }
+      ],
+      "objects": {
+        "before": [
+          {
+            "kind": "number",
+            "text": "24 ms",
+            "start": 0,
+            "end": 5,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 6
+            },
+            "context": "24 ms降至18 ms",
+            "context_start": 0,
+            "paragraph": "24 ms降至18 ms",
+            "paragraph_start": 0
+          },
+          {
+            "kind": "number",
+            "text": "18 ms",
+            "start": 7,
+            "end": 12,
+            "line": 1,
+            "column": 8,
+            "end_position": {
+              "line": 1,
+              "column": 13
+            },
+            "context": "24 ms降至18 ms",
+            "context_start": 0,
+            "paragraph": "24 ms降至18 ms",
+            "paragraph_start": 0
+          }
+        ],
+        "after": [
+          {
+            "kind": "number",
+            "text": "25%",
+            "start": 2,
+            "end": 5,
+            "line": 1,
+            "column": 3,
+            "end_position": {
+              "line": 1,
+              "column": 6
+            },
+            "context": "降低25%",
+            "context_start": 0,
+            "paragraph": "降低25%",
+            "paragraph_start": 0
+          }
+        ]
+      },
+      "coverage_warnings": {
+        "before": [],
+        "after": []
+      },
+      "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+      "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+    }
+  },
+  "glossary_code": {
+    "input": "  ```\n吞吐量\n  ```\n历史接口吞吐量与吞吐量",
+    "glossary": {
+      "terms": [
+        {
+          "preferred": "吞吐率",
+          "variants": [
+            "吞吐量"
+          ]
+        }
+      ],
+      "allow": [
+        "历史接口吞吐量"
+      ]
+    },
+    "v0.6.0": {
+      "protected_changes": {
+        "removed": [],
+        "added": []
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [
+        {
+          "line": 2,
+          "column": 1,
+          "found": "吞吐量",
+          "preferred": "吞吐率",
+          "reason": "check project definition"
+        },
+        {
+          "line": 4,
+          "column": 9,
+          "found": "吞吐量",
+          "preferred": "吞吐率",
+          "reason": "check project definition"
+        }
+      ],
+      "interpretation": "Review candidates in context; counts do not verify scope, order, causality or scientific meaning."
+    },
+    "working_snapshot": {
+      "protected_changes": {
+        "removed": [],
+        "added": [
+          [
+            "code",
+            "  ```\n吞吐量\n  ```\n"
+          ]
+        ]
+      },
+      "number_changes": {
+        "removed": [],
+        "added": []
+      },
+      "terminology_candidates": [
+        {
+          "start": 24,
+          "end": 27,
+          "line": 4,
+          "column": 9,
+          "end_position": {
+            "line": 4,
+            "column": 12
+          },
+          "found": "吞吐量",
+          "preferred": "吞吐率",
+          "reason": "check project definition"
+        }
+      ],
+      "schema_version": 2,
+      "local_candidates": [
+        {
+          "candidate_type": "unmatched_new",
+          "object_type": "code",
+          "after": {
+            "kind": "code",
+            "text": "  ```\n吞吐量\n  ```\n",
+            "start": 0,
+            "end": 16,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 4,
+              "column": 1
+            },
+            "context": "  ```\n吞吐量\n  ```\n历史接口吞吐量与吞吐量",
+            "context_start": 0,
+            "paragraph": "  ```\n吞吐量\n  ```\n历史接口吞吐量与吞吐量",
+            "paragraph_start": 0
+          },
+          "match_basis": "unresolved",
+          "uncertainty": "May be added, removed, moved or edited; no reliable pairing."
+        }
+      ],
+      "diff_hunks": [
+        {
+          "before": {
+            "start": 0,
+            "end": 0,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 1,
+              "column": 1
+            }
+          },
+          "after": {
+            "start": 0,
+            "end": 27,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 4,
+              "column": 12
+            }
+          }
+        }
+      ],
+      "objects": {
+        "before": [],
+        "after": [
+          {
+            "kind": "code",
+            "text": "  ```\n吞吐量\n  ```\n",
+            "start": 0,
+            "end": 16,
+            "line": 1,
+            "column": 1,
+            "end_position": {
+              "line": 4,
+              "column": 1
+            },
+            "context": "  ```\n吞吐量\n  ```\n历史接口吞吐量与吞吐量",
+            "context_start": 0,
+            "paragraph": "  ```\n吞吐量\n  ```\n历史接口吞吐量与吞吐量",
+            "paragraph_start": 0
+          }
+        ]
+      },
+      "coverage_warnings": {
+        "before": [],
+        "after": []
+      },
+      "position_convention": "Unicode code points; 0-based half-open offsets; 1-based lines/columns; newline-normalized CLI input.",
+      "interpretation": "Lexical candidates only. Counts and local matches do not verify scientific meaning. Intact clause moves may be silent; inspect diff_hunks."
+    }
+  }
+}

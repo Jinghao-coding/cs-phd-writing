@@ -1,0 +1,18 @@
+{
+  "examples/paper-to-chapter/project/background.tex": "45ebf8ac4a41e52ba46326cdf615a2a213791ba5c9a69a3d91e28bf8798689c5",
+  "examples/paper-to-chapter/project/main.tex": "1f5ba493fd4bc36b145b5e4da6a5c8e4a5da00ac2a109d2c93e4d4492a433ac9",
+  "examples/paper-to-chapter/project/AGENTS.md": "27f43bbac42de470ca0253c162942f042a1d4455fb133b8751ad8d6ca454ccfd",
+  "examples/paper-to-chapter/output/chapter.tex": "073296e8220cb20870f2c7d154da1fc033b9d9dfaac51f03f007aea9dfd51a18",
+  "examples/paper-to-chapter/output/example.pdf": "1a3a1518c99f8a25d03501ee83f8172b5be060dc7a04a9eadffb9d446800387e",
+  "evals/integration/project/main-full.tex": "678809954c60015507d746c4bcb960bad2921b88f8d0037c593d60c8f6bdcee1",
+  "evals/integration/project/main.tex": "1a61ef9e7f3c9c4aef9193bb7d93bfe2cceebc5771b8ed9f8f932997d26ccd6e",
+  "evals/integration/project/abstract.tex": "48c7ba642453dd759bab223d61e72fccc49e3377ef3fb9e14a1ff7ced451b1da",
+  "evals/integration/project/AGENTS.md": "c329678061e1adc15ec85bf20b7a090c6f665e07b9daf0b90f148afd8836d4df",
+  "evals/integration/project/tables/results.tex": "94b4d8f91d70054e0c86ccc40bdd3313c73f0a9b775139d3a3849436f2abc842",
+  "evals/integration/project/archive/reclaim-v1.tex": "6600a960a654c8a5c7d55c413e782b42e6f13fd54aa31a00f153494a78a60429",
+  "evals/integration/project/chapters/background.tex": "9463ace825e7c15ed06f633c9b5eed3bfba7c33f53d9529da4fd4b2463be0c6f",
+  "evals/integration/project/chapters/reclaim.tex": "0f606ff20a6aa8e7643d10b5a1db7fa9eba77ec8904ae25311430dca27fe7328",
+  "evals/integration/project/algorithms/reclaim.tex": "950d2dc89267d43b769a9f639c8a555d8eb8a2f44edf6b794e12c8c599e83dc5",
+  "evals/integration/project/shared/notation.tex": "17c47e2fdcf0f5a9bd7e6e9907166d71ef6dad998dab7b00bdcd4838f3097865",
+  "evals/integration/project/docs/context.md": "bf7b73872fea3fa3cd41390825b696a03fa52a4ad4135c2c151a2952060aa944"
+}

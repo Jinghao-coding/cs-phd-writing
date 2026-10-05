@@ -1,0 +1,27 @@
+--- before/abstract.tex
++++ after/abstract.tex
+@@ -1,2 +1,2 @@
+ \chapter*{摘要}
+-本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为80 KiB，比基线100 KiB降低20\%。
++本文研究共享对象的安全回收。在教学合成轨迹W中，延迟回收策略的峰值保留空间为72 KiB，比基线100 KiB降低28\%。
+--- before/chapters/reclaim.tex
++++ after/chapters/reclaim.tex
+@@ -1,6 +1,6 @@
+ \chapter{共享对象回收}
+ \label{ch:reclaim}
+-索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象退役后的等待时长。当对象已退役或引用计数为零时，系统释放对象空间。具体条件见算法说明。
++索引移除与读者退出可能发生在不同时间。$r_i$ 表示对象 $i$ 当前的读者引用计数。当对象已退役且引用计数为零时，系统释放对象空间。具体条件见算法说明。
+ \input{algorithms/reclaim}
+ 读者退出临界区后递减引用计数。
+ 仅当对象已经退役且不再被读者引用时，回收器才释放对象空间。
+--- before/docs/context.md
++++ after/docs/context.md
+@@ -4,5 +4,6 @@
+ 
+ | 依据 | 来源 | 使用位置 | 状态 |
+ | --- | --- | --- | --- |
+-| R1 峰值空间 | tables/results.tex，教学合成值 | abstract.tex；chapters/reclaim.tex 结果节 | 来源已更新，使用位置待核 |
+-| A1 回收条件 | algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 待核 |
++| R1 峰值空间 | tables/results.tex，教学合成值 | abstract.tex；chapters/reclaim.tex 结果节 | 2026-10-05 已逐处核验：摘要同步为轨迹W的72 KiB，相对基线100 KiB降低28%；研究章原有72 KiB及28%正确，保留。结论限定于W，未推广至轨迹V。 |
++| A1 回收条件 | algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 2026-10-05 已核验：释放条件更正为对象已退役且引用计数为零，与算法及作者补充一致；保留读者退出临界区后递减引用计数的作者补充。 |
++| 符号 $r_i$ | shared/notation.tex；algorithms/reclaim.tex | chapters/reclaim.tex 方法段 | 2026-10-05 已核验：将等待时长更正为对象 $i$ 当前的读者引用计数，与符号约定及算法输入一致。 |

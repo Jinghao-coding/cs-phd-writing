@@ -1,0 +1,19 @@
+{
+  "errors": [],
+  "tests": {
+    "exit_code": 0,
+    "output": "....................................\n----------------------------------------------------------------------\nRan 36 tests in 0.225s\n\nOK\n"
+  },
+  "date": "2026-10-05",
+  "host": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "python": "3.14.8",
+  "command": "python3 scripts/validate_repo.py",
+  "source_sha256": {
+    "scripts/check_revision.py": "25dde31451280d4736f16c47fa7f28bd183e3f955722bb3c93e01f589b523a9c",
+    "scripts/validate_repo.py": "3d6e1f77fe3af6a6274469d7a5ac779aa0a45fc7be6b83b26563ff56282f985f",
+    "scripts/run_integration.py": "0d23fb47eba0b3cfd420b6465c0d6f8bbc56360d0e406247bdeeb6b56989d1e4",
+    "evals/test_validate_repo.py": "085f3d85b987ef5bbb83adc8afdcc62422c037cda2cf3a6e4daa3b2f1c0334e0",
+    "evals/test_revision_check.py": "4eff4e8d39b8f2168c934cc77acb154b5df76ed3bebbf488897ca4692b8ca718",
+    "evals/test_integration_runner.py": "d591e3f1dc6cd7b359cee4323f38ad75961d15911ba3bcef8b70d05df983e907"
+  }
+}
